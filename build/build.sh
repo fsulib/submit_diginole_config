@@ -1,14 +1,14 @@
 rm -f /etc/localtime >> /root/build.log 2>&1
 ln -s /usr/share/zoneinfo/US/Eastern /etc/localtime >> /root/build.log 2>&1
 
-fallocate -l 2G /swapfile >> /root/build.log 2>&1
-chmod 600 /swapfile >> /root/build.log 2>&1
-mkswap /swapfile >> /root/build.log 2>&1
-swapon /swapfile >> /root/build.log 2>&1
-swapon -s >> /root/build.log 2>&1
-echo "/swapfile none swap sw 0 0" >> /etc/fstab
-echo "vm.swappiness=10" >> /etc/sysctl.conf
-sysctl -p >> /root/build.log 2>&1
+#fallocate -l 2G /swapfile >> /root/build.log 2>&1
+#chmod 600 /swapfile >> /root/build.log 2>&1
+#mkswap /swapfile >> /root/build.log 2>&1
+#swapon /swapfile >> /root/build.log 2>&1
+#swapon -s >> /root/build.log 2>&1
+#echo "/swapfile none swap sw 0 0" >> /etc/fstab
+#echo "vm.swappiness=10" >> /etc/sysctl.conf
+#sysctl -p >> /root/build.log 2>&1
 
 apt update -y >> /root/build.log 2>&1
 apt install -y php >> /root/build.log 2>&1
