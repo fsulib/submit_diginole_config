@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cd /var/www/html/drupal/; /var/www/html/drupal/vendor/bin/drupal config:import --directory=/submit_diginole_config/sync
