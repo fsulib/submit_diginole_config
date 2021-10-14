@@ -93,9 +93,14 @@ composer -n install >> /root/build.log 2>&1
 #	--account-pass="${DRUPAL_ADMIN_PASSWORD}" \
 #	--account-mail="${DRUPAL_ADMIN_EMAIL}" \
 #	--no-interaction
+
+
+# Configure Drupal site 
 #/var/www/html/drupal/vendor/bin/drush config-set "system.site" uuid "6d3939a8-a52f-4862-a77a-176786dcad2a" -y
 #/var/www/html/drupal/vendor/bin/drush ev '\Drupal::entityManager()->getStorage("shortcut_set")->load("default")->delete();'
 #/submit_diginole_config/commands/sd-import
+#/var/www/html/drupal/vendor/bin/drush config:set "smtp.settings" smtp_username "${SMTP_USERNAME}" -y
+#/var/www/html/drupal/vendor/bin/drush config:set "smtp.settings" smtp_password "${SMTP_PASSWORD}" -y
 
 
 # Preflight
