@@ -60,24 +60,6 @@ apt install -y apache2 >> /root/build.log 2>&1
 #service mysql restart
 
 
-# Install Drupal site
-#cd /var/www/html/drupal
-#/var/www/html/drupal/vendor/bin/drupal site:install standard \
-#	--langcode="en" \
-#	--db-type="mysql" \
-#	--db-host="${DATABASE_ENDPOINT}" \
-#	--db-name="submit_diginole" \
-#	--db-user="${DATABASE_DRUPAL_USERNAME}" \
-#	--db-pass="${DATABASE_DRUPAL_PASSWORD}" \
-#	--db-port="3306" \
-#	--site-mail="${DRUPAL_ADMIN_EMAIL}" \
-#	--account-name="${DRUPAL_ADMIN_USERNAME}" \
-#	--account-pass="${DRUPAL_ADMIN_PASSWORD}" \
-#	--account-mail="${DRUPAL_ADMIN_EMAIL}" \
-#	--no-interaction
-#/submit_diginole_config/commands/sd-import
-
-
 # Prep Apache for Drupal
 echo "AddHandler php5-script .php" >> /etc/apache2/apache2.conf
 echo "AddType text/html .php" >> /etc/apache2/apache2.conf
@@ -96,6 +78,26 @@ rm composer.*
 cp /submit_diginole_config/assets/composer.json .
 composer -n install >> /root/build.log 2>&1
 
+# Install Drupal site
+#cd /var/www/html/drupal
+#/var/www/html/drupal/vendor/bin/drupal site:install standard \
+#	--langcode="en" \
+#	--db-type="mysql" \
+#	--db-host="${DATABASE_ENDPOINT}" \
+#	--db-name="submit_diginole" \
+#	--db-user="${DATABASE_DRUPAL_USERNAME}" \
+#	--db-pass="${DATABASE_DRUPAL_PASSWORD}" \
+#	--db-port="3306" \
+#	--site-mail="${DRUPAL_ADMIN_EMAIL}" \
+#	--account-name="${DRUPAL_ADMIN_USERNAME}" \
+#	--account-pass="${DRUPAL_ADMIN_PASSWORD}" \
+#	--account-mail="${DRUPAL_ADMIN_EMAIL}" \
+#	--no-interaction
+#/var/www/html/drupal/vendor/bin/drush config-set "system.site" uuid "6d3939a8-a52f-4862-a77a-176786dcad2a" -y
+#/var/www/html/drupal/vendor/bin/drush ev '\Drupal::entityManager()->getStorage("shortcut_set")->load("default")->delete();'
+#/submit_diginole_config/commands/sd-import
+
 
 # Preflight
+service mysql restart >> /root/build.log 2>&1
 service apache2 restart >> /root/build.log 2>&1
