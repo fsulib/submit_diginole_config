@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+echo "PATH=/submit_diginole_config/commands/:/var/www/html/drupal/vendor/bin/:$PATH" >> /etc/environment
 source /etc/environment
 
 
@@ -79,20 +80,31 @@ cp /submit_diginole_config/assets/composer.json .
 composer -n install >> /root/build.log 2>&1
 
 # Install Drupal site
-#cd /var/www/html/drupal
-#/var/www/html/drupal/vendor/bin/drupal site:install standard \
-#	--langcode="en" \
-#	--db-type="mysql" \
-#	--db-host="${DATABASE_ENDPOINT}" \
-#	--db-name="submit_diginole" \
-#	--db-user="${DATABASE_DRUPAL_USERNAME}" \
-#	--db-pass="${DATABASE_DRUPAL_PASSWORD}" \
-#	--db-port="3306" \
-#	--site-mail="${DRUPAL_ADMIN_EMAIL}" \
-#	--account-name="${DRUPAL_ADMIN_USERNAME}" \
-#	--account-pass="${DRUPAL_ADMIN_PASSWORD}" \
-#	--account-mail="${DRUPAL_ADMIN_EMAIL}" \
-#	--no-interaction
+/var/www/html/drupal/vendor/bin/drush \
+  -y \
+  si \
+  standard \
+  install_configure_form.enable_update_status_emails=NULL \
+  --locale=en --db-url=mysql://$DATABASE_DRUPAL_USERNAME:$DATABASE_DRUPAL_PASSWORD@$DATABASE_ENDPOINT/submit_diginole \
+  --account-name=$DRUPAL_ADMIN_USERNAME \
+  --account-pass=$DRUPAL_ADMIN_PASSWORD \
+  --account-mail=$DRUPAL_ADMIN_EMAIL \
+  --site-mail=$DRUPAL_ADMIN_EMAIL >> /root/build.log 2>&1
+
+
+# Configure trusted host patterns
+echo '$settings["trusted_host_patterns"] = [' >> /var/www/html/drupal/web/sites/default/settings.php
+case $ENVIRONMENT in
+  vagrant)
+    echo '"^localhost$",'  >> /var/www/html/drupal/web/sites/default/settings.php
+    ;;
+  dev)
+    echo '"^dev.submit.diginole.lib.fsu.edu$",'  >> /var/www/html/drupal/web/sites/default/settings.php
+    ;;
+  *)
+    ;;
+esac
+echo '];' >> /var/www/html/drupal/web/sites/default/settings.php
 
 
 # Configure Drupal site 
