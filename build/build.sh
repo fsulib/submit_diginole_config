@@ -58,8 +58,6 @@ mysql \
 	--host="${DATABASE_ENDPOINT}" \
 	--execute="FLUSH PRIVILEGES;"
 
-service mysql restart
-
 
 # Prep Apache for Drupal
 echo "AddHandler php5-script .php" >> /etc/apache2/apache2.conf
@@ -116,5 +114,4 @@ drush config:set "smtp.settings" smtp_password "${SMTP_PASSWORD}" -y
 
 # Preflight
 drush cr
-service mysql restart >> /root/build.log 2>&1
 service apache2 restart >> /root/build.log 2>&1
