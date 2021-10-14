@@ -1,3 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-cd /var/www/html/drupal/; /var/www/html/drupal/vendor/bin/drupal config:import --directory=/submit_diginole_config/sync
+cd /var/www/html/drupal/
+/var/www/html/drupal/vendor/bin/drupal config:import --directory=/submit_diginole_config/sync
