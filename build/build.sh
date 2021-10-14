@@ -105,7 +105,6 @@ esac
 echo '];' >> /var/www/html/drupal/web/sites/default/settings.php
 
 /var/www/html/drupal/vendor/bin/drush config-set "system.site" uuid "0734e930-32e6-4075-8e2e-cc4c0286b4c1" -y
-/var/www/html/drupal/vendor/bin/drush --root=/var/www/html/drupal/web/sites/default -y config:import --source=/submit_diginole_config/sync
 /var/www/html/druapl/vendor/bin/drush entity:delete shortcut_set
 /var/www/html/drupal/vendor/bin/drush --root=/var/www/html/drupal/web/sites/default -y config:import --source=/submit_diginole_config/sync
 #/var/www/html/drupal/vendor/bin/drush config:set "smtp.settings" smtp_username "${SMTP_USERNAME}" -y
