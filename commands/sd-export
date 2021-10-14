@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/var/www/html/drupal/vendor/bin/drush config:export --destination=/submit_diginole_config/sync
+/var/www/html/drupal/vendor/bin/drush --root=/var/www/html/drupal/web/sites/default config:export --destination=/submit_diginole_config/sync

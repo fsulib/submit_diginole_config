@@ -91,8 +91,6 @@ composer -n install >> /root/build.log 2>&1
   --account-mail=$DRUPAL_ADMIN_EMAIL \
   --site-mail=$DRUPAL_ADMIN_EMAIL >> /root/build.log 2>&1
 
-
-# Configure trusted host patterns
 echo '$settings["trusted_host_patterns"] = [' >> /var/www/html/drupal/web/sites/default/settings.php
 case $ENVIRONMENT in
   vagrant)
@@ -106,11 +104,10 @@ case $ENVIRONMENT in
 esac
 echo '];' >> /var/www/html/drupal/web/sites/default/settings.php
 
-
-# Configure Drupal site 
-#/var/www/html/drupal/vendor/bin/drush config-set "system.site" uuid "6d3939a8-a52f-4862-a77a-176786dcad2a" -y
-#/var/www/html/drupal/vendor/bin/drush ev '\Drupal::entityManager()->getStorage("shortcut_set")->load("default")->delete();'
-#/submit_diginole_config/commands/sd-import
+/var/www/html/drupal/vendor/bin/drush config-set "system.site" uuid "0734e930-32e6-4075-8e2e-cc4c0286b4c1" -y
+/var/www/html/drupal/vendor/bin/drush --root=/var/www/html/drupal/web/sites/default -y config:import --source=/submit_diginole_config/sync
+/var/www/html/druapl/vendor/bin/drush entity:delete shortcut_set
+/var/www/html/drupal/vendor/bin/drush --root=/var/www/html/drupal/web/sites/default -y config:import --source=/submit_diginole_config/sync
 #/var/www/html/drupal/vendor/bin/drush config:set "smtp.settings" smtp_username "${SMTP_USERNAME}" -y
 #/var/www/html/drupal/vendor/bin/drush config:set "smtp.settings" smtp_password "${SMTP_PASSWORD}" -y
 
