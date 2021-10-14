@@ -92,26 +92,26 @@ drush \
 echo '$settings["trusted_host_patterns"] = [' >> /var/www/html/drupal/web/sites/default/settings.php
 case $ENVIRONMENT in
   vagrant)
-    echo '"^localhost$",'  >> /var/www/html/drupal/web/sites/default/settings.php
+    echo '"^localhost$",' >> /var/www/html/drupal/web/sites/default/settings.php
     ;;
   dev)
-    echo '"^dev.submit.diginole.lib.fsu.edu$",'  >> /var/www/html/drupal/web/sites/default/settings.php
+    echo '"^dev.submit.diginole.lib.fsu.edu$",' >> /var/www/html/drupal/web/sites/default/settings.php
     ;;
   *)
     ;;
 esac
 echo '];' >> /var/www/html/drupal/web/sites/default/settings.php
 
-drush entity:delete shortcut_set
-drush config-set "system.site" uuid "0734e930-32e6-4075-8e2e-cc4c0286b4c1" -y
-drush --root=/var/www/html/drupal/web/sites/default -y config:import --source=/submit_diginole_config/sync
+drush entity:delete shortcut_set >> /root/build.log 2>&1
+drush config-set "system.site" uuid "0734e930-32e6-4075-8e2e-cc4c0286b4c1" -y >> /root/build.log 2>&1
+drush --root=/var/www/html/drupal/web/sites/default -y config:import --source=/submit_diginole_config/sync >> /root/build.log 2>&1
 
 
 # Override imported config with site-specific config
-drush config:set "smtp.settings" smtp_username "${SMTP_USERNAME}" -y
-drush config:set "smtp.settings" smtp_password "${SMTP_PASSWORD}" -y
+drush config:set "smtp.settings" smtp_username "${SMTP_USERNAME}" -y >> /root/build.log 2>&1
+drush config:set "smtp.settings" smtp_password "${SMTP_PASSWORD}" -y >> /root/build.log 2>&1
 
 
 # Preflight
-drush cr
+drush cr >> /root/build.log 2>&1
 service apache2 restart >> /root/build.log 2>&1
