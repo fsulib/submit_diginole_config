@@ -33,31 +33,31 @@ apt install -y apache2 >> /root/build.log 2>&1
 
 
 # Set up Drupal user in database
-#mysql \
-#  --user="${DATABASE_ROOT_USERNAME}" \
-#	--password="${DATABASE_ROOT_PASSWORD}" \
-#	--host="${DATABASE_ENDPOINT}" \
-#	--execute="CREATE DATABASE submit_diginole;"
-#
-#mysql \
-#  --user="${DATABASE_ROOT_USERNAME}" \
-#	--password="${DATABASE_ROOT_PASSWORD}" \
-#	--host="${DATABASE_ENDPOINT}" \
-#	--execute="CREATE USER '${DATABASE_DRUPAL_USERNAME}'@'%' IDENTIFIED BY '${DATABASE_DRUPAL_PASSWORD}';"
-#
-#mysql \
-#  --user="${DATABASE_ROOT_USERNAME}" \
-#	--password="${DATABASE_ROOT_PASSWORD}" \
-#	--host="${DATABASE_ENDPOINT}" \
-#	--execute="GRANT ALL PRIVILEGES ON submit_diginole.* TO '${DATABASE_DRUPAL_USERNAME}'@'%';"
-#
-#mysql \
-#  --user="${DATABASE_ROOT_USERNAME}" \
-#	--password="${DATABASE_ROOT_PASSWORD}" \
-#	--host="${DATABASE_ENDPOINT}" \
-#	--execute="FLUSH PRIVILEGES;"
-#
-#service mysql restart
+mysql \
+  --user="${DATABASE_ROOT_USERNAME}" \
+	--password="${DATABASE_ROOT_PASSWORD}" \
+	--host="${DATABASE_ENDPOINT}" \
+	--execute="CREATE DATABASE submit_diginole;"
+
+mysql \
+  --user="${DATABASE_ROOT_USERNAME}" \
+	--password="${DATABASE_ROOT_PASSWORD}" \
+	--host="${DATABASE_ENDPOINT}" \
+	--execute="CREATE USER '${DATABASE_DRUPAL_USERNAME}'@'%' IDENTIFIED BY '${DATABASE_DRUPAL_PASSWORD}';"
+
+mysql \
+  --user="${DATABASE_ROOT_USERNAME}" \
+	--password="${DATABASE_ROOT_PASSWORD}" \
+	--host="${DATABASE_ENDPOINT}" \
+	--execute="GRANT ALL PRIVILEGES ON submit_diginole.* TO '${DATABASE_DRUPAL_USERNAME}'@'%';"
+
+mysql \
+  --user="${DATABASE_ROOT_USERNAME}" \
+	--password="${DATABASE_ROOT_PASSWORD}" \
+	--host="${DATABASE_ENDPOINT}" \
+	--execute="FLUSH PRIVILEGES;"
+
+service mysql restart
 
 
 # Prep Apache for Drupal
