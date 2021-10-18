@@ -9,7 +9,7 @@ rm -f /etc/localtime >> /root/build.log 2>&1
 ln -s /usr/share/zoneinfo/US/Eastern /etc/localtime >> /root/build.log 2>&1
 
 
-# Set up swap space so Composer doesn't die on small instances 
+# Set up swap space so Composer doesn't die on small instances
 fallocate -l 2G /swapfile >> /root/build.log 2>&1
 chmod 600 /swapfile >> /root/build.log 2>&1
 mkswap /swapfile >> /root/build.log 2>&1
@@ -101,6 +101,8 @@ case $ENVIRONMENT in
     ;;
 esac
 echo '];' >> /var/www/html/drupal/web/sites/default/settings.php
+
+echo '$settings["file_private_path"] = "/var/www/html/drupal/private_files";' >> /var/www/html/drupal/web/sites/default/settings.php
 
 drush entity:delete shortcut_set >> /root/build.log 2>&1
 drush config-set "system.site" uuid "0734e930-32e6-4075-8e2e-cc4c0286b4c1" -y >> /root/build.log 2>&1
