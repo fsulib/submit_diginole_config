@@ -7,6 +7,7 @@ Vagrant.configure("2") do |config|
   config.vm.synced_folder "~/.ssh", "/local_keys", :mount_options => ["dmode=777","fmode=777"]
   config.vm.network :forwarded_port, host: 9999, guest: 80
   config.vbguest.auto_update = false
+  config.ssh.forward_agent = true
   config.vm.define 'submit_diginole_vagrant' do |t|
     config.vm.provider :virtualbox do |v|
       v.customize ["modifyvm", :id, "--memory", 4096]

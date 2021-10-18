@@ -34,6 +34,7 @@ module:
   search: 0
   shortcut: 0
   smtp: 0
+  submit_diginole_content: 0
   system: 0
   taxonomy: 0
   text: 0

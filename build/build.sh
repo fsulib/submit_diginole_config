@@ -101,8 +101,15 @@ case $ENVIRONMENT in
     ;;
 esac
 echo '];' >> /var/www/html/drupal/web/sites/default/settings.php
-
+cd /var/www/html/drupal
+mkdir -p private_files
+chmod -R 777 private_files
 echo '$settings["file_private_path"] = "/var/www/html/drupal/private_files";' >> /var/www/html/drupal/web/sites/default/settings.php
+
+#copy in submit_diginole_content module
+mkdir /var/www/html/drupal/web/modules/custom
+cd /var/www/html/drupal/web/modules/custom
+cp -r  /submit_diginole_config/assets/submit_diginole_content .
 
 drush entity:delete shortcut_set >> /root/build.log 2>&1
 drush config-set "system.site" uuid "0734e930-32e6-4075-8e2e-cc4c0286b4c1" -y >> /root/build.log 2>&1
