@@ -1,0 +1,301 @@
+uuid: 26f857d0-ca00-43af-ba9b-f135504eb1d0
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 1
+template: false
+archive: false
+id: book
+title: 'Book Submission'
+description: 'Webform for submitting books'
+category: ''
+elements: |-
+  first_name:
+    '#type': textfield
+    '#title': 'First Name'
+    '#required': true
+  last_name:
+    '#type': textfield
+    '#title': 'Last Name'
+    '#required': true
+  email:
+    '#type': textfield
+    '#title': Email
+    '#required': true
+  department:
+    '#type': select
+    '#title': Department
+    '#options': fsu_departments
+    '#required': true
+  submission_type:
+    '#type': select
+    '#title': 'Submission Type'
+    '#options': book_submission_options
+    '#required': true
+  submission_title:
+    '#type': textfield
+    '#title': 'Submission Title'
+    '#required': true
+  submission_subtitle:
+    '#type': textfield
+    '#title': 'Submission Subtitle'
+  author:
+    '#type': textfield
+    '#title': Author
+    '#description': 'This element is a placeholder'
+    '#required': true
+  doi:
+    '#type': textfield
+    '#title': DOI
+    '#description': '<div style="list-style-type:lower-alpha"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Provide the DOI for this item if one already exists</span></span></span></span></span></span></div>'
+  keywords:
+    '#type': textfield
+    '#title': Keywords
+    '#description': |-
+      <div class="description">
+      <div class="webform-element-description" id="edit-keywords--description">A comma separated list of keywords, for example: &quot;Cooking, Minimalist art, Brutalist architecture&quot;</div>
+      </div>
+  embargo_period:
+    '#type': select
+    '#title': 'Embargo Period'
+    '#options': embargo_period
+    '#empty_option': '-None-'
+    '#empty_value': none
+    '#required': true
+  visibility:
+    '#type': radios
+    '#title': Visibility
+    '#options': visibility
+    '#required': true
+  date_of_publication:
+    '#type': date
+    '#title': 'Date of Publication'
+    '#required': true
+  publication_name:
+    '#type': textfield
+    '#title': 'Publication Name'
+  publication_edition:
+    '#type': textfield
+    '#title': 'Publication edition'
+  publication_volume:
+    '#type': textfield
+    '#title': 'Publication Volume'
+  publication_issue:
+    '#type': textfield
+    '#title': 'Publication Issue'
+  publication_page_range:
+    '#type': textfield
+    '#title': 'Publication page range'
+  publication_note:
+    '#type': textfield
+    '#title': 'Publication Note'
+  preferred_citation:
+    '#type': textarea
+    '#title': 'Preferred Citation'
+  grant_number:
+    '#type': textfield
+    '#title': 'Grant Number'
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">If funded by a grant, please include the funding agency grant number here. If you would like your article to be submitted to a funding agency&#39;s public access repository on your behalf, please include the name of the agency and repository in the &quot;Note to FSU Libraries Staff&quot; field, below.</span></span></span></span></span></span>'
+  note_to_library_staff:
+    '#type': textarea
+    '#title': 'Note to Library staff'
+  processed_text:
+    '#type': processed_text
+    '#text': |
+      <p>placeholder for file upload</p>
+    '#format': basic_html
+  submission_agreement_acknowledgment:
+    '#type': checkbox
+    '#title': 'Submission Agreement Acknowledgment'
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">I grant to Florida State University (&ldquo;FSU&rdquo;) the non-exclusive right to preserve and reproduce the work I am depositing (the &ldquo;Work&rdquo;), and to display, distribute and make the Work available publicly without charge, in accordance with the terms of the DigiNole author agreement found at</span></span></span></span></span></span><a href="http://diginole.lib.fsu.edu/repository/author-agreement" style="text-decoration:none"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none"> </span></span></span></span></span></span><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#56a3f1; color:#1155cc"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:underline"><span style="-webkit-text-decoration-skip:none"><span style="text-decoration-skip-ink:none">http://diginole.lib.fsu.edu/repository/author-agreement</span></span></span></span></span></span></span></span></a><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">.</span></span></span></span></span></span>'
+    '#required': true
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#states':
+      visible:
+        ':input[name="submission_agreement_acknowledgment"]':
+          checked: true
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: both
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

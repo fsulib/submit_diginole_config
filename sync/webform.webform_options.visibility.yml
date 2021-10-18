@@ -1,0 +1,11 @@
+uuid: 0d64d002-e6cf-464b-b082-d75891367f28
+langcode: en
+status: true
+dependencies: {  }
+id: visibility
+label: Visibility
+category: ''
+likert: false
+options: |-
+  viewable_general_public: 'Viewable by general public'
+  viewable_on_campus: 'Viewable only on-campus'

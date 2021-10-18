@@ -1,0 +1,12 @@
+uuid: ead5a8a9-ec79-4c66-8b23-dcef92817376
+langcode: en
+status: true
+dependencies: {  }
+id: book_submission_options
+label: 'Book Submission Options'
+category: ''
+likert: false
+options: |-
+  book: Book
+  book_chapter: 'Book Chapter'
+  book_review: 'Book Review'
