@@ -1,0 +1,21 @@
+uuid: 4201d79c-60fd-4492-adec-3604a991e676
+langcode: en
+status: true
+dependencies: {  }
+id: submission_types
+label: 'Submission Types'
+category: ''
+likert: false
+options: |-
+  undergraduate_honors_thesis: 'Undergraduate Honors Thesis'
+  audio: Audio
+  journal_article: 'Journal Article'
+  book: Book
+  conference: Conference
+  capstone_project: 'Capstone Project'
+  data_set: 'Data Set'
+  minimal_submission: 'Minimal Submission'
+  report: report
+  video: Video
+  working_paper: 'Working Paper'
+  other: Other

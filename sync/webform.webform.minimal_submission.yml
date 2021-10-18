@@ -1,4 +1,4 @@
-uuid: 22e3a31b-5d48-423b-a1c1-9bf0bbf0ca95
+uuid: 04a02d1c-ffe9-472f-b9df-b965a7a23e99
 langcode: en
 status: open
 dependencies: {  }
@@ -8,94 +8,44 @@ weight: 0
 uid: 1
 template: false
 archive: false
-id: university_records_submission
-title: 'University Records Submission'
-description: 'Webform for submitting University Records'
+id: minimal_submission
+title: 'Minimal Submission'
+description: 'Webform for minimal submissions'
 category: ''
 elements: |-
-  have_you_contacted_the_university_archivist:
-    '#type': select
-    '#title': 'Have you contacted the University Archivist about this deposit and received permission to submit materials?*'
-    '#description': 'If you have not contacted the University Archivist, please email <span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">lib-specialcollections@fsu.edu to discuss your materials prior to submission.</span></span></span></span></span></span>'
-    '#options': yes_no
-    '#required': true
   first_name:
     '#type': textfield
     '#title': 'First Name'
     '#required': true
-    '#states':
-      visible:
-        ':input[name="have_you_contacted_the_university_archivist"]':
-          value: 'Yes'
   last_name:
     '#type': textfield
     '#title': 'Last Name'
     '#required': true
-    '#states':
-      visible:
-        ':input[name="have_you_contacted_the_university_archivist"]':
-          value: 'Yes'
-  fsu_department_club_group:
+  email:
     '#type': textfield
-    '#title': 'FSU Department/Club/Group'
-    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Please provide the name of the appropriate FSU-affiliated academic department, club, or group this material is associated with</span></span></span></span></span></span>'
-    '#states':
-      visible:
-        ':input[name="have_you_contacted_the_university_archivist"]':
-          value: 'Yes'
-  are_you_the_sole_creator_of_these_materials_:
-    '#type': webform_select_other
-    '#title': 'Are you the sole creator of these materials?'
-    '#description': '<div style="list-style-type:lower-roman"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">If you answered &quot;no,&quot; please list the names of the content co-creators, their contact information and the circumstances of how you came to have the materials.</span></span></span></span></span></span></div>'
-    '#options':
-      'yes': 'Yes'
-    '#empty_option': ' '
-    '#other__type': textarea
-    '#other__option_label': 'No - please provide more information'
-    '#other__placeholder': ''
+    '#title': Email
     '#required': true
-    '#states':
-      visible:
-        ':input[name="have_you_contacted_the_university_archivist"]':
-          value: 'Yes'
-  what_type_s_of_files_are_you_uploading_:
-    '#type': checkboxes
-    '#title': 'What type(s) of files are you uploading?'
-    '#options':
-      pdf: PDF
-      photo: Photographs
-      audio: Audio
-      video: Video
+  department:
+    '#type': select
+    '#title': Department
+    '#options': fsu_departments
     '#required': true
-    '#states':
-      visible:
-        ':input[name="have_you_contacted_the_university_archivist"]':
-          value: 'Yes'
-  please_describe_your_items_including_locations_events_dates:
-    '#type': textarea
-    '#title': 'Please describe your items including locations, events, dates, and names of people included (if known)'
-    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Please provide the Archives with as much contextual information as possible about this material.</span></span></span></span></span></span>'
-    '#states':
-      visible:
-        ':input[name="have_you_contacted_the_university_archivist"]':
-          value: 'Yes'
-  submission_agreement_acknowledgment_:
+  processed_text:
+    '#type': processed_text
+    '#text': |
+      <p>placeholder for file upload</p>
+    '#format': basic_html
+  submission_agreement_acknowledgment:
     '#type': checkbox
-    '#title': 'Submission Agreement Acknowledgment '
-    '#description': 'This text is still under review by SCA but it will be an agreement between the submitter and the archives to use the material. A user must check this box and agree to these terms in order to submit.'
+    '#title': 'Submission Agreement Acknowledgment'
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">I grant to Florida State University (&ldquo;FSU&rdquo;) the non-exclusive right to preserve and reproduce the work I am depositing (the &ldquo;Work&rdquo;), and to display, distribute and make the Work available publicly without charge, in accordance with the terms of the DigiNole author agreement found at</span></span></span></span></span></span><a href="http://diginole.lib.fsu.edu/repository/author-agreement" style="text-decoration:none"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none"> </span></span></span></span></span></span><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#56a3f1; color:#1155cc"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:underline"><span style="-webkit-text-decoration-skip:none"><span style="text-decoration-skip-ink:none">http://diginole.lib.fsu.edu/repository/author-agreement</span></span></span></span></span></span></span></span></a><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">.</span></span></span></span></span></span>'
     '#required': true
-    '#states':
-      visible:
-        ':input[name="have_you_contacted_the_university_archivist"]':
-          value: 'Yes'
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
     '#states':
       visible:
-        ':input[name="have_you_contacted_the_university_archivist"]':
-          value: 'Yes'
-        ':input[name="submission_agreement_acknowledgment_"]':
+        ':input[name="submission_agreement_acknowledgment"]':
           checked: true
 css: ''
 javascript: ''
@@ -106,9 +56,9 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: /university_records
+  page_submit_path: ''
   page_confirm_path: ''
-  page_theme_name: bartik
+  page_theme_name: ''
   form_title: both
   form_submit_once: false
   form_exception_message: ''

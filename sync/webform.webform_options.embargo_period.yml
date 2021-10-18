@@ -1,0 +1,16 @@
+uuid: a6013ddd-5943-429d-9065-f650c5087810
+langcode: en
+status: true
+dependencies: {  }
+id: embargo_period
+label: 'Embargo Period'
+category: ''
+likert: false
+options: |-
+  unsure: Unsure
+  6_months: '6 months'
+  12_months: '12 months'
+  18_months: '18 months'
+  24_months: '24 months'
+  36_months: '36 months'
+  48_months: '48 months'

@@ -1,0 +1,12 @@
+uuid: f7dd43ed-ac1d-4e0c-b009-6af1b0024a93
+langcode: en
+status: true
+dependencies: {  }
+id: report_submission_type_options
+label: 'Report Submission Type Options'
+category: ''
+likert: false
+options: |-
+  policy: Policy
+  reserach: Reserach
+  technical: Technical

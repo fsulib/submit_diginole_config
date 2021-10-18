@@ -1,0 +1,12 @@
+uuid: 8a2720ca-6453-4f87-b8c2-162101847bd5
+langcode: en
+status: true
+dependencies: {  }
+id: conference_submission_options
+label: 'Conference Submission Options'
+category: ''
+likert: false
+options: |-
+  conference_paper: 'Conference Paper'
+  conference_poster: 'Conference Poster'
+  conference_presentation: 'Conference Presentation'
