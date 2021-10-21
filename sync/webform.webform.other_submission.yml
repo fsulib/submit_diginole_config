@@ -130,11 +130,10 @@ elements: |-
     '#type': textarea
     '#title': 'Note to Library staff'
     '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Provide any additional information that may be helpful to FSU Library staff members who will be handling this submission.</span></span></span></span></span></span>'
-  processed_text:
-    '#type': processed_text
-    '#text': |
-      <p>placeholder for file upload</p>
-    '#format': basic_html
+  upload_generic_submission:
+    '#type': managed_file
+    '#title': 'Upload generic submission'
+    '#required': true
   submission_agreement_acknowledgment:
     '#type': checkbox
     '#title': 'Submission Agreement Acknowledgment'

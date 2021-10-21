@@ -19,6 +19,14 @@ elements: |-
     '#description': 'If you have not contacted the University Archivist, please email <span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">lib-specialcollections@fsu.edu to discuss your materials prior to submission.</span></span></span></span></span></span>'
     '#options': yes_no
     '#required': true
+  email:
+    '#type': textfield
+    '#title': Email
+    '#required': true
+    '#states':
+      visible:
+        ':input[name="have_you_contacted_the_university_archivist"]':
+          value: 'Yes'
   first_name:
     '#type': textfield
     '#title': 'First Name'
@@ -61,11 +69,14 @@ elements: |-
   what_type_s_of_files_are_you_uploading_:
     '#type': checkboxes
     '#title': 'What type(s) of files are you uploading?'
+    '#description': 'Check all that apply'
     '#options':
       pdf: PDF
       photo: Photographs
       audio: Audio
       video: Video
+      another_format: another_format
+      yet_another_format: yet_another_format
     '#required': true
     '#states':
       visible:
@@ -75,6 +86,14 @@ elements: |-
     '#type': textarea
     '#title': 'Please describe your items including locations, events, dates, and names of people included (if known)'
     '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Please provide the Archives with as much contextual information as possible about this material.</span></span></span></span></span></span>'
+    '#states':
+      visible:
+        ':input[name="have_you_contacted_the_university_archivist"]':
+          value: 'Yes'
+  upload_university_records:
+    '#type': managed_file
+    '#title': 'Upload University Records'
+    '#required': true
     '#states':
       visible:
         ':input[name="have_you_contacted_the_university_archivist"]':

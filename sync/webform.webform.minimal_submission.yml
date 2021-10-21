@@ -30,11 +30,10 @@ elements: |-
     '#title': Department
     '#options': fsu_departments
     '#required': true
-  processed_text:
-    '#type': processed_text
-    '#text': |
-      <p>placeholder for file upload</p>
-    '#format': basic_html
+  upload_minimal_submission:
+    '#type': managed_file
+    '#title': 'Upload Minimal Submission'
+    '#required': true
   submission_agreement_acknowledgment:
     '#type': checkbox
     '#title': 'Submission Agreement Acknowledgment'
