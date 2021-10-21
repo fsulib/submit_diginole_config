@@ -43,10 +43,34 @@ elements: |-
     '#type': textfield
     '#title': 'Submission Subtitle'
   author:
-    '#type': textfield
+    '#type': webform_custom_composite
     '#title': Author
-    '#description': 'This element is a placeholder'
     '#required': true
+    '#multiple__header': false
+    '#multiple__item_label': author
+    '#multiple__min_items': 1
+    '#multiple__sorting': false
+    '#multiple__add': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another Author'
+    '#element':
+      author_first_name:
+        '#type': textfield
+        '#required': true
+        '#title': 'First Name'
+      author_middle_name:
+        '#type': textfield
+        '#title': 'Middle Name'
+      author_last_name:
+        '#type': textfield
+        '#required': true
+        '#title': 'Last Name'
+      author_orcid:
+        '#type': textfield
+        '#title': ORCID
+      author_institution:
+        '#type': textfield
+        '#title': Institution
   doi:
     '#type': textfield
     '#title': DOI
