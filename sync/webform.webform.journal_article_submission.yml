@@ -21,6 +21,15 @@ elements: |-
     '#type': textfield
     '#title': 'Last Name'
     '#required': true
+  email:
+    '#type': textfield
+    '#title': Email
+    '#required': true
+  department:
+    '#type': select
+    '#title': Department
+    '#options': fsu_departments
+    '#required': true
   submission_type:
     '#type': select
     '#title': 'Submission Type'

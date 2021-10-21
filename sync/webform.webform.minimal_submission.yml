@@ -26,10 +26,8 @@ elements: |-
     '#title': Email
     '#required': true
   department:
-    '#type': select
+    '#type': textfield
     '#title': Department
-    '#options': fsu_departments
-    '#required': true
   upload_minimal_submission:
     '#type': managed_file
     '#title': 'Upload Minimal Submission'
