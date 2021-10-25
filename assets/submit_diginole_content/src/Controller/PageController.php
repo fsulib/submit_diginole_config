@@ -16,7 +16,7 @@ class PageController extends ControllerBase {
     $list_of_pages .= '<li><a href="/form/book">Book Submission</a></li>';
     $list_of_pages .= '<li><a href="/form/capstone-project-submission">Capstone Project Submission</a></li>';
     $list_of_pages .= '<li><a href="/form/conference">Conference Submission</a></li>';
-    $list_of_pages .= '<li><a href="/form/data-set">Data Set Submission/a></li>';
+    $list_of_pages .= '<li><a href="/form/data-set">Data Set Submission</a></li>';
     $list_of_pages .= '<li><a href="/form/honors-thesis-submission">Honors Thesis Submission</a></li>';
     $list_of_pages .= '<li><a href="/form/journal-article-submission">Journal Article Submission</a></li>';
     $list_of_pages .= '<li><a href="/form/minimal-submission">Minimal Submission</a></li>';
