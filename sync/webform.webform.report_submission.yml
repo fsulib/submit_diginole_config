@@ -28,6 +28,7 @@ elements: |-
     '#type': select
     '#title': Department
     '#options': fsu_departments
+    '#select2': true
     '#required': true
   submission_type:
     '#type': select

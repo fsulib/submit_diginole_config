@@ -24,7 +24,9 @@ elements: |-
   department:
     '#type': select
     '#title': Department
+    '#placeholder': 'Select or search for department'
     '#options': fsu_departments
+    '#select2': true
     '#required': true
   email:
     '#type': textfield
