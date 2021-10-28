@@ -27,7 +27,8 @@ elements: |-
     '#required': true
   department:
     '#type': textfield
-    '#title': Department
+    '#title': Department/Institute/Center/Program
+    '#placeholder': 'Select or search for department/institute/center/program'
   upload_minimal_submission:
     '#type': managed_file
     '#title': 'Upload Minimal Submission'

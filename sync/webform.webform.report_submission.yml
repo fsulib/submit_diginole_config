@@ -26,7 +26,8 @@ elements: |-
     '#required': true
   department:
     '#type': select
-    '#title': Department
+    '#title': Department/Institute/Center/Program
+    '#placeholder': 'Select or search for department/institute/center/program'
     '#options': fsu_departments
     '#select2': true
     '#required': true

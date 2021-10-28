@@ -1,4 +1,4 @@
-uuid: 26f857d0-ca00-43af-ba9b-f135504eb1d0
+uuid: 4fe31a60-3405-4154-86a7-8bec5352d0c4
 langcode: en
 status: open
 dependencies: {  }
@@ -8,9 +8,9 @@ weight: 0
 uid: 1
 template: false
 archive: false
-id: book
-title: 'Book Submission'
-description: 'Webform for submitting books'
+id: doctural_nursing_program_dnp_cap
+title: 'Doctural Nursing Program (DNP) Capstone Project Submission'
+description: 'Webform for submitting DNP capstone projects'
 category: ''
 elements: |-
   first_name:
@@ -20,22 +20,27 @@ elements: |-
   last_name:
     '#type': textfield
     '#title': 'Last Name'
-    '#required': true
   email:
     '#type': textfield
     '#title': Email
     '#required': true
-  department:
+  department_institute_center_program:
     '#type': select
     '#title': Department/Institute/Center/Program
-    '#placeholder': 'Select or search for department/institute/center/program'
+    '#description': 'This element is pre-defined and cannot be edited'
+    '#disabled': true
     '#options': fsu_departments
-    '#select2': true
+    '#empty_option': 'Doctural Nursing Program'
+    '#empty_value': 'fsu:dnp_project_graduates'
     '#required': true
   submission_type:
     '#type': select
     '#title': 'Submission Type'
-    '#options': book_submission_options
+    '#description': 'This field is pre-defined and cannot be edited'
+    '#disabled': true
+    '#options': submission_types
+    '#empty_option': 'Capstone Project'
+    '#empty_value': capstone_project
     '#required': true
   submission_title:
     '#type': textfield
@@ -73,10 +78,6 @@ elements: |-
       author_institution:
         '#type': textfield
         '#title': Institution
-  doi:
-    '#type': textfield
-    '#title': DOI
-    '#description': '<div style="list-style-type:lower-alpha"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Provide the DOI for this item if one already exists</span></span></span></span></span></span></div>'
   abstract:
     '#type': textarea
     '#title': Abstract
@@ -85,7 +86,11 @@ elements: |-
     '#title': Keywords
     '#description': |-
       <div class="description">
+      <div class="webform-element-description" id="edit-keywords--description">
+      <div class="description">
       <div class="webform-element-description" id="edit-keywords--description">A comma separated list of keywords, for example: &quot;Cooking, Minimalist art, Brutalist architecture&quot;</div>
+      </div>
+      </div>
       </div>
   embargo_period:
     '#type': select
@@ -99,31 +104,14 @@ elements: |-
     '#title': Visibility
     '#options': visibility
     '#required': true
-  date_of_publication:
+  date_of_submission:
     '#type': date
-    '#title': 'Date of Publication'
+    '#title': 'Date of Submission'
     '#required': true
-  publication_name:
-    '#type': textfield
-    '#title': 'Publication Name'
-  publication_edition:
-    '#type': textfield
-    '#title': 'Publication edition'
-  publication_volume:
-    '#type': textfield
-    '#title': 'Publication Volume'
-  publication_issue:
-    '#type': textfield
-    '#title': 'Publication Issue'
-  publication_page_range:
-    '#type': textfield
-    '#title': 'Publication page range'
   publication_note:
-    '#type': textfield
-    '#title': 'Publication Note'
-  preferred_citation:
     '#type': textarea
-    '#title': 'Preferred Citation'
+    '#title': 'Publication Note'
+    '#description': '<div class="description">Extra information related to publication or required by publisher (optional).</div>'
   grant_number:
     '#type': textfield
     '#title': 'Grant Number'
@@ -131,9 +119,10 @@ elements: |-
   note_to_library_staff:
     '#type': textarea
     '#title': 'Note to Library staff'
-  upload_book_file:
-    '#type': webform_document_file
-    '#title': 'Upload book file'
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Provide any additional information that may be helpful to FSU Library staff members who will be handling this submission.</span></span></span></span></span></span>'
+  upload_capstone_project:
+    '#type': managed_file
+    '#title': 'Upload Capstone Project'
     '#required': true
   submission_agreement_acknowledgment:
     '#type': checkbox
