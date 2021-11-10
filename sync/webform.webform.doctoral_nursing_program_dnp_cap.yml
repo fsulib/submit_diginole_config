@@ -1,4 +1,4 @@
-uuid: 4fe31a60-3405-4154-86a7-8bec5352d0c4
+uuid: c6a3cf7e-24b4-40ae-a61b-829a944b875c
 langcode: en
 status: open
 dependencies: {  }
@@ -8,8 +8,8 @@ weight: 0
 uid: 1
 template: false
 archive: false
-id: doctural_nursing_program_dnp_cap
-title: 'Doctural Nursing Program (DNP) Capstone Project Submission'
+id: doctoral_nursing_program_dnp_cap
+title: 'Doctoral Nursing Program (DNP) Capstone Project Submission'
 description: 'Webform for submitting DNP capstone projects'
 category: ''
 elements: |-
