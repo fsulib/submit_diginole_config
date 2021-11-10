@@ -1,4 +1,4 @@
-uuid: 9f555a69-c2ee-4451-a11f-55d07a438e44
+uuid: dcf7dde0-c67a-44bc-82e8-ef7c8d0eb520
 langcode: en
 status: open
 dependencies: {  }
@@ -8,9 +8,9 @@ weight: 0
 uid: 1
 template: false
 archive: false
-id: other_submission
-title: 'Other Submission'
-description: 'Webform for submitting other stuff'
+id: editorial_submission
+title: 'Editorial Submission'
+description: 'Webform for submitting Editorials'
 category: ''
 elements: |-
   first_name:
@@ -25,21 +25,20 @@ elements: |-
     '#type': textfield
     '#title': Email
     '#required': true
-  department:
+  department_institute_center_program:
     '#type': select
     '#title': Department/Institute/Center/Program
-    '#placeholder': 'Select or search for department/institute/center/program'
     '#options': fsu_departments
     '#select2': true
     '#required': true
   submission_type:
     '#type': select
     '#title': 'Submission Type'
-    '#description': 'This field is pre-defined and cannot be edited'
+    '#description': 'This field is pre-defined and cannot be edited.'
     '#disabled': true
     '#options': submission_types
-    '#empty_option': Other
-    '#empty_value': other
+    '#empty_option': Editorial
+    '#empty_value': editorial
     '#required': true
   submission_title:
     '#type': textfield
@@ -87,21 +86,15 @@ elements: |-
   keywords:
     '#type': textfield
     '#title': Keywords
-    '#description': |-
-      <div class="description">
-      <div class="webform-element-description" id="edit-keywords--description">A comma separated list of keywords, for example: &quot;Cooking, Minimalist art, Brutalist architecture&quot;</div>
+    '#description': 'A comma separated list of keywords, for example: &quot;Cooking, Minimalist art, Brutalist architecture&quot;'
   embargo_period:
     '#type': select
     '#title': 'Embargo Period'
     '#options': embargo_period
-    '#empty_option': '-None-'
-    '#empty_value': none
-    '#required': true
   visibility:
     '#type': radios
     '#title': Visibility
     '#options': visibility
-    '#required': true
   date_of_publication:
     '#type': date
     '#title': 'Date of Publication'
@@ -119,7 +112,7 @@ elements: |-
     '#title': 'Publication Issue'
   publication_page_range:
     '#type': textfield
-    '#title': 'Publication page range'
+    '#title': 'Publication Page Range'
   publication_note:
     '#type': textarea
     '#title': 'Publication Note'
@@ -133,15 +126,14 @@ elements: |-
   note_to_library_staff:
     '#type': textarea
     '#title': 'Note to Library staff'
-    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Provide any additional information that may be helpful to FSU Library staff members who will be handling this submission.</span></span></span></span></span></span>'
-  upload_generic_submission:
-    '#type': managed_file
-    '#title': 'Upload generic submission'
+  upload_editorial:
+    '#type': webform_document_file
+    '#title': 'Upload Editorial'
     '#required': true
   submission_agreement_acknowledgment:
     '#type': checkbox
     '#title': 'Submission Agreement Acknowledgment'
-    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">I grant to Florida State University (&ldquo;FSU&rdquo;) the non-exclusive right to preserve and reproduce the work I am depositing (the &ldquo;Work&rdquo;), and to display, distribute and make the Work available publicly without charge, in accordance with the terms of the DigiNole author agreement found at</span></span></span></span></span></span><a href="http://diginole.lib.fsu.edu/repository/author-agreement" style="text-decoration:none"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none"> </span></span></span></span></span></span><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#56a3f1; color:#1155cc"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:underline"><span style="-webkit-text-decoration-skip:none"><span style="text-decoration-skip-ink:none">http://diginole.lib.fsu.edu/repository/author-agreement</span></span></span></span></span></span></span></span></a><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">.</span></span></span></span></span></span>'
+    '#description': '<div style="list-style-type:lower-alpha"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">I grant to Florida State University (&ldquo;FSU&rdquo;) the non-exclusive right to preserve and reproduce the work I am depositing (the &ldquo;Work&rdquo;), and to display, distribute and make the Work available publicly without charge, in accordance with the terms of the DigiNole author agreement found at</span></span></span></span></span></span><a href="http://diginole.lib.fsu.edu/repository/author-agreement" style="text-decoration:none"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none"> </span></span></span></span></span></span><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#56a3f1; color:#1155cc"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:underline"><span style="-webkit-text-decoration-skip:none"><span style="text-decoration-skip-ink:none">http://diginole.lib.fsu.edu/repository/author-agreement</span></span></span></span></span></span></span></span></a><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">.</span></span></span></span></span></span></div>'
     '#required': true
   actions:
     '#type': webform_actions
@@ -191,6 +183,9 @@ settings:
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  form_method: ''
+  form_action: ''
+  form_attributes: {  }
   share: false
   share_node: false
   share_theme_name: ''

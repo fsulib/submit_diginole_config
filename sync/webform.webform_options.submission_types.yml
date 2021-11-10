@@ -19,3 +19,5 @@ options: |-
   video: Video
   working_paper: 'Working Paper'
   other: Other
+  editorial: Editorial
+  3d_object: '3D Object'

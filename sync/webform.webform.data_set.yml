@@ -98,9 +98,10 @@ elements: |-
   date_of_publication:
     '#type': date
     '#title': 'Date of Publication'
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">If you are unsure of the date of publication, select the date the work was initially released online or use the date you submitted the work to DigiNole.</span></span></span></span></span></span>'
     '#required': true
   publication_note:
-    '#type': textfield
+    '#type': textarea
     '#title': 'Publication Note'
   grant_number:
     '#type': textfield

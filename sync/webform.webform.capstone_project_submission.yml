@@ -25,9 +25,11 @@ elements: |-
     '#title': Email
     '#required': true
   department:
-    '#type': textfield
+    '#type': select
     '#title': Department
-    '#description': 'DNP (the years change) -- this element is a placeholder'
+    '#placeholder': 'Select or search for department/institute/center/program'
+    '#options': fsu_departments
+    '#select2': true
     '#required': true
   submission_type:
     '#type': select
@@ -107,7 +109,6 @@ elements: |-
   publication_note:
     '#type': textarea
     '#title': 'Publication Note'
-    '#description': '<div class="description">Extra information related to publication or required by publisher (optional).</div>'
   grant_number:
     '#type': textfield
     '#title': 'Grant Number'

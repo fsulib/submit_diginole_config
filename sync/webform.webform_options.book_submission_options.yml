@@ -9,4 +9,3 @@ likert: false
 options: |-
   book: Book
   book_chapter: 'Book Chapter'
-  book_review: 'Book Review'

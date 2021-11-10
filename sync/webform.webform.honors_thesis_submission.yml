@@ -111,6 +111,7 @@ elements: |-
   would_you_like_to_create_a_doi_for_this_material_:
     '#type': select
     '#title': 'Would you like to create a DOI for this material?'
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">DOI = Direct object identifier, this is a unique permanent identifier for digital documents and is important in academic citation by allowing readers to reliably locate the source.</span></span></span></span></span></span>'
     '#options': yes_no
   note_to_library_staff:
     '#type': textarea

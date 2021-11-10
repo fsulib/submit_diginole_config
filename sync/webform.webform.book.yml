@@ -76,7 +76,7 @@ elements: |-
   doi:
     '#type': textfield
     '#title': DOI
-    '#description': '<div style="list-style-type:lower-alpha"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Provide the DOI for this item if one already exists</span></span></span></span></span></span></div>'
+    '#description': '<div style="list-style-type:lower-alpha"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Provide the DOI for this item if one already exists. Ex: 10.0059/fsu01254863</span></span></span></span></span></span></div>'
   abstract:
     '#type': textarea
     '#title': Abstract
@@ -102,13 +102,14 @@ elements: |-
   date_of_publication:
     '#type': date
     '#title': 'Date of Publication'
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">If you are unsure of the date of publication, select the date the work was initially released online or use the date you submitted the work to DigiNole.</span></span></span></span></span></span>'
     '#required': true
-  publication_name:
+  publisher_name:
     '#type': textfield
-    '#title': 'Publication Name'
+    '#title': 'Publisher Name'
   publication_edition:
     '#type': textfield
-    '#title': 'Publication edition'
+    '#title': 'Publication Edition'
   publication_volume:
     '#type': textfield
     '#title': 'Publication Volume'
@@ -117,9 +118,9 @@ elements: |-
     '#title': 'Publication Issue'
   publication_page_range:
     '#type': textfield
-    '#title': 'Publication page range'
+    '#title': 'Publication Page Range'
   publication_note:
-    '#type': textfield
+    '#type': textarea
     '#title': 'Publication Note'
   preferred_citation:
     '#type': textarea
@@ -133,7 +134,7 @@ elements: |-
     '#title': 'Note to Library staff'
   upload_book_file:
     '#type': webform_document_file
-    '#title': 'Upload book file'
+    '#title': 'Upload Book file'
     '#required': true
   submission_agreement_acknowledgment:
     '#type': checkbox

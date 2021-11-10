@@ -111,7 +111,6 @@ elements: |-
   publication_note:
     '#type': textarea
     '#title': 'Publication Note'
-    '#description': '<div class="description">Extra information related to publication or required by publisher (optional).</div>'
   grant_number:
     '#type': textfield
     '#title': 'Grant Number'

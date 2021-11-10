@@ -75,10 +75,11 @@ elements: |-
   doi:
     '#type': textfield
     '#title': DOI
-    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Provide the DOI for this item if one already exists</span></span></span></span></span></span>'
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Provide the DOI for this item if one already exists. Ex: 10.0059/fsu01254863</span></span></span></span></span></span>'
   if_a_doi_does_not_already_exist_would_you_like_to_create_a_doi_f:
     '#type': select
     '#title': 'If a DOI does not already exist, would you like to create a DOI for this material?'
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">DOI = Direct object identifier, this is a unique permanent identifier for digital documents and is important in academic citation by allowing readers to reliably locate the source.</span></span></span></span></span></span>'
     '#options': yes_no
   abstract:
     '#type': textarea
@@ -104,12 +105,13 @@ elements: |-
   date_of_publication:
     '#type': date
     '#title': 'Date of Publication'
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">If you are unsure of the date of publication, select the date the work was initially released online or use the date you submitted the work to DigiNole.</span></span></span></span></span></span>'
     '#required': true
   journal_of_publication:
     '#type': textfield
     '#title': 'Journal of Publication'
   publication_note:
-    '#type': textfield
+    '#type': textarea
     '#title': 'Publication Note'
   grant_number:
     '#type': textfield

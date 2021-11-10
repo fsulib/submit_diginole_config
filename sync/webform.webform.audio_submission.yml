@@ -21,16 +21,16 @@ elements: |-
     '#type': textfield
     '#title': 'Last Name'
     '#required': true
+  email:
+    '#type': textfield
+    '#title': Email
+    '#required': true
   department:
     '#type': select
     '#title': Department/Institute/Center/Program
     '#placeholder': 'Select or search for department/institute/center/program'
     '#options': fsu_departments
     '#select2': true
-    '#required': true
-  email:
-    '#type': textfield
-    '#title': Email
     '#required': true
   submission_type:
     '#type': select
@@ -83,7 +83,7 @@ elements: |-
   doi:
     '#type': textfield
     '#title': DOI
-    '#description': 'Provide the DOI for this item if one already exists'
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Provide the DOI for this item if one already exists. Ex: 10.0059/fsu012548</span></span></span></span></span></span>'
   abstract:
     '#type': textarea
     '#title': Abstract
@@ -106,12 +106,14 @@ elements: |-
   date_of_publication:
     '#type': date
     '#title': 'Date of Publication'
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">If you are unsure of the date of publication, select the date the work was initially released online or use the date you submitted the work to DigiNole.</span></span></span></span></span></span>'
     '#required': true
   publication_title:
     '#type': textfield
     '#title': 'Publication Title'
+    '#description': '<div style="list-style-type:lower-alpha"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Ex. journal title, book series title, etc. Not the title of the work being submitted.</span></span></span></span></span></span></div>'
   publication_note:
-    '#type': textfield
+    '#type': textarea
     '#title': 'Publication Note'
   preferred_citation:
     '#type': textarea

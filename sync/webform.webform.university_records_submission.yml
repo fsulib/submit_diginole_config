@@ -16,9 +16,18 @@ elements: |-
   have_you_contacted_the_university_archivist:
     '#type': select
     '#title': 'Have you contacted the University Archivist about this deposit and received permission to submit materials?*'
-    '#description': 'If you have not contacted the University Archivist, please email <span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">lib-specialcollections@fsu.edu to discuss your materials prior to submission.</span></span></span></span></span></span>'
+    '#description': '<div style="list-style-type:decimal"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Calibri,sans-serif"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">If you have not contacted the University Archivist, please email lib-specialcollections@fsu.edu to discuss your materials prior to submission. Submissions </span></span></span></span></span></span><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Calibri,sans-serif"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><strong style="font-weight:700"><span style="font-style:normal"><span style="text-decoration:none">will not be accepted</span></span></strong></span></span></span><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Calibri,sans-serif"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none"> without a prior arrangement, completed Records Disposition Form, and Accession Number.</span></span></span></span></span></span></div>'
     '#options': yes_no
     '#required': true
+  accession_number:
+    '#type': textfield
+    '#title': 'Accession Number'
+    '#description': 'Please provide the Accession Number given to you for this donation by the University Archivist.'
+    '#required': true
+    '#states':
+      visible:
+        ':input[name="have_you_contacted_the_university_archivist"]':
+          value: 'Yes'
   email:
     '#type': textfield
     '#title': Email
@@ -98,15 +107,6 @@ elements: |-
       visible:
         ':input[name="have_you_contacted_the_university_archivist"]':
           value: 'Yes'
-  submission_agreement_acknowledgment_:
-    '#type': checkbox
-    '#title': 'Submission Agreement Acknowledgment '
-    '#description': 'This text is still under review by SCA but it will be an agreement between the submitter and the archives to use the material. A user must check this box and agree to these terms in order to submit.'
-    '#required': true
-    '#states':
-      visible:
-        ':input[name="have_you_contacted_the_university_archivist"]':
-          value: 'Yes'
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
@@ -125,7 +125,7 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: /university_records
+  page_submit_path: ''
   page_confirm_path: ''
   page_theme_name: bartik
   form_title: both
@@ -247,6 +247,9 @@ settings:
   token_update: false
   token_delete: false
   serial_disabled: false
+  form_method: ''
+  form_action: ''
+  form_attributes: {  }
 access:
   create:
     roles:

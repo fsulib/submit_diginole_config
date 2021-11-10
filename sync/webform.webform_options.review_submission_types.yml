@@ -1,0 +1,11 @@
+uuid: 67ac21d5-10f6-4725-998b-650a610a501c
+langcode: en
+status: true
+dependencies: {  }
+id: review_submission_types
+label: 'Review Submission Types'
+category: ''
+likert: false
+options: |-
+  review: Review
+  book_review: 'Book Review'
