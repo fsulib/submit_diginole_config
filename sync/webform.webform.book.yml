@@ -28,6 +28,7 @@ elements: |-
   department:
     '#type': select
     '#title': Department/Institute/Center/Program
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">If you would like to submit to more than one collection, please list additional collections in the &quot;Note to FSU Libraries Staff&quot; field, below.</span></span></span></span></span></span>'
     '#placeholder': 'Select or search for department/institute/center/program'
     '#options': fsu_departments
     '#select2': true
@@ -47,6 +48,7 @@ elements: |-
   author:
     '#type': webform_custom_composite
     '#title': Author
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">All authors involved, listed in the order they appear on the document.</span></span></span></span></span></span>'
     '#required': true
     '#multiple__header': false
     '#multiple__item_label': author
@@ -90,6 +92,7 @@ elements: |-
   embargo_period:
     '#type': select
     '#title': 'Embargo Period'
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Embargo period extends from the date of publication.</span></span></span></span></span></span>'
     '#options': embargo_period
     '#empty_option': '-None-'
     '#empty_value': none
@@ -122,6 +125,7 @@ elements: |-
   publication_note:
     '#type': textarea
     '#title': 'Publication Note'
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Extra information related to publication or required by publisher (optional).</span></span></span></span></span></span>'
   preferred_citation:
     '#type': textarea
     '#title': 'Preferred Citation'
@@ -129,13 +133,19 @@ elements: |-
     '#type': textfield
     '#title': 'Grant Number'
     '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">If funded by a grant, please include the funding agency grant number here. If you would like your article to be submitted to a funding agency&#39;s public access repository on your behalf, please include the name of the agency and repository in the &quot;Note to FSU Libraries Staff&quot; field, below.</span></span></span></span></span></span>'
-  note_to_library_staff:
-    '#type': textarea
-    '#title': 'Note to Library staff'
+  license:
+    '#type': select
+    '#title': License
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Choose a license to specify how your work can be reused. The selected license applies to all files included in this submission. If you want to upload some of your files under different licenses, please do so in separate submissions. For information about Creative Commons licenses and the reuse permissions granted by each license, see:</span></span></span></span></span></span><a href="https://creativecommons.org/licenses/" style="text-decoration:none"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none"> </span></span></span></span></span></span><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#56a3f1; color:#1155cc"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:underline"><span style="-webkit-text-decoration-skip:none"><span style="text-decoration-skip-ink:none">https://creativecommons.org/licenses/</span></span></span></span></span></span></span></span></a><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">.</span></span></span></span></span></span>'
+    '#options': license_options
   upload_book_file:
     '#type': webform_document_file
     '#title': 'Upload Book file'
     '#required': true
+  note_to_library_staff:
+    '#type': textarea
+    '#title': 'Note to Library staff'
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Provide any additional information that may be helpful to FSU Library staff members who will be handling this submission.</span></span></span></span></span></span>'
   submission_agreement_acknowledgment:
     '#type': checkbox
     '#title': 'Submission Agreement Acknowledgment'

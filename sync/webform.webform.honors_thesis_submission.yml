@@ -28,6 +28,7 @@ elements: |-
   department:
     '#type': select
     '#title': Department/Institute/Center/Program
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">If you would like to submit to more than one collection, please list additional collections in the &quot;Note to FSU Libraries Staff&quot; field, below.</span></span></span></span></span></span>'
     '#placeholder': 'Select or search for department/institute/center/program'
     '#options': fsu_departments
     '#select2': true
@@ -50,6 +51,7 @@ elements: |-
   author:
     '#type': webform_custom_composite
     '#title': Author
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">All authors involved, listed in the order they appear on the document.</span></span></span></span></span></span>'
     '#required': true
     '#multiple__header': false
     '#multiple__item_label': author
@@ -86,6 +88,7 @@ elements: |-
   embargo_period:
     '#type': select
     '#title': 'Embargo Period'
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Embargo period extends from the date of publication.</span></span></span></span></span></span>'
     '#options': embargo_period
     '#empty_option': '-None-'
     '#empty_value': none
@@ -103,7 +106,7 @@ elements: |-
   publication_note:
     '#type': textarea
     '#title': 'Publication Note'
-    '#description': '<div style="list-style-type:lower-alpha"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">If applicable, provide the title of the publication in which this thesis has previously appeared (e.g. an academic journal, scholarly monograph, etc) or any extra information related to such a publication or required by the publisher.</span></span></span></span></span></span></div>'
+    '#description': '<div style="list-style-type:lower-alpha"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Extra information related to publication or required by publisher (optional).</span></span></span></span></span></span></div>'
   grant_number:
     '#type': textfield
     '#title': 'Grant Number'
@@ -113,14 +116,19 @@ elements: |-
     '#title': 'Would you like to create a DOI for this material?'
     '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">DOI = Direct object identifier, this is a unique permanent identifier for digital documents and is important in academic citation by allowing readers to reliably locate the source.</span></span></span></span></span></span>'
     '#options': yes_no
-  note_to_library_staff:
-    '#type': textarea
-    '#title': 'Note to Library staff'
-    '#description': '<div style="list-style-type:lower-alpha"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Provide any additional information that may be helpful to FSU Library staff members who will be handling this submission.</span></span></span></span></span></span></div>'
+  license:
+    '#type': select
+    '#title': License
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Choose a license to specify how your work can be reused. The selected license applies to all files included in this submission. If you want to upload some of your files under different licenses, please do so in separate submissions. For information about Creative Commons licenses and the reuse permissions granted by each license, see:</span></span></span></span></span></span><a href="https://creativecommons.org/licenses/" style="text-decoration:none"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none"> </span></span></span></span></span></span><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#56a3f1; color:#1155cc"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:underline"><span style="-webkit-text-decoration-skip:none"><span style="text-decoration-skip-ink:none">https://creativecommons.org/licenses/</span></span></span></span></span></span></span></span></a><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">.</span></span></span></span></span></span>'
+    '#options': license_options
   upload_honors_thesis:
     '#type': webform_document_file
     '#title': 'Upload Honors Thesis'
     '#required': true
+  note_to_library_staff:
+    '#type': textarea
+    '#title': 'Note to Library staff'
+    '#description': '<div style="list-style-type:lower-alpha"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Provide any additional information that may be helpful to FSU Library staff members who will be handling this submission.</span></span></span></span></span></span></div>'
   submission_agreement_acknowledgment:
     '#type': checkbox
     '#title': 'Submission Agreement Acknowledgment'

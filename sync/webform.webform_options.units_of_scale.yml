@@ -1,0 +1,12 @@
+uuid: e2cbe327-45dd-408b-a855-c26001c52c67
+langcode: en
+status: true
+dependencies: {  }
+id: units_of_scale
+label: 'Units of Scale'
+category: ''
+likert: false
+options: |-
+  millimeters: millimeters
+  centimeters: centimeters
+  inches: inches

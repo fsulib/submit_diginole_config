@@ -6,4 +6,101 @@ id: fsu_departments
 label: 'FSU Departments'
 category: ''
 likert: false
-options: "'fsu:department_of_accounting': Accounting\r\n'fsu:department_of_anthropology': Anthropology\r\n'fsu:program_in_arts_administration': 'Art Administration'\r\n'fsu:department_of_art_education': 'Art Education'\r\n'fsu:department_of_art_history': 'Art History'\r\n'fsu:program_in_art_therapy': 'Art Therapy'\r\n'fsu:askew_school_of_public_administration_and_policy': 'Askew School of Public Administration and Policy'\r\n'fsu:department_of_behavioral_sciences_and_social_medicine': 'Behavioral Sciences and Social Medicine'\r\n'fsu:department_of_biological_science': 'Biological Science'\r\n'fsu:department_of_biomedical_sciences': 'Biomedical Sciences'\r\n'fsu:department_of_business_analytics': 'Business Analytics, Information Systems and Supply Chain'\r\n'fsu:center_for_advanced_power_systems': 'Center for Advanced Power Systems'\r\n'fsu:center_on_better_health_and_life_for_underserved_populations': 'Center for Better Health and Life for Underserved Populations'\r\n'fsu:center_for_brain_repair': 'Center for Brain Repair'\r\n'fsu:center_for_genomics_and_personalized_medicine': 'Center for Genomics and Personalized Medicine'\r\n'fsu:center_for_global_engagement': 'Center for Global Engagement'\r\n'fsu:center_for_innovative_collaboration_in_medicine_and_law': 'Center for Innovative Collaboration in Medicine and Law'\r\n'fsu:center_for_ocean_atmospheric_prediction_studies': 'Center for Ocean-Atmospheric Prediction Studies'\r\n'fsu:center_for_postsecondary_success': 'Center for Postsecondary Success'\r\n'fsu:center_for_tech_in_counseling_and_career_development': 'Center for the Study of Technology in Counseling and Career Development'\r\n'fsu:department_of_chemical_and_biomedical_engineering': 'Chemical and Biomedical Engineering'\r\n'fsu:department_of_civil_and_environmental_engineering': 'Civil and Environmental Engineering'\r\n'fsu:department_of_chemistry_and_biochemistry': 'Chemistry and Biochemistry'\r\n'fsu:department_of_classics': Classics\r\n'fsu:department_of_clinical_sciences': 'Clinical Sciences'\r\n'fsu:school_of_communication': Communication\r\n'fsu:school_of_communication_science_and_disorders': 'Communication Science and Disorders'\r\n'fsu:department_of_computer_science': 'Computer Science'\r\n'fsu:college_of_criminology_and_criminal_justice': 'Criminology and Criminal Justice'\r\n'fsu:school_of_dance': Dance\r\n'fsu:dedman_school_of_hospitality': 'Dedman School of Hospitality'\r\nfsu:dnp_project_graduates: Doctural Nursing Program\r\n'fsu:department_of_earth_ocean_and_atmospheric_science': 'Earth, Ocean and Atmospheric Science'\r\n'fsu:department_of_economics': Economics\r\n'fsu:education_commission_of_the_states': 'Education Commission of the States'\r\n'fsu:department_of_educational_leadership_and_policy_studies': 'Educational Leadership and Policy Studies'\r\n'fsu:department_of_educational_psychology_and_learning_systems': 'Educational Psychology and Learning Systems'\r\n'fsu:department_of_electrical_and_computer_engineering': 'Electrical and Computer Engineering'\r\n'fsu:department_of_english': English\r\n'fsu:department_of_family_and_child_science': 'Family and Child Sciences'\r\n'fsu:department_of_family_medicine_and_rural_health': 'Family Medicine and Rural Health'\r\n'fsu:department_of_finance': Finance\r\n'fsu:florida_center_for_reading_research': 'Florida Center for Reading Research'\r\n'fsu:florida_climate_institute': 'Florida Climate Institute'\r\n'fsu:florida_learning_disability_research_center': 'Florida Learning Disability Research Center'\r\n'fsu:florida_state_university_patents': 'Florida State University Patents'\r\n'fsu:fsu_coastal_and_marine_laboratory': 'FSU Coastal and Marine Laboratory'\r\n'fsu:department_of_geography': Geography\r\n'fsu:geophysical_fluid_dynamics_institute': 'Geophysical Fluid Dynamics Institute'\r\n'fsu:department_of_geriatrics': Geriatrics\r\n'fsu:department_of_history': History\r\n'fsu:honors_ethical_issues_and_life_choices': 'Honors Ethical Issues and Life Choices'\r\n'fsu:idigbio': iDigBio\r\n'fsu:industrial_and_manufacturing_engineering': 'Industrial and Manufacturing Engineering'\r\n'fsu:school_of_information': Information\r\n'fsu:information_institute': 'Information Institute'\r\n'fsu:institute_for_family_violence_studies': 'Institute for Family Violence Studies'\r\n'fsu:institute_for_successful_longevity': 'Institute for Successful Longevity'\r\n'fsu:institute_of_molecular_biophysics': 'Institute of Molecular Biophysics'\r\n'fsu:institute_of_sports_sciences_and_medicine': 'Institute of Sports Sciences & Medicine'\r\n'fsu:college_of_law': Law\r\n'fsu:leadership_learning_research_center': 'Leadership Learning Research Center'\r\n'fsu:learning_systems_institute': 'Learning Systems Institute'\r\n'fsu:diabetes_research': 'Living with Diabetes - Research and Perspectives'\r\n'fsu:maguire_medical_library': 'Maguire Medical Library'\r\n'fsu:department_of_management': Management\r\n'fsu:department_of_marketing': Marketing\r\n'fsu:department_of_mathematics': Mathematics\r\n'fsu:department_of_material_science_and_engineering': 'Material Science and Engineering'\r\n'fsu:department_of_mechanical_engineering': 'Mechanical Engineering'\r\n'fsu:department_of_modern_languages_and_linguistics': 'Modern Languages and Linguistics'\r\n'fsu:college_of_music': Music\r\n'fsu:National_High_Magnetic_Field_Laboratory': 'National High Magnetic Field Laboratory'\r\n'fsu:program_in_neuroscience': Neuroscience\r\n'fsu:department_of_nutrition_food_and_exercise_sciences': 'Nutrition, Food and Exercise Sciences'\r\nother: 'Other (please describe in \"Note to FSU Libraries Staff\" field at end of form)'\r\n'fsu:department_of_philosophy': Philosophy\r\n'fsu:department_of_physics': Physics\r\n'fsu:department_of_political_science': 'Political Science'\r\n'fsu:department_of_psychology': Psychology\r\n'fsu:department_of_religion': Religion\r\n'fsu:research_computing_center': 'Research Computing Center'\r\n'fsu:program_in_risk_management_and_insurance_and_real_estate': 'Risk Management and Insurance and Real Estate'\r\n'fsu:department_of_scientific_computing': 'Scientific Computing'\r\n'fsu:showcase_of_undergraduate_research_excellence': 'Showcase of Undergraduate Research Excellence'\r\n'fsu:college_of_social_work': 'Social Work'\r\n'fsu:department_of_sociology': Sociology\r\n'fsu:department_of_sport_management': 'Sport Management'\r\n'fsu:department_of_statistics': Statistics\r\n'fsu:school_of_teacher_education': 'Teacher Education'\r\n'fsu:translational_science_laboratory': 'Translational Science Laboratory'\r\n'fsu:honors_theses': 'Undergraduate Honors Theses'\r\n'fsu:undergraduate_research_symposium': 'Undergraduate Research Symposium'\r\n'fsu:undergraduate_scholarship': 'Undergraduate Scholarship'\r\n'fsu:university_libraries': 'University Libraries'\r\n'fsu:department_of_urban_and_regional_planning': 'Urban and Regional Planning'\r\n'fsu:usedit': USEDiT\r\n"
+options: |-
+  'fsu:department_of_accounting': Accounting
+  'fsu:department_of_anthropology': Anthropology
+  'fsu:program_in_arts_administration': 'Art Administration'
+  'fsu:department_of_art_education': 'Art Education'
+  'fsu:department_of_art_history': 'Art History'
+  'fsu:program_in_art_therapy': 'Art Therapy'
+  'fsu:askew_school_of_public_administration_and_policy': 'Askew School of Public Administration and Policy'
+  'fsu:department_of_behavioral_sciences_and_social_medicine': 'Behavioral Sciences and Social Medicine'
+  'fsu:department_of_biological_science': 'Biological Science'
+  'fsu:department_of_biomedical_sciences': 'Biomedical Sciences'
+  'fsu:department_of_business_analytics': 'Business Analytics, Information Systems and Supply Chain'
+  'fsu:center_for_advanced_power_systems': 'Center for Advanced Power Systems'
+  'fsu:center_on_better_health_and_life_for_underserved_populations': 'Center for Better Health and Life for Underserved Populations'
+  'fsu:center_for_brain_repair': 'Center for Brain Repair'
+  'fsu:center_for_genomics_and_personalized_medicine': 'Center for Genomics and Personalized Medicine'
+  'fsu:center_for_global_engagement': 'Center for Global Engagement'
+  'fsu:center_for_innovative_collaboration_in_medicine_and_law': 'Center for Innovative Collaboration in Medicine and Law'
+  'fsu:center_for_ocean_atmospheric_prediction_studies': 'Center for Ocean-Atmospheric Prediction Studies'
+  'fsu:center_for_postsecondary_success': 'Center for Postsecondary Success'
+  'fsu:center_for_tech_in_counseling_and_career_development': 'Center for the Study of Technology in Counseling and Career Development'
+  'fsu:department_of_chemical_and_biomedical_engineering': 'Chemical and Biomedical Engineering'
+  'fsu:department_of_civil_and_environmental_engineering': 'Civil and Environmental Engineering'
+  'fsu:department_of_chemistry_and_biochemistry': 'Chemistry and Biochemistry'
+  'fsu:department_of_classics': Classics
+  'fsu:department_of_clinical_sciences': 'Clinical Sciences'
+  'fsu:school_of_communication': Communication
+  'fsu:school_of_communication_science_and_disorders': 'Communication Science and Disorders'
+  'fsu:department_of_computer_science': 'Computer Science'
+  'fsu:college_of_criminology_and_criminal_justice': 'Criminology and Criminal Justice'
+  'fsu:school_of_dance': Dance
+  'fsu:dedman_school_of_hospitality': 'Dedman School of Hospitality'
+  'fsu:dnp_project_graduates': 'Doctoral Nursing Program'
+  'fsu:department_of_earth_ocean_and_atmospheric_science': 'Earth, Ocean and Atmospheric Science'
+  'fsu:department_of_economics': Economics
+  'fsu:education_commission_of_the_states': 'Education Commission of the States'
+  'fsu:department_of_educational_leadership_and_policy_studies': 'Educational Leadership and Policy Studies'
+  'fsu:department_of_educational_psychology_and_learning_systems': 'Educational Psychology and Learning Systems'
+  'fsu:department_of_electrical_and_computer_engineering': 'Electrical and Computer Engineering'
+  'fsu:department_of_english': English
+  'fsu:department_of_family_and_child_science': 'Family and Child Sciences'
+  'fsu:department_of_family_medicine_and_rural_health': 'Family Medicine and Rural Health'
+  'fsu:department_of_finance': Finance
+  'fsu:florida_center_for_reading_research': 'Florida Center for Reading Research'
+  'fsu:florida_climate_institute': 'Florida Climate Institute'
+  'fsu:florida_learning_disability_research_center': 'Florida Learning Disability Research Center'
+  'fsu:florida_state_university_patents': 'Florida State University Patents'
+  'fsu:fsu_coastal_and_marine_laboratory': 'FSU Coastal and Marine Laboratory'
+  'fsu:department_of_geography': Geography
+  'fsu:geophysical_fluid_dynamics_institute': 'Geophysical Fluid Dynamics Institute'
+  'fsu:department_of_geriatrics': Geriatrics
+  'fsu:department_of_history': History
+  'fsu:honors_ethical_issues_and_life_choices': 'Honors Ethical Issues and Life Choices'
+  'fsu:idigbio': iDigBio
+  'fsu:industrial_and_manufacturing_engineering': 'Industrial and Manufacturing Engineering'
+  'fsu:school_of_information': Information
+  'fsu:information_institute': 'Information Institute'
+  'fsu:institute_for_family_violence_studies': 'Institute for Family Violence Studies'
+  'fsu:institute_for_successful_longevity': 'Institute for Successful Longevity'
+  'fsu:institute_of_molecular_biophysics': 'Institute of Molecular Biophysics'
+  'fsu:institute_of_sports_sciences_and_medicine': 'Institute of Sports Sciences & Medicine'
+  'fsu:college_of_law': Law
+  'fsu:leadership_learning_research_center': 'Leadership Learning Research Center'
+  'fsu:learning_systems_institute': 'Learning Systems Institute'
+  'fsu:diabetes_research': 'Living with Diabetes - Research and Perspectives'
+  'fsu:maguire_medical_library': 'Maguire Medical Library'
+  'fsu:department_of_management': Management
+  'fsu:department_of_marketing': Marketing
+  'fsu:department_of_mathematics': Mathematics
+  'fsu:department_of_material_science_and_engineering': 'Material Science and Engineering'
+  'fsu:department_of_mechanical_engineering': 'Mechanical Engineering'
+  'fsu:department_of_modern_languages_and_linguistics': 'Modern Languages and Linguistics'
+  'fsu:college_of_music': Music
+  'fsu:National_High_Magnetic_Field_Laboratory': 'National High Magnetic Field Laboratory'
+  'fsu:program_in_neuroscience': Neuroscience
+  'fsu:department_of_nutrition_food_and_exercise_sciences': 'Nutrition, Food and Exercise Sciences'
+  other: 'Other (please describe in "Note to FSU Libraries Staff" field at end of form)'
+  'fsu:department_of_philosophy': Philosophy
+  'fsu:department_of_physics': Physics
+  'fsu:department_of_political_science': 'Political Science'
+  'fsu:department_of_psychology': Psychology
+  'fsu:department_of_religion': Religion
+  'fsu:research_computing_center': 'Research Computing Center'
+  'fsu:program_in_risk_management_and_insurance_and_real_estate': 'Risk Management and Insurance and Real Estate'
+  'fsu:department_of_scientific_computing': 'Scientific Computing'
+  'fsu:showcase_of_undergraduate_research_excellence': 'Showcase of Undergraduate Research Excellence'
+  'fsu:college_of_social_work': 'Social Work'
+  'fsu:department_of_sociology': Sociology
+  'fsu:department_of_sport_management': 'Sport Management'
+  'fsu:department_of_statistics': Statistics
+  'fsu:school_of_teacher_education': 'Teacher Education'
+  'fsu:translational_science_laboratory': 'Translational Science Laboratory'
+  'fsu:honors_theses': 'Undergraduate Honors Theses'
+  'fsu:undergraduate_research_symposium': 'Undergraduate Research Symposium'
+  'fsu:undergraduate_scholarship': 'Undergraduate Scholarship'
+  'fsu:university_libraries': 'University Libraries'
+  'fsu:department_of_urban_and_regional_planning': 'Urban and Regional Planning'
+  'fsu:usedit': USEDiT
