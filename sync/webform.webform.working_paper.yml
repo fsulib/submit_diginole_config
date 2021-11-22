@@ -79,20 +79,36 @@ elements: |-
       author_institution:
         '#type': textfield
         '#title': Institution
-  doi:
+  is_there_a_doi_already_associated_with_this_object_:
+    '#type': select
+    '#title': 'Is there a DOI already associated with this object?'
+    '#description': '<div style="list-style-type:lower-roman"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">DOI = Direct object identifier, this is a unique permanent identifier for digital documents and is important in academic citation by allowing readers to reliably locate the source.&nbsp;</span></span></span></span></span></span></div>'
+    '#options': yes_no
+    '#empty_option': '-Select-'
+  if_there_is_already_a_doi_associated_with_this_item_please_enter:
     '#type': textfield
-    '#title': DOI
-    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Provide the DOI for this item if one already exists</span></span></span></span></span></span>'
+    '#title': 'If there is already a DOI associated with this item, please enter it here'
+    '#description': '<div style="list-style-type:lower-roman"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Example: 10.0059/fsu012548</span></span></span></span></span></span></div>'
+    '#states':
+      visible:
+        ':input[name="is_there_a_doi_already_associated_with_this_object_"]':
+          value: 'Yes'
+  if_a_doi_does_not_already_exist_would_you_like_to_create_one_for:
+    '#type': select
+    '#title': 'If a DOI does not already exist, would you like to create one for this material?'
+    '#options': yes_no
+    '#empty_option': '-Select-'
+    '#states':
+      visible:
+        ':input[name="is_there_a_doi_already_associated_with_this_object_"]':
+          value: 'No'
   abstract:
     '#type': textarea
     '#title': Abstract
   keywords:
     '#type': textfield
     '#title': Keywords
-    '#description': |-
-      <div class="description">
-      <div class="webform-element-description" id="edit-keywords--description">
-      A comma separated list of keywords, for example: &quot;Cooking, Minimalist art, Brutalist architecture&quot;</div>
+    '#description': 'A comma separated list of keywords, for example: &quot;Cooking, Minimalist art, Brutalist architecture&quot;'
   embargo_period:
     '#type': select
     '#title': 'Embargo Period'
@@ -106,10 +122,23 @@ elements: |-
     '#title': Visibility
     '#options': visibility
     '#required': true
-  date_of_publication:
-    '#type': date
+  date_of_publication_composite:
+    '#type': webform_custom_composite
     '#title': 'Date of Publication'
+    '#multiple': 2
+    '#description': '<div style="list-style-type:lower-alpha"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">If you are unsure of the date of publication, select the date the work was initially released online or use the date you submitted the work to DigiNole.</span></span></span></span></span></span></div>'
     '#required': true
+    '#multiple__header': false
+    '#multiple__sorting': false
+    '#multiple__operations': false
+    '#multiple__add_more': false
+    '#element':
+      date_of_publication:
+        '#type': date
+        '#title': 'Date of Publication'
+      not_yet_published:
+        '#type': checkbox
+        '#title': 'Not yet published'
   publication_title:
     '#type': textfield
     '#title': 'Publication Title'

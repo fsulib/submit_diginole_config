@@ -29,6 +29,7 @@ elements: |-
     '#type': select
     '#title': Department/Institute/Center/Program
     '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">If you would like to submit to more than one collection, please list additional collections in the &quot;Note to FSU Libraries Staff&quot; field, below.</span></span></span></span></span></span>'
+    '#placeholder': 'Select or search for department/institute/center/program'
     '#options': fsu_departments
     '#select2': true
     '#required': true

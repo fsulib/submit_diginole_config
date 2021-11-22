@@ -85,14 +85,7 @@ elements: |-
   keywords:
     '#type': textfield
     '#title': Keywords
-    '#description': |-
-      <div class="description">
-      <div class="webform-element-description" id="edit-keywords--description">
-      <div class="description">
-      <div class="webform-element-description" id="edit-keywords--description">A comma separated list of keywords, for example: &quot;Cooking, Minimalist art, Brutalist architecture&quot;</div>
-      </div>
-      </div>
-      </div>
+    '#description': 'A comma separated list of keywords, for example: &quot;Cooking, Minimalist art, Brutalist architecture&quot;'
   embargo_period:
     '#type': select
     '#title': 'Embargo Period'
