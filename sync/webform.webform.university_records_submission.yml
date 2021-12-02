@@ -80,12 +80,11 @@ elements: |-
     '#title': 'What type(s) of files are you uploading?'
     '#description': 'Check all that apply'
     '#options':
-      pdf: PDF
+      documents: Documents
       photo: Photographs
       audio: Audio
       video: Video
-      another_format: another_format
-      yet_another_format: yet_another_format
+      other: Other
     '#required': true
     '#states':
       visible:
