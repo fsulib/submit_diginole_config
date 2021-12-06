@@ -55,7 +55,7 @@ elements: |-
   fsu_department_club_group:
     '#type': textfield
     '#title': 'FSU Department/Club/Group'
-    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Please provide the name of the appropriate FSU-affiliated academic department, club, or group this material is associated with</span></span></span></span></span></span>'
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Please provide the name of the appropriate FSU-affiliated unit (e.g. academic department, club, or group) this material is associated with</span></span></span></span></span></span>'
     '#states':
       visible:
         ':input[name="have_you_contacted_the_university_archivist"]':
