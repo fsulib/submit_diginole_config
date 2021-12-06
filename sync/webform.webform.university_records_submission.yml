@@ -22,7 +22,7 @@ elements: |-
   accession_number:
     '#type': textfield
     '#title': 'Accession Number'
-    '#description': 'Please provide the Accession Number given to you for this donation by the University Archivist.'
+    '#description': 'Please provide the Accession Number given to you for this transfer by the University Archivist.'
     '#required': true
     '#states':
       visible:
@@ -60,21 +60,24 @@ elements: |-
       visible:
         ':input[name="have_you_contacted_the_university_archivist"]':
           value: 'Yes'
-  are_you_the_sole_creator_of_these_materials_:
-    '#type': webform_select_other
-    '#title': 'Are you the sole creator of these materials?'
-    '#description': '<div style="list-style-type:lower-roman"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">If you answered &quot;no,&quot; please list the names of the content co-creators, their contact information and the circumstances of how you came to have the materials.</span></span></span></span></span></span></div>'
-    '#options':
-      'yes': 'Yes'
-    '#empty_option': ' '
-    '#other__type': textarea
-    '#other__option_label': 'No - please provide more information'
-    '#other__placeholder': ''
+  are_these_materials_solely_created_by_the_unit_that_you_are_repr:
+    '#type': select
+    '#title': 'Are these materials solely created by the unit that you are representing?'
+    '#options': yes_no
+    '#empty_option': '-Select-'
     '#required': true
     '#states':
       visible:
         ':input[name="have_you_contacted_the_university_archivist"]':
           value: 'Yes'
+  please_describe_the_origin_and_or_creators_of_the_materials_:
+    '#type': textarea
+    '#title': 'Please describe the origin and/or creators of the materials.'
+    '#states':
+      visible:
+        ':input[name="are_these_materials_solely_created_by_the_unit_that_you_are_repr"]':
+          value: 'No'
+    '#required': true
   what_type_s_of_files_are_you_uploading_:
     '#type': checkboxes
     '#title': 'What type(s) of files are you uploading?'
