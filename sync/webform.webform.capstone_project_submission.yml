@@ -20,6 +20,7 @@ elements: |-
   last_name:
     '#type': textfield
     '#title': 'Last Name'
+    '#required': true
   email:
     '#type': textfield
     '#title': Email
@@ -115,7 +116,6 @@ elements: |-
     '#options': embargo_period
     '#empty_option': '-None-'
     '#empty_value': none
-    '#required': true
   visibility:
     '#type': radios
     '#title': Visibility

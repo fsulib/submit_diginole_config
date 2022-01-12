@@ -16,6 +16,7 @@ elements: |-
   first_name:
     '#type': textfield
     '#title': 'First Name'
+    '#required': true
   last_name:
     '#type': textfield
     '#title': 'Last Name'
@@ -110,7 +111,6 @@ elements: |-
     '#options': embargo_period
     '#empty_option': '-None-'
     '#empty_value': none
-    '#required': true
   visibility:
     '#type': radios
     '#title': Visibility

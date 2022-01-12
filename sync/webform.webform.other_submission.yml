@@ -116,29 +116,15 @@ elements: |-
     '#options': embargo_period
     '#empty_option': '-None-'
     '#empty_value': none
-    '#required': true
   visibility:
     '#type': radios
     '#title': Visibility
     '#options': visibility
     '#required': true
-  date_of_publication_composite:
-    '#type': webform_custom_composite
+  date_of_publication:
+    '#type': date
     '#title': 'Date of Publication'
-    '#multiple': 2
-    '#description': '<div style="list-style-type:lower-alpha"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">If you are unsure of the date of publication, select the date the work was initially released online or use the date you submitted the work to DigiNole.</span></span></span></span></span></span></div>'
-    '#required': true
-    '#multiple__header': false
-    '#multiple__sorting': false
-    '#multiple__operations': false
-    '#multiple__add_more': false
-    '#element':
-      date_of_publication:
-        '#type': date
-        '#title': 'Date of Publication'
-      not_yet_published:
-        '#type': checkbox
-        '#title': 'Not yet published'
+    '#description': 'If you are unsure of the date of publication, select the date the work was initially released online or use the date you submitted the work to DigiNole.'
   publication_title:
     '#type': textfield
     '#title': 'Publication Title'

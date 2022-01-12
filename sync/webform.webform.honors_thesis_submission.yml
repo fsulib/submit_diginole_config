@@ -92,7 +92,6 @@ elements: |-
     '#options': embargo_period
     '#empty_option': '-None-'
     '#empty_value': none
-    '#required': true
   visibility:
     '#type': radios
     '#title': Visibility

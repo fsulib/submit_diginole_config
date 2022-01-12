@@ -95,6 +95,7 @@ elements: |-
     '#type': radios
     '#title': Visibility
     '#options': visibility
+    '#required': true
   date_of_publication:
     '#type': date
     '#title': 'Date of Publication'
