@@ -1,0 +1,15 @@
+uuid: 7b6e54c9-2632-43ce-8c30-43ffe3d3c11a
+langcode: en
+status: true
+dependencies: {  }
+id: submission_status
+label: 'Submission Status Options'
+category: 'DigiNole Submission'
+likert: false
+options: |-
+  new: New
+  rejected: Rejected
+  in_review: 'In Review'
+  approved: Approved
+  ingested: Ingested
+  error: Error

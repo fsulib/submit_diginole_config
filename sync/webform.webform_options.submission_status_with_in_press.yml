@@ -1,0 +1,16 @@
+uuid: f350288f-1d66-4416-9d65-833644e2b1b7
+langcode: en
+status: true
+dependencies: {  }
+id: submission_status_with_in_press
+label: 'Submission Status Options with In Press'
+category: 'DigiNole Submission'
+likert: false
+options: |-
+  new: New
+  rejected: Rejected
+  in_press: 'In Press'
+  in_review: 'In Review'
+  approved: Approved
+  ingested: Ingested
+  error: Error
