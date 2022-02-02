@@ -1,0 +1,14 @@
+uuid: 20ce3700-baec-4dea-bcde-0bb2809b0599
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.submission_reviewer
+  module:
+    - user
+id: user_add_role_action.submission_reviewer
+label: 'Add the Submission Reviewer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: submission_reviewer
