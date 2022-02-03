@@ -109,31 +109,6 @@ elements: |-
       visible:
         ':input[name="have_you_contacted_the_university_archivist"]':
           value: 'Yes'
-  submission_status:
-    '#type': select
-    '#title': 'Submission Status'
-    '#options': submission_status
-    '#required': true
-    '#states':
-      visible:
-        ':input[name="have_you_contacted_the_university_archivist"]':
-          value: 'Yes'
-    '#default_value': new
-    '#access_create_roles':
-      - administrator
-      - submission_reviewer
-    '#access_create_users':
-      - '1'
-    '#access_update_roles':
-      - administrator
-      - submission_reviewer
-    '#access_update_users':
-      - '1'
-    '#access_view_roles':
-      - administrator
-      - submission_reviewer
-    '#access_view_users':
-      - '1'
   diginole_collection:
     '#type': select
     '#title': 'DigiNole Collection'
@@ -164,6 +139,58 @@ elements: |-
       visible:
         ':input[name="have_you_contacted_the_university_archivist"]':
           value: 'Yes'
+    '#access_create_roles':
+      - administrator
+      - submission_reviewer
+    '#access_create_users':
+      - '1'
+    '#access_update_roles':
+      - administrator
+      - submission_reviewer
+    '#access_update_users':
+      - '1'
+    '#access_view_roles':
+      - administrator
+      - submission_reviewer
+    '#access_view_users':
+      - '1'
+  submission_status:
+    '#type': select
+    '#title': 'Submission Status'
+    '#options': submission_status
+    '#required': true
+    '#states':
+      visible:
+        ':input[name="have_you_contacted_the_university_archivist"]':
+          value: 'Yes'
+    '#default_value': new
+    '#access_create_roles':
+      - administrator
+      - submission_reviewer
+    '#access_create_users':
+      - '1'
+    '#access_update_roles':
+      - administrator
+      - submission_reviewer
+    '#access_update_users':
+      - '1'
+    '#access_view_roles':
+      - administrator
+      - submission_reviewer
+    '#access_view_users':
+      - '1'
+  submission_log:
+    '#type': textarea
+    '#title': 'Submission Log'
+    '#multiple': true
+    '#states':
+      visible:
+        ':input[name="have_you_contacted_the_university_archivist"]':
+          value: 'Yes'
+    '#multiple__sorting': false
+    '#multiple__add': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another Log Entry'
     '#access_create_roles':
       - administrator
       - submission_reviewer

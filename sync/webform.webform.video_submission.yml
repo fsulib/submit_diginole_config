@@ -124,27 +124,6 @@ elements: |-
     '#title': 'Submission Agreement Acknowledgment'
     '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">I grant to Florida State University (&ldquo;FSU&rdquo;) the non-exclusive right to preserve and reproduce the work I am depositing (the &ldquo;Work&rdquo;), and to display, distribute and make the Work available publicly without charge, in accordance with the terms of the DigiNole author agreement found at</span></span></span></span></span></span><a href="http://diginole.lib.fsu.edu/repository/author-agreement" style="text-decoration:none"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none"> </span></span></span></span></span></span><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#56a3f1; color:#1155cc"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:underline"><span style="-webkit-text-decoration-skip:none"><span style="text-decoration-skip-ink:none">http://diginole.lib.fsu.edu/repository/author-agreement</span></span></span></span></span></span></span></span></a><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">.</span></span></span></span></span></span>'
     '#required': true
-  submission_status:
-    '#type': select
-    '#title': 'Submission Status'
-    '#options': submission_status
-    '#required': true
-    '#default_value': new
-    '#access_create_roles':
-      - administrator
-      - submission_reviewer
-    '#access_create_users':
-      - '1'
-    '#access_update_roles':
-      - administrator
-      - submission_reviewer
-    '#access_update_users':
-      - '1'
-    '#access_view_roles':
-      - administrator
-      - submission_reviewer
-    '#access_view_users':
-      - '1'
   diginole_collection:
     '#type': select
     '#title': 'DigiNole Collection'
@@ -167,6 +146,50 @@ elements: |-
   diginole_purl:
     '#type': textfield
     '#title': 'DigiNole PURL'
+    '#access_create_roles':
+      - administrator
+      - submission_reviewer
+    '#access_create_users':
+      - '1'
+    '#access_update_roles':
+      - administrator
+      - submission_reviewer
+    '#access_update_users':
+      - '1'
+    '#access_view_roles':
+      - administrator
+      - submission_reviewer
+    '#access_view_users':
+      - '1'
+  submission_status:
+    '#type': select
+    '#title': 'Submission Status'
+    '#options': submission_status
+    '#required': true
+    '#default_value': new
+    '#access_create_roles':
+      - administrator
+      - submission_reviewer
+    '#access_create_users':
+      - '1'
+    '#access_update_roles':
+      - administrator
+      - submission_reviewer
+    '#access_update_users':
+      - '1'
+    '#access_view_roles':
+      - administrator
+      - submission_reviewer
+    '#access_view_users':
+      - '1'
+  submission_log:
+    '#type': textarea
+    '#title': 'Submission Log'
+    '#multiple': true
+    '#multiple__sorting': false
+    '#multiple__add': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another Log Entry'
     '#access_create_roles':
       - administrator
       - submission_reviewer
