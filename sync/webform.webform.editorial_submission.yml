@@ -168,6 +168,43 @@ elements: |-
       - submission_reviewer
     '#access_view_users':
       - '1'
+  diginole_collection:
+    '#type': select
+    '#title': 'DigiNole Collection'
+    '#options': diginole_collection
+    '#access_create_roles':
+      - administrator
+      - submission_reviewer
+    '#access_create_users':
+      - '1'
+    '#access_update_roles':
+      - administrator
+      - submission_reviewer
+    '#access_update_users':
+      - '1'
+    '#access_view_roles':
+      - administrator
+      - submission_reviewer
+    '#access_view_users':
+      - '1'
+  diginole_purl:
+    '#type': textfield
+    '#title': 'DigiNole PURL'
+    '#access_create_roles':
+      - administrator
+      - submission_reviewer
+    '#access_create_users':
+      - '1'
+    '#access_update_roles':
+      - administrator
+      - submission_reviewer
+    '#access_update_users':
+      - '1'
+    '#access_view_roles':
+      - administrator
+      - submission_reviewer
+    '#access_view_users':
+      - '1'
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'

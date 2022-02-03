@@ -1,0 +1,9 @@
+uuid: 43e5e9dc-6c2c-48fa-9342-6949218bf23f
+langcode: en
+status: true
+dependencies: {  }
+id: diginole_collection
+label: 'DigiNole Collection'
+category: 'DigiNole Submission'
+likert: false
+options: ''
