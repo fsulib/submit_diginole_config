@@ -13,6 +13,11 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "name": "fsulib/diginole_submission_ais",
+            "type": "vcs",
+            "url": "git@github.com:fsulib/diginole_submission_ais.git"
         }
     ],
     "require": {
@@ -25,7 +30,8 @@
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2",
         "drupal/smtp": "^1.0",
-        "drupal/webform": "^6.0"
+        "drupal/webform": "^6.0",
+        "fsulib/diginole_submission_ais": "dev-main"
     },
     "require-dev": {
         "drupal/core-dev": "^9.1",
@@ -38,7 +44,17 @@
     "prefer-stable": true,
     "config": {
         "discard-changes": true,
-        "sort-packages": true
+        "sort-packages": true,
+        "preferred-install": {
+            "fsulib/*": "source"
+        },
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "zaporylie/composer-drupal-optimizations": true
+        }
     },
     "autoload": {
         "classmap": [
