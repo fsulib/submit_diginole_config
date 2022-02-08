@@ -14,3 +14,4 @@ options: |-
   approved: Approved
   ingested: Ingested
   error: Error
+  pending: Pending
