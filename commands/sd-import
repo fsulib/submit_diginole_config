@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-/var/www/html/drupal/vendor/bin/drush --root=/var/www/html/drupal/web/sites/default config:import --source=/submit_diginole_config/sync
