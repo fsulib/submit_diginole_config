@@ -7,8 +7,8 @@ smtp_port: '25'
 smtp_protocol: tls
 smtp_autotls: true
 smtp_timeout: 30
-smtp_username: '0'
-smtp_password: '0'
+smtp_username: test
+smtp_password: test
 smtp_from: do-not-reply@submit.diginole.lib.fsu.edu
 smtp_fromname: submit.diginole
 smtp_client_hostname: ''
