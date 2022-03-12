@@ -35,12 +35,17 @@ module:
   quickedit: 0
   rdf: 0
   search: 0
+  serialization: 0
   shortcut: 0
   smtp: 0
   submit_diginole_content: 0
   system: 0
   taxonomy: 0
   text: 0
+  tome: 0
+  tome_base: 0
+  tome_static: 0
+  tome_sync: 0
   toolbar: 0
   tour: 0
   update: 0
