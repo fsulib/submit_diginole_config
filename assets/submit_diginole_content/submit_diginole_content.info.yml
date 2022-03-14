@@ -1,5 +1,0 @@
-name: Submit Diginole Content
-description: Programmatically creates static pages for submit.diginole site
-package: DigiNole
-type: module
-core_version_requirement: ^9

@@ -1,7 +1,0 @@
-submit_diginole_content.home:
-  path: '/home'
-  defaults:
-    _controller: '\Drupal\submit_diginole_content\Controller\PageController::home'
-    _title: 'Welcome to submit.diginole'
-  requirements:
-    _permission: 'access content'
