@@ -1,0 +1,89 @@
+{
+    "uuid": [
+        {
+            "value": "67e2a5fb-6be4-45b7-a88e-d903aa8c0aa3"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page",
+            "target_type": "node_type",
+            "target_uuid": "86f030aa-5c45-42f9-9355-b116953c7c15"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2022-03-14T03:35:31+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "dd60c32b-46de-4e9e-a31b-333e03a0c032"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "dd60c32b-46de-4e9e-a31b-333e03a0c032"
+        }
+    ],
+    "title": [
+        {
+            "value": "Home Page"
+        }
+    ],
+    "created": [
+        {
+            "value": "2022-03-14T03:26:15+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2022-03-14T03:35:31+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "path": [
+        {
+            "alias": "\/home-page",
+            "langcode": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Submission workflow examples<\/p>\r\n\r\n<ul>\r\n\t<li><a href=\"\/form\/3d-object-submission\">3D Objects<\/a><\/li>\r\n\t<li><a href=\"\/form\/audio-submission\">Audios<\/a><\/li>\r\n\t<li><a href=\"\/form\/book\">Books<\/a><\/li>\r\n\t<li><a href=\"\/form\/capstone-project-submission\">Capstone Projects<\/a><\/li>\r\n\t<li><a href=\"\/form\/conference\">Conferences<\/a><\/li>\r\n\t<li><a href=\"\/form\/data-set\">Data Sets<\/a><\/li>\r\n\t<li><a href=\"\/form\/doctoral-nursing-program-dnp-cap\">Doctoral Nursing Program (DNP) Captstone Projects<\/a><\/li>\r\n\t<li><a href=\"\/form\/editorial-submission\">Editorials<\/a><\/li>\r\n\t<li><a href=\"\/form\/honors-thesis-submission\">Honors Theses<\/a><\/li>\r\n\t<li><a href=\"\/form\/journal-article-submission\">Journal Articles<\/a><\/li>\r\n\t<li><a href=\"\/form\/minimal-submission\">Minimals<\/a><\/li>\r\n\t<li><a href=\"\/form\/other-submission\">Others<\/a><\/li>\r\n\t<li><a href=\"\/form\/report-submission\">Reports<\/a><\/li>\r\n\t<li><a href=\"\/form\/review-submission\">Reviews<\/a><\/li>\r\n\t<li><a href=\"\/form\/university-records-submission\">University Records<\/a><\/li>\r\n\t<li><a href=\"\/form\/video-submission\">Videos<\/a><\/li>\r\n\t<li><a href=\"\/form\/working-paper\">Working Papers<\/a><\/li>\r\n<\/ul>\r\n",
+            "format": "basic_html",
+            "summary": ""
+        }
+    ]
+}
