@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "c1a533f0-550c-48bb-9d0c-22c8a311d541"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/3d_object_submission\/drafts"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/3d-object-submission\/drafts"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

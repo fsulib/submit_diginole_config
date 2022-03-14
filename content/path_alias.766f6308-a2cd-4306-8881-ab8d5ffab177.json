@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "766f6308-a2cd-4306-8881-ab8d5ffab177"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/report_submission\/drafts"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/report-submission\/drafts"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "72c81195-4367-403e-aed3-57ed4e508a68"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/conference"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/conference"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

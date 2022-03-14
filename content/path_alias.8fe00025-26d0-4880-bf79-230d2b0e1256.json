@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "8fe00025-26d0-4880-bf79-230d2b0e1256"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/editorial_submission\/confirmation"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/editorial-submission\/confirmation"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "135296b9-b45a-4489-b4e0-fa615c1ecb3c"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/editorial_submission\/submissions"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/editorial-submission\/submissions"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

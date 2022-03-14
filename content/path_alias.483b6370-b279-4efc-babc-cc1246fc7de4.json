@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "483b6370-b279-4efc-babc-cc1246fc7de4"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/report_submission\/drafts"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/report-submission\/drafts"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

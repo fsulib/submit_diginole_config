@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "35e37b79-eff2-4e1f-bf4a-0d83db910837"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/3d_object_submission"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/3d-object-submission"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

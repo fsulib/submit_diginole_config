@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "e523a8a0-8b56-425f-9ee9-38b9d3251cae"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/working_paper"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/working-paper"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "39957e43-9535-47f4-ae99-d9bfe88d61d7"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/conference\/drafts"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/conference\/drafts"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

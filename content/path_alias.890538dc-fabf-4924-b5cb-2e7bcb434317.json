@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "890538dc-fabf-4924-b5cb-2e7bcb434317"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/3d_object_submission\/confirmation"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/3d-object-submission\/confirmation"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

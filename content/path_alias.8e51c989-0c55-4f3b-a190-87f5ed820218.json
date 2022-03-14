@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "8e51c989-0c55-4f3b-a190-87f5ed820218"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/working_paper\/drafts"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/working-paper\/drafts"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

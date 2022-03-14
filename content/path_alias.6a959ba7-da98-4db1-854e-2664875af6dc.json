@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "6a959ba7-da98-4db1-854e-2664875af6dc"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/other_submission\/drafts"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/other-submission\/drafts"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

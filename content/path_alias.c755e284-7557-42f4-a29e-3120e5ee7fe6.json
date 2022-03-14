@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "c755e284-7557-42f4-a29e-3120e5ee7fe6"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/book\/submissions"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/book\/submissions"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

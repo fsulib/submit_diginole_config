@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "552f5445-7330-41b1-9a01-c59b21cbd924"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/data_set\/submissions"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/data-set\/submissions"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

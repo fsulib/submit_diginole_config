@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "e0508bec-9785-4704-b53d-865e3dd58563"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/doctoral_nursing_program_dnp_cap"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/doctoral-nursing-program-dnp-cap"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

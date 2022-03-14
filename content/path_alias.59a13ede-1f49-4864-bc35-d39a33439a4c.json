@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "59a13ede-1f49-4864-bc35-d39a33439a4c"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/video_submission\/drafts"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/video-submission\/drafts"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

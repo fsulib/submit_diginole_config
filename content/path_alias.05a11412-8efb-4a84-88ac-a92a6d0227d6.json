@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "05a11412-8efb-4a84-88ac-a92a6d0227d6"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/conference\/submissions"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/conference\/submissions"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

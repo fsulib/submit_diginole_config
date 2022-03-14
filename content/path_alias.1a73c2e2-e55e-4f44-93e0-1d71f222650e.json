@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "1a73c2e2-e55e-4f44-93e0-1d71f222650e"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/working_paper\/submissions"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/working-paper\/submissions"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

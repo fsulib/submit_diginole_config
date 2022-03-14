@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "25c2d4d5-cea5-46f5-9f7b-567490ac87f8"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/university_records_submission"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/university-records-submission"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

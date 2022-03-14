@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "f5e50175-9925-4bba-8db1-90f7ebd4120c"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/video_submission\/confirmation"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/video-submission\/confirmation"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

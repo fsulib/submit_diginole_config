@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "c8ab2459-6792-4d3c-8848-f9501fee96cc"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/capstone_project_submission\/drafts"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/capstone-project-submission\/drafts"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

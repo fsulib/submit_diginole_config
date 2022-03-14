@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "c54e4245-1158-45bd-b345-693688e6364e"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/audio_submission"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/audio-submission"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

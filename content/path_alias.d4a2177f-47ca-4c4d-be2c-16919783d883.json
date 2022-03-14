@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "d4a2177f-47ca-4c4d-be2c-16919783d883"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/journal_article_submission\/drafts"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/journal-article-submission\/drafts"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

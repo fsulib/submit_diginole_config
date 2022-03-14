@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "3d41f76f-b899-4cfd-b75e-c931faa25656"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/minimal_submission\/submissions"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/minimal-submission\/submissions"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

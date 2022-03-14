@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "0bcefd2c-dcb9-4878-8a88-c959de2d8a79"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/report_submission"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/report-submission"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "1c974659-f119-4ee5-acc4-d009a54006e4"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/book"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/book"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

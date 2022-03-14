@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "24d82c39-44cf-45bd-adc6-4e67e9fd8fac"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/honors_thesis_submission\/submissions"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/honors-thesis-submission\/submissions"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}
