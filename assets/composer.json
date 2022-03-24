@@ -18,21 +18,35 @@
             "name": "fsulib/diginole_submission_ais",
             "type": "vcs",
             "url": "git@github.com:fsulib/diginole_submission_ais.git"
+        },
+        {
+            "name": "fsulib/fsu_strata",
+            "type": "vcs",
+            "url": "git@github.com:fsulib/fsu_strata.git"
+        },
+        {
+            "name": "fsulib/fsu_twig_filter",
+            "type": "vcs",
+            "url": "git@github.com:fsulib/fsu_twig_filter.git"
         }
     ],
     "require": {
         "php": ">=7.3",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
+	"drupal/bootstrap": "^3.23",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-recommended": "^9.1",
         "drupal/smtp": "^1.0",
         "drupal/tome": "^1.6",
+	"drupal/upgrade_status": "^3.14",
         "drupal/webform": "^6.0",
         "drush/drush": "^10.3",
-        "fsulib/diginole_submission_ais": "dev-main",
         "vlucas/phpdotenv": "^5.1",
-        "webflo/drupal-finder": "^1.2"
+        "webflo/drupal-finder": "^1.2",
+        "fsulib/diginole_submission_ais": "dev-main",
+	"fsulib/fsu_strata": "dev-master",
+        "fsulib/fsu_twig_filter": "dev-master"
     },
     "require-dev": {
         "drupal/core-dev": "^9.1",
@@ -88,6 +102,7 @@
             "web/libraries/{$name}": ["type:drupal-library"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/modules/custom/{$name}": ["type:drupal-custom-module"],
+            "web/theme/custom/{$name}": ["type:drupal-custom-theme"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/Commands/contrib/{$name}": ["type:drupal-drush"]
