@@ -102,7 +102,7 @@
             "web/libraries/{$name}": ["type:drupal-library"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/modules/custom/{$name}": ["type:drupal-custom-module"],
-            "web/theme/custom/{$name}": ["type:drupal-custom-theme"],
+            "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/Commands/contrib/{$name}": ["type:drupal-drush"]
