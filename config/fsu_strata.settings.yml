@@ -1,0 +1,72 @@
+_core:
+  default_config_hash: cUL2zRcRnQ90hm8mZ6ArkEbYFaHH_m1Efz4a7-89cLY
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://localhost:9999/themes/custom/fsu_strata/favicon.ico'
+  use_default: true
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: ''
+  url: ''
+  use_default: false
+cdn_provider: ''
+color: default
+strata_twitter: ''
+strata_linkedin: ''
+strata_instagram: ''
+strata_facebook: ''
+strata_youtube: ''
+locationname: ''
+locationaddress: ''
+locationcity: ''
+locationstate: ''
+locationpostalcode: ''
+locationlat: ''
+locationlon: ''
+footertextone:
+  value: ''
+  format: full_html
+footertexttwo:
+  value: ''
+  format: full_html
+maptext:
+  value: ''
+  format: full_html
+twitterfeed:
+  value: ''
+  format: full_html
+schemas:
+  bootstrap: 8000
+  fsu_strata: 8000
+table_responsive: '-1'
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  fullheader: ''
+  header: ''
+  slideshow: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  footer: ''
+  fullcontent: ''
+  advancedcontent: ''
+cdn_theme: ''
+cdn_cache_ttl_versions: 0
+cdn_cache_ttl_themes: 0
+cdn_cache_ttl_assets: 0
+cdn_cache_ttl_library: 0
+reset_http_request_cache: ''
+table: ''
+strataversion: '3.1'
+logoselection: fsu-seal-3d-160x160
+overrideaddress:
+  value: ''
+  format: full_html

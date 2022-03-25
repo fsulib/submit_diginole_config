@@ -1,0 +1,22 @@
+uuid: 962a4153-483e-4811-b3a2-959d43043f27
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - fsu_strata
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: fsu_strata_help
+theme: fsu_strata
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

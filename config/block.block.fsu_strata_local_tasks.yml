@@ -1,0 +1,22 @@
+uuid: fdb96187-22ae-4659-9a55-c3f49cb81496
+langcode: en
+status: true
+dependencies:
+  theme:
+    - fsu_strata
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: fsu_strata_local_tasks
+theme: fsu_strata
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

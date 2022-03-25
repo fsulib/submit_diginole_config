@@ -79,7 +79,7 @@
     ],
     "path": [
         {
-            "alias": "\/home-page",
+            "alias": "\/home",
             "langcode": "en"
         }
     ],

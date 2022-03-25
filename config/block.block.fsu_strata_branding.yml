@@ -1,0 +1,25 @@
+uuid: 8902dea1-c118-47e5-82cf-1bb25a56e9dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fsu_strata
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: fsu_strata_branding
+theme: fsu_strata
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }
