@@ -1,7 +1,7 @@
 {
     "uuid": [
         {
-            "value": "67e2a5fb-6be4-45b7-a88e-d903aa8c0aa3"
+            "value": "0c452fa6-a1ea-4442-a644-7244ebd23019"
         }
     ],
     "langcode": [
@@ -18,7 +18,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2022-04-14T17:49:38+00:00",
+            "value": "2022-04-14T17:54:33+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -42,18 +42,18 @@
     ],
     "title": [
         {
-            "value": "Home Page"
+            "value": "FAQs"
         }
     ],
     "created": [
         {
-            "value": "2022-03-14T03:26:15+00:00",
+            "value": "2022-04-14T16:56:13+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": "2022-04-14T17:49:38+00:00",
+            "value": "2022-04-14T17:54:33+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -79,13 +79,13 @@
     ],
     "path": [
         {
-            "alias": "\/home",
+            "alias": "\/faqs",
             "langcode": "en"
         }
     ],
     "body": [
         {
-            "value": "<h2>How to submit to DigiNole<\/h2>\r\n\r\n<p>Use this website to submit materials to DigiNole, FSU's Institutional Repository.<\/p>\r\n\r\n<p>FSU Libraries welcomes submissions to DigiNole from the FSU community. If you need more information about what kinds of materials can be submitted, please refer to the <a href=\"\/faqs#what_can_I_submit\">\"What can I submit to DigiNole?\"<\/a> section of the FAQ page.<\/p>\r\n\r\n<p>To begin the submission process, select one of the forms below that best fits the content you are submitting. If you are unsure of which form to choose, please refer to the <a href=\"\/faqs#what_form_to_use\">\"What submission form should I use?\"<\/a> section of the FAQ page.<\/p>\r\n\r\n<p>Dropdown menu and submit button go here.<\/p>\r\n",
+            "value": "<h2>General<\/h2>\r\n\r\n<h3><a href=\"#what_can_I_submit\">What can I submit to DigiNole?<\/a><\/h3>\r\n\r\n<h3><a href=\"#what_form_to_use\">What form should I use?<\/a><\/h3>\r\n\r\n<h3><a href=\"#university_archives\">Can I use this site to submit materials to the University Archives?<\/a><\/h3>\r\n\r\n<div id=\"what_can_I_submit\"><strong>What can I submit to DigiNole?<\/strong><\/div>\r\n\r\n<p>Here's what you can submit....<\/p>\r\n\r\n<div id=\"what_form_to_use\"><strong>What form should I use?<\/strong><\/div>\r\n\r\n<p>What form you use will depend on the kind of material you want to submit....<\/p>\r\n\r\n<div id=\"university_archives\"><strong>Can I use this site to submit materials to the University Archives?<\/strong><\/div>\r\n\r\n<p>FSU University Archives maintains a separate process for submission. Please visit the <a href=\"https:\/\/www.lib.fsu.edu\/sca\/donate\">University Archives website<\/a> for more information.<\/p>\r\n",
             "format": "full_html",
             "summary": ""
         }

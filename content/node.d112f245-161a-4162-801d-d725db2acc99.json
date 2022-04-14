@@ -1,7 +1,7 @@
 {
     "uuid": [
         {
-            "value": "67e2a5fb-6be4-45b7-a88e-d903aa8c0aa3"
+            "value": "d112f245-161a-4162-801d-d725db2acc99"
         }
     ],
     "langcode": [
@@ -18,7 +18,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2022-04-14T17:49:38+00:00",
+            "value": "2022-04-14T18:01:17+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -42,18 +42,18 @@
     ],
     "title": [
         {
-            "value": "Home Page"
+            "value": "Help & Support"
         }
     ],
     "created": [
         {
-            "value": "2022-03-14T03:26:15+00:00",
+            "value": "2022-04-14T16:57:59+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": "2022-04-14T17:49:38+00:00",
+            "value": "2022-04-14T18:01:17+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -79,13 +79,13 @@
     ],
     "path": [
         {
-            "alias": "\/home",
+            "alias": "\/help",
             "langcode": "en"
         }
     ],
     "body": [
         {
-            "value": "<h2>How to submit to DigiNole<\/h2>\r\n\r\n<p>Use this website to submit materials to DigiNole, FSU's Institutional Repository.<\/p>\r\n\r\n<p>FSU Libraries welcomes submissions to DigiNole from the FSU community. If you need more information about what kinds of materials can be submitted, please refer to the <a href=\"\/faqs#what_can_I_submit\">\"What can I submit to DigiNole?\"<\/a> section of the FAQ page.<\/p>\r\n\r\n<p>To begin the submission process, select one of the forms below that best fits the content you are submitting. If you are unsure of which form to choose, please refer to the <a href=\"\/faqs#what_form_to_use\">\"What submission form should I use?\"<\/a> section of the FAQ page.<\/p>\r\n\r\n<p>Dropdown menu and submit button go here.<\/p>\r\n",
+            "value": "<p>If you encounter any issues using this submission system or have further questions or feedback, please contact FSU Libraries\u2019 DigiNole support team at<strong> <a href=\"mailto:lib-support@fsu.edu\">lib-support@fsu.edu<\/a><\/strong>.<\/p>\r\n",
             "format": "full_html",
             "summary": ""
         }

@@ -2,7 +2,7 @@ _core:
   default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
 langcode: en
 uuid: 0734e930-32e6-4075-8e2e-cc4c0286b4c1
-name: submit_diginole
+name: 'Submit to DigiNole'
 mail: admin@admin.edu
 slogan: ''
 page:
