@@ -1,0 +1,23 @@
+uuid: b3be6a23-0035-43e8-af55-7b02b22f53db
+langcode: en
+status: true
+dependencies: {  }
+id: webform_selector
+label: 'Webform Selector'
+category: ''
+likert: false
+options: |-
+  '3d_object_submission ': '3D Object'
+  'audio_submission ': Audio
+  book: Book
+  'capstone_project_submission ': 'Capstone Project'
+  conference: Conference
+  data_set: 'Data Set'
+  'doctoral_nursing_program_dnp_cap ': 'Doctoral Nursing Program Capstone Project'
+  editorial_submission: Editorial
+  'honors_thesis_submission ': 'Honors Thesis '
+  journal_article_submission: 'Journal Article'
+  report_submission: Report
+  review_submission: Review
+  video_submission: Video
+  working_paper: 'Working Paper'

@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "e81507ad-b35d-4fb1-b21c-0698cb178946"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/home_page_webform\/drafts"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/home-page-webform\/drafts"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}
