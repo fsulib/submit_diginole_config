@@ -1,0 +1,93 @@
+{
+    "uuid": [
+        {
+            "value": "fc502a8b-3206-49ad-b12a-3c043e30bff6"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page",
+            "target_type": "node_type",
+            "target_uuid": "86f030aa-5c45-42f9-9355-b116953c7c15"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2022-04-19T14:10:46+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "dd60c32b-46de-4e9e-a31b-333e03a0c032"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "dd60c32b-46de-4e9e-a31b-333e03a0c032"
+        }
+    ],
+    "title": [
+        {
+            "value": "Policies"
+        }
+    ],
+    "created": [
+        {
+            "value": "2022-04-19T13:53:45+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2022-04-19T14:10:46+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/policies",
+            "langcode": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>On this page you will find links to policies related to materials submitted to DigiNole.<\/p>\r\n\r\n<ol>\r\n\t<li><a href=\"https:\/\/diginole.lib.fsu.edu\/copyright-and-legal-information\">Copyright &amp; Legal<\/a><\/li>\r\n\t<li><a href=\"https:\/\/www.lib.fsu.edu\/data-deposit-policy\">Data Deposit<\/a><\/li>\r\n\t<li><a href=\"https:\/\/policies.vpfa.fsu.edu\/policies-and-procedures\/technology\/information-privacy-policy\">Information Privacy (Option 1, currently in the footer of DigiNole)<\/a><\/li>\r\n\t<li><a href=\"https:\/\/www.fsu.edu\/\/misc\/policy.html\">Information Privacy (Option 2, currently in the footer of the Strata theme)<\/a><\/li>\r\n\t<li><a href=\"https:\/\/diginole.lib.fsu.edu\/copyright-and-legal-information#author-agreement\">DigiNole Author Agreement<\/a><\/li>\r\n\t<li><a href=\"http:\/\/openaccess.fsu.edu\/policy-text\/\">Open Access Policy<\/a><\/li>\r\n\t<li><a href=\"https:\/\/www.lib.fsu.edu\/sites\/default\/files\/sites\/default\/files\/upload\/diginoleharvestpolicy.v1-1.pdf\">Metadata Harvest Policy<\/a><\/li>\r\n<\/ol>\r\n",
+            "format": "basic_html",
+            "summary": ""
+        }
+    ]
+}

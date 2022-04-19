@@ -18,7 +18,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2022-04-14T17:54:33+00:00",
+            "value": "2022-04-19T14:21:34+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -53,7 +53,7 @@
     ],
     "changed": [
         {
-            "value": "2022-04-14T17:54:33+00:00",
+            "value": "2022-04-19T14:21:34+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -85,7 +85,7 @@
     ],
     "body": [
         {
-            "value": "<h2>General<\/h2>\r\n\r\n<h3><a href=\"#what_can_I_submit\">What can I submit to DigiNole?<\/a><\/h3>\r\n\r\n<h3><a href=\"#what_form_to_use\">What form should I use?<\/a><\/h3>\r\n\r\n<h3><a href=\"#university_archives\">Can I use this site to submit materials to the University Archives?<\/a><\/h3>\r\n\r\n<div id=\"what_can_I_submit\"><strong>What can I submit to DigiNole?<\/strong><\/div>\r\n\r\n<p>Here's what you can submit....<\/p>\r\n\r\n<div id=\"what_form_to_use\"><strong>What form should I use?<\/strong><\/div>\r\n\r\n<p>What form you use will depend on the kind of material you want to submit....<\/p>\r\n\r\n<div id=\"university_archives\"><strong>Can I use this site to submit materials to the University Archives?<\/strong><\/div>\r\n\r\n<p>FSU University Archives maintains a separate process for submission. Please visit the <a href=\"https:\/\/www.lib.fsu.edu\/sca\/donate\">University Archives website<\/a> for more information.<\/p>\r\n",
+            "value": "<h2>General<\/h2>\r\n\r\n<h3><a href=\"#what_can_I_submit\">What can I submit to DigiNole?<\/a><\/h3>\r\n\r\n<h3><a href=\"#what_form_to_use\">What form should I use?<\/a><\/h3>\r\n\r\n<h3><a href=\"#university_archives\">Can I use this site to submit materials to the University Archives?<\/a><\/h3>\r\n\r\n<h3><a href=\"#data_deposit\">What materials should my data deposit include?<\/a><\/h3>\r\n\r\n<h3><a href=\"#after_submission\">How long will it take my materials to be available online after submitting?<\/a><\/h3>\r\n\r\n<div id=\"what_can_I_submit\"><strong>What can I submit to DigiNole?<\/strong><\/div>\r\n\r\n<p>Here's what you can submit....<\/p>\r\n\r\n<div id=\"what_form_to_use\"><strong>What form should I use?<\/strong><\/div>\r\n\r\n<p>What form you use will depend on the kind of material you want to submit....<\/p>\r\n\r\n<div id=\"university_archives\"><strong>Can I use this site to submit materials to the University Archives?<\/strong><\/div>\r\n\r\n<p>FSU University Archives maintains a separate process for submission. Please visit the <a href=\"https:\/\/www.lib.fsu.edu\/sca\/donate\">University Archives website<\/a> for more information.<\/p>\r\n\r\n<div id=\"data_deposit\"><strong>What materials should my data deposit include?<\/strong><\/div>\r\n\r\n<p>Your data deposit should include ....<\/p>\r\n\r\n<div id=\"after_submission\"><strong>How long will it take my materials to be available online after submitting?<\/strong><\/div>\r\n\r\n<p>\u201cPatience is bitter, but its fruit is sweet.\u201d -Aristotle<\/p>\r\n",
             "format": "full_html",
             "summary": ""
         }
