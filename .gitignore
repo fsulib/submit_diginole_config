@@ -1,5 +1,5 @@
 .vagrant
 .DS_Store
-files/php/twig/*
-files/js/*
 files/css/*
+files/js/*
+files/php/twig/*
