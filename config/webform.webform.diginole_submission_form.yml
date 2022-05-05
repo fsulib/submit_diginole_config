@@ -1,0 +1,829 @@
+uuid: e4f23cb9-f6b0-414d-a07a-2a30446707a5
+langcode: en
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: diginole_submission_form
+title: 'DigiNole Submission Form'
+description: 'This is the parent webform for DigiNole submissions.&nbsp; Variant forms for each type of submission are built from this form.'
+category: 'DigiNole Submission'
+elements: |-
+  first_name:
+    '#type': textfield
+    '#title': 'First Name'
+    '#required': true
+    '#admin_notes': 'Present in all variants.'
+  last_name:
+    '#type': textfield
+    '#title': 'Last Name'
+    '#required': true
+    '#admin_notes': 'Present in all variants.'
+  email:
+    '#type': textfield
+    '#title': Email
+    '#required': true
+    '#admin_notes': 'Present in all variants.'
+  department:
+    '#type': select
+    '#title': Department/Institute/Center/Program
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">If you would like to submit to more than one collection, please list additional collections in the &quot;Note to FSU Libraries Staff&quot; field, below.</span></span></span></span></span></span>'
+    '#placeholder': 'Select or search for department/institute/center/program'
+    '#options': fsu_departments
+    '#select2': true
+    '#required': true
+    '#admin_notes': 'Present in all variants.'
+  submission_type:
+    '#type': select
+    '#title': 'Submission Type'
+    '#description': 'This field is pre-defined and cannot be edited.'
+    '#disabled': true
+    '#options': submission_types
+    '#empty_option': '3D Object'
+    '#empty_value': 3d_object
+    '#required': true
+    '#admin_notes': 'Present in all forms except Minimal Submission.'
+  submission_title:
+    '#type': textfield
+    '#title': 'Submission Title'
+    '#required': true
+    '#admin_notes': 'Present in all forms except Minimal Submission.'
+  submission_subtitle:
+    '#type': textfield
+    '#title': 'Submission Subtitle'
+    '#admin_notes': 'Present in all forms except Minimal Submission.'
+  author:
+    '#type': webform_custom_composite
+    '#title': Author
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">All authors involved, listed in the order they appear on the document.</span></span></span></span></span></span>'
+    '#required': true
+    '#multiple__header': false
+    '#multiple__item_label': author
+    '#multiple__min_items': 1
+    '#multiple__sorting': false
+    '#multiple__add': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another Author'
+    '#admin_notes': 'Present in all forms except Minimal Submission.'
+    '#element':
+      author_first_name:
+        '#type': textfield
+        '#required': true
+        '#title': 'First Name'
+      author_middle_name:
+        '#type': textfield
+        '#title': 'Middle Name'
+      author_last_name:
+        '#type': textfield
+        '#required': true
+        '#title': 'Last Name'
+      author_orcid:
+        '#type': textfield
+        '#title': ORCID
+      author_institution:
+        '#type': textfield
+        '#title': Institution
+  doi:
+    '#type': textfield
+    '#title': DOI
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Provide the DOI for this item if one already exists. Ex: 10.0059/fsu01254863</span></span></span></span></span></span>'
+    '#admin_notes': |-
+      Present in:
+      <ul>
+      	<li>Audio</li>
+      	<li>Conference</li>
+      	<li>Editorial</li>
+      	<li>Journal Article</li>
+      	<li>Review</li>
+      </ul>
+  is_there_a_doi_already_associated_with_this_object_:
+    '#type': select
+    '#title': 'Is there a DOI already associated with this object?'
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">DOI = Direct object identifier, this is a unique permanent identifier for digital documents and is important in academic citation by allowing readers to reliably locate the source. </span></span></span></span></span></span>'
+    '#options': yes_no
+    '#empty_option': '-Select-'
+    '#admin_notes': |-
+      Present in
+      <ul>
+      	<li>Capstone</li>
+      	<li>Data Set</li>
+      	<li>Doctoral Nursing Program</li>
+      	<li>Honors Thesis</li>
+      	<li>Other</li>
+      	<li>Report</li>
+      	<li>Working Paper</li>
+      </ul>
+  if_there_is_already_a_doi_associated_with_this_item_please_enter:
+    '#type': textfield
+    '#title': 'If there is already a DOI associated with this item, please enter it here'
+    '#description': '<div style="list-style-type:lower-roman"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Example: 10.0059/fsu012548</span></span></span></span></span></span></div>'
+    '#states':
+      visible:
+        ':input[name="is_there_a_doi_already_associated_with_this_object_"]':
+          value: 'Yes'
+    '#admin_notes': |-
+      Present in
+      <ul>
+      	<li>Capstone</li>
+      	<li>Data Set</li>
+      	<li>Doctoral Nursing Program</li>
+      	<li>Honors Thesis</li>
+      	<li>Other</li>
+      	<li>Report</li>
+      	<li>Working Paper</li>
+      </ul>
+  if_a_doi_does_not_already_exist_would_you_like_to_create_a_doi_f:
+    '#type': select
+    '#title': 'If a DOI does not already exist, would you like to create a DOI for this material?'
+    '#options': yes_no
+    '#empty_option': '-Select-'
+    '#states':
+      visible:
+        ':input[name="is_there_a_doi_already_associated_with_this_object_"]':
+          value: 'No'
+    '#admin_notes': |-
+      Present in:
+      <ul>
+      	<li>Capstone</li>
+      	<li>Data Set</li>
+      	<li>Doctoral Nursing Program</li>
+      	<li>Honors Thesis</li>
+      	<li>Other</li>
+      	<li>Report</li>
+      	<li>Working Paper</li>
+      </ul>
+  abstract:
+    '#type': textarea
+    '#title': Abstract
+    '#admin_notes': 'Present in all variants except Minimal Submission.&nbsp; Sometimes labeled Description.'
+  keywords:
+    '#type': textfield
+    '#title': Keywords
+    '#description': 'A comma separated list of keywords, for example: &quot;Cooking, Minimalist art, Brutalist architecture&quot;'
+    '#admin_notes': 'Present in all variants except Minimal Submission.'
+  units_of_scale:
+    '#type': webform_select_other
+    '#title': 'Units of Scale'
+    '#options': units_of_scale
+    '#other__description': 'Please enter other unit of scale, e.g. "miles", "kilometers", "feet"'
+    '#admin_notes': 'Present in 3D object variant only.'
+  embargo_period:
+    '#type': select
+    '#title': 'Embargo Period'
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Embargo period extends from the date of publication.</span></span></span></span></span></span>'
+    '#options': embargo_period
+    '#admin_notes': 'Present in all variants.'
+    '#empty_option': '-None-'
+    '#empty_value': none
+  visibility:
+    '#type': radios
+    '#title': Visibility
+    '#options': visibility
+    '#required': true
+    '#admin_notes': 'Present in all variants except Minimal Submission'
+  date_of_submission:
+    '#type': date
+    '#title': 'Date of Submission'
+    '#required': true
+    '#admin_notes': |-
+      Present in:
+      <ul>
+      	<li>Capstone</li>
+      	<li>Doctoral Nursing Program</li>
+      	<li>Honors Thesis</li>
+      </ul>
+  date_of_publication:
+    '#type': date
+    '#title': 'Date of Publication'
+    '#description': 'If you are unsure of the date of publication, select the date the work was initially released online or use the date you submitted the work to DigiNole.'
+    '#admin_notes': |-
+      Present in:
+      <ul>
+      	<li>3D Object</li>
+      	<li>Audio</li>
+      	<li>Book</li>
+      	<li>Conference</li>
+      	<li>Data Set</li>
+      	<li>Editorial</li>
+      	<li>Journal Article</li>
+      	<li>Other</li>
+      	<li>Report</li>
+      	<li>Review</li>
+      	<li>Video</li>
+      	<li>Working Paper</li>
+      </ul>
+  journal_of_publication:
+    '#type': textfield
+    '#title': 'Journal of Publication'
+    '#admin_notes': 'Present in Report variant only'
+  publication_title:
+    '#type': textfield
+    '#title': 'Publication Title'
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Ex. journal title, book series title, etc. Not the title of the work being submitted.</span></span></span></span></span></span>'
+    '#admin_notes': |-
+      Present in:
+      <ul>
+      	<li>Audio</li>
+      	<li>Conference</li>
+      	<li>Editorial</li>
+      	<li>Journal Article</li>
+      	<li>Other</li>
+      	<li>Review</li>
+      	<li>Working Paper</li>
+      </ul>
+  publisher_name:
+    '#type': textfield
+    '#title': 'Publisher Name'
+    '#admin_notes': 'Present in Book variant only'
+  publication_edition:
+    '#type': textfield
+    '#title': 'Publication Edition'
+    '#admin_notes': 'Present in Book variant only'
+  publication_volume:
+    '#type': textfield
+    '#title': 'Publication Volume'
+    '#admin_notes': |-
+      Present in:
+      <ul>
+      	<li>Book</li>
+      	<li>Conference</li>
+      	<li>Editorial</li>
+      	<li>Journal Article</li>
+      	<li>Other</li>
+      	<li>Review</li>
+      	<li>Working Paper</li>
+      </ul>
+  publication_issue:
+    '#type': textfield
+    '#title': 'Publication Issue'
+    '#admin_notes': |-
+      Present in:
+      <ul>
+      	<li>Book</li>
+      	<li>Conference</li>
+      	<li>Editorial</li>
+      	<li>Journal Article</li>
+      	<li>Other</li>
+      	<li>Review</li>
+      	<li>Working Paper</li>
+      </ul>
+  publication_page_range:
+    '#type': textfield
+    '#title': 'Publication page range'
+    '#admin_notes': |-
+      Present in:
+      <ul>
+      	<li>Book</li>
+      	<li>Conference</li>
+      	<li>Editorial</li>
+      	<li>Journal Article</li>
+      	<li>Other</li>
+      	<li>Review</li>
+      	<li>Working Paper</li>
+      </ul>
+  publication_note:
+    '#type': textarea
+    '#title': 'Publication Note'
+    '#description': '<div style="list-style-type:decimal"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Extra information related to publication or required by publisher (optional).</span></span></span></span></span></span></div>'
+    '#admin_notes': 'Present in all variants except Minimal Submission'
+  isbn:
+    '#type': textfield
+    '#title': ISBN
+    '#admin_notes': 'Present in Book variant only.'
+  preferred_citation:
+    '#type': textarea
+    '#title': 'Preferred Citation'
+    '#admin_notes': |-
+      Present in:
+      <ul>
+      	<li>Book</li>
+      	<li>Conference</li>
+      	<li>Editorial</li>
+      	<li>Journal Article</li>
+      	<li>Other</li>
+      	<li>Review</li>
+      	<li>Working Paper</li>
+      </ul>
+  grant_number:
+    '#type': textfield
+    '#title': 'Grant Number'
+    '#description': |-
+      <div class="description">
+      <div class="webform-element-description" id="edit-grant-number--description"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">If funded by a grant, please include the funding agency grant number here. If you would like your article to be submitted to a funding agency&#39;s public access repository on your behalf, please include the name of the agency and repository in the &quot;Note to FSU Libraries Staff&quot; field, below.</span></span></span></span></span></span></div>
+      </div>
+    '#admin_notes': 'Present in all variants except Minimal Submission'
+  license:
+    '#type': select
+    '#title': License
+    '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Choose a license to specify how your work can be reused. The selected license applies to all files included in this submission. If you want to upload some of your files under different licenses, please do so in separate submissions. For information about Creative Commons licenses and the reuse permissions granted by each license, see:</span></span></span></span></span></span><a href="https://creativecommons.org/licenses/" style="text-decoration:none"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none"> </span></span></span></span></span></span><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#56a3f1; color:#1155cc"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:underline"><span style="-webkit-text-decoration-skip:none"><span style="text-decoration-skip-ink:none">https://creativecommons.org/licenses/</span></span></span></span></span></span></span></span></a><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">.</span></span></span></span></span></span>'
+    '#options': license_options
+    '#admin_notes': 'Present in all variants.'
+  upload_element:
+    '#type': managed_file
+    '#title': 'Upload Element Label'
+    '#required': true
+    '#admin_notes': 'Present in all variants except for Minimal Submission.&nbsp; Needs overrides for label, etc for all forms.'
+  note_to_library_staff:
+    '#type': textarea
+    '#title': 'Note to Library staff'
+    '#description': '<div style="list-style-type:decimal"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Provide any additional information that may be helpful to FSU Library staff members who will be handling this submission.</span></span></span></span></span></span></div>'
+    '#admin_notes': 'Present in all variants.'
+  submission_agreement_acknowledgment:
+    '#type': checkbox
+    '#title': 'Submission Agreement Acknowledgment'
+    '#description': '<div style="list-style-type:lower-alpha"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">I grant to Florida State University (&ldquo;FSU&rdquo;) the non-exclusive right to preserve and reproduce the work I am depositing (the &ldquo;Work&rdquo;), and to display, distribute and make the Work available publicly without charge, in accordance with the terms of the DigiNole author agreement found at</span></span></span></span></span></span><a href="http://diginole.lib.fsu.edu/repository/author-agreement" style="text-decoration:none"><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none"> </span></span></span></span></span></span><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#56a3f1; color:#1155cc"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:underline"><span style="-webkit-text-decoration-skip:none"><span style="text-decoration-skip-ink:none">http://diginole.lib.fsu.edu/repository/author-agreement</span></span></span></span></span></span></span></span></a><span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">.</span></span></span></span></span></span></div>'
+    '#required': true
+    '#admin_notes': 'Present in all variants.'
+  diginole_collection:
+    '#type': select
+    '#title': 'DigiNole Collection'
+    '#options': diginole_collection
+    '#admin_notes': 'Present in all variants.'
+    '#access_create_roles':
+      - administrator
+      - submission_reviewer
+    '#access_create_users':
+      - '1'
+    '#access_update_roles':
+      - administrator
+      - submission_reviewer
+    '#access_update_users':
+      - '1'
+    '#access_view_roles':
+      - administrator
+      - submission_reviewer
+    '#access_view_users':
+      - '1'
+  diginole_purl:
+    '#type': textfield
+    '#title': 'DigiNole PURL'
+    '#admin_notes': 'Present in all variants.'
+    '#access_create_roles':
+      - administrator
+      - submission_reviewer
+    '#access_create_users':
+      - '1'
+    '#access_update_roles':
+      - administrator
+      - submission_reviewer
+    '#access_update_users':
+      - '1'
+    '#access_view_roles':
+      - administrator
+      - submission_reviewer
+    '#access_view_users':
+      - '1'
+  submission_status:
+    '#type': select
+    '#title': 'Submission Status'
+    '#options': submission_status
+    '#required': true
+    '#default_value': new
+    '#admin_notes': 'This element is available in all variants. Some variants use the submission_status options and others use the submission_status_with_in_press options.'
+    '#access_create_roles':
+      - administrator
+      - submission_reviewer
+    '#access_create_users':
+      - '1'
+    '#access_update_roles':
+      - administrator
+      - submission_reviewer
+    '#access_update_users':
+      - '1'
+    '#access_view_roles':
+      - administrator
+      - submission_reviewer
+    '#access_view_users':
+      - '1'
+  submission_log:
+    '#type': textarea
+    '#title': 'Submission Log'
+    '#multiple': true
+    '#multiple__sorting': false
+    '#multiple__add': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another Log Entry'
+    '#admin_notes': 'Present in all variants'
+    '#access_create_roles':
+      - administrator
+      - submission_reviewer
+    '#access_create_users':
+      - '1'
+    '#access_update_roles':
+      - administrator
+      - submission_reviewer
+    '#access_update_users':
+      - '1'
+    '#access_view_roles':
+      - administrator
+      - submission_reviewer
+    '#access_view_users':
+      - '1'
+  form_type:
+    '#type': webform_variant
+    '#title': 'Form Type'
+    '#admin_notes': 'This element enables the use of Webform Variants.'
+    '#variant': override
+    '#display_on': view
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#states':
+      visible:
+        ':input[name="submission_agreement_acknowledgment"]':
+          checked: true
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: both
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants:
+  3d_object:
+    id: override
+    variant_id: 3d_object
+    element_key: form_type
+    label: '3D Object Submission'
+    notes: 'Webform for submitting 3D objects'
+    status: true
+    weight: 7
+    settings:
+      debug: false
+      settings: {  }
+      elements: "doi:\r\n  '#access': false\r\nis_there_a_doi_already_associated_with_this_object_:\r\n  '#access': false\r\nif_there_is_already_a_doi_associated_with_this_item_please_enter:\r\n  '#access': false\r\nif_a_doi_does_not_already_exist_would_you_like_to_create_a_doi_f:\r\n  '#access': false\r\nabstract:\r\n  '#title': Description\r\ndate_of_submission:\r\n  '#access': false\r\njournal_of_publication:\r\n  '#access': false\r\npublication_title:\r\n  '#access': false\r\npublisher_name:\r\n  '#access': false\r\npublication_edition:\r\n  '#access': false\r\npublication_volume:\r\n  '#access': false\r\npublication_issue:\r\n  '#access': false\r\npublication_page_range:\r\n  '#access': false\r\nisbn:\r\n  '#access': false\r\npreferred_citation:\r\n  '#access': false\r\nupload_element:\r\n  '#type': managed_file\r\n  '#title': 'Upload 3D Object'\r\n  '#required': true\r\n  '#file_extensions': 'txt rtf pdf doc docx odt ppt pptx odp xls xlsx ods'"
+      handlers: {  }
+  audio:
+    id: override
+    variant_id: audio
+    element_key: form_type
+    label: 'Audio Submission'
+    notes: 'Webform for submitting audio objects'
+    status: true
+    weight: 7
+    settings:
+      debug: false
+      settings: {  }
+      elements: "submission_type:\r\n  '#type': select\r\n  '#title': 'Submission Type'\r\n  '#description': |-\r\n    <div class=\"description\">\r\n    <div class=\"webform-element-description\" id=\"edit-submissi--description\">This field is pre-defined and cannot be edited</div>\r\n    </div>\r\n  '#disabled': true\r\n  '#options': submission_types\r\n  '#empty_option': Audio\r\n  '#empty_value': audio\r\n  '#required': true\r\nkeywords:\r\n  '#description': '<div class=\"description\">A comma separated list of keywords, for example: &quot;Cooking, Minimalist art, Brutalist architecture&quot;</div>'\r\nis_there_a_doi_already_associated_with_this_object_:\r\n  '#access': false\r\nif_there_is_already_a_doi_associated_with_this_item_please_enter:\r\n  '#access': false\r\nif_a_doi_does_not_already_exist_would_you_like_to_create_a_doi_f:\r\n  '#access': false\r\nunits_of_scale:\r\n  '#access': false\r\ndate_of_submission:\r\n  '#access': false\r\njournal_of_publication:\r\n  '#access': false\r\npublisher_name:\r\n  '#access': false\r\npublication_edition:\r\n  '#access': false\r\npublication_volume:\r\n  '#access': false\r\npublication_issue:\r\n  '#access': false\r\npublication_page_range:\r\n  '#access': false\r\npublication_note:\r\n  '#type': textarea\r\n  '#title': 'Publication Note'\r\n  '#description': '<span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:Arial\"><span data-darkreader-inline-color=\"\" style=\"--darkreader-inline-color:#e8e6e3; color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Extra information related to publication or required by publisher (optional).</span></span></span></span></span></span>'\r\n  '#description_display': after\r\npreferred_citation:\r\n  '#access': false\r\nupload_element:\r\n  '#type': managed_file\r\n  '#title': 'Upload audio file'\r\n  '#required': true\r\n  '#file_extensions': 'mp3 ogg wav'"
+      handlers: {  }
+  book:
+    id: override
+    variant_id: book
+    element_key: form_type
+    label: 'Book Submission'
+    notes: 'Webform for submitting books'
+    status: true
+    weight: 7
+    settings:
+      debug: false
+      settings: {  }
+      elements: "submission_type:\r\n  '#type': select\r\n  '#title': 'Submission Type'\r\n  '#description': ''\r\n  '#disabled': false\r\n  '#options': book_submission_options\r\n  '#empty_option': ' - Select - '\r\n  '#empty_value': \r\n  '#required': true  \r\ndoi:\r\n  '#access': false\r\nis_there_a_doi_already_associated_with_this_object_:\r\n  '#access': false\r\nif_there_is_already_a_doi_associated_with_this_item_please_enter:\r\n  '#access': false\r\nif_a_doi_does_not_already_exist_would_you_like_to_create_a_doi_f:\r\n  '#access': false\r\nunits_of_scale:\r\n  '#access': false\r\ndate_of_submission:\r\n  '#access': false\r\njournal_of_publication:\r\n  '#access': false\r\npublication_title:\r\n  '#access': false\r\nupload_element:\r\n  '#type': managed_file\r\n  '#title': 'Upload Book File'\r\n  '#file_extensions': 'txt rtf pdf doc docx odt ppt pptx odp xls xlsx ods'\r\nsubmission_status:\r\n  '#options': submission_status_with_in_press"
+      handlers: {  }
+  capstone_project:
+    id: override
+    variant_id: capstone_project
+    element_key: form_type
+    label: 'Capstone Project Submission'
+    notes: 'Webform for submitting capstone projects'
+    status: true
+    weight: 7
+    settings:
+      debug: false
+      settings: {  }
+      elements: "submission_type:\r\n  '#empty_option': 'Capstone Project'\r\n  '#empty_value': capstone_project\r\ndoi:\r\n  '#access': false\r\nabstract:\r\n  '#type': textarea\r\n  '#title': Abstract\r\n  '#admin_notes': 'Present in all variants except Minimal Submission.&nbsp; Sometimes labeled Description.'\r\nunits_of_scale:\r\n  '#access': false\r\ndate_of_publication:\r\n  '#access': false\r\njournal_of_publication:\r\n  '#access': false\r\npublication_title:\r\n  '#access': false\r\npublisher_name:\r\n  '#access': false\r\npublication_edition:\r\n  '#access': false\r\npublication_volume:\r\n  '#access': false\r\npublication_issue:\r\n  '#access': false\r\npublication_page_range:\r\n  '#access': false\r\nisbn:\r\n  '#access': false\r\npreferred_citation:\r\n  '#access': false\r\nupload_element:\r\n  '#type': managed_file\r\n  '#title': 'Upload Capstone Project'\r\n  '#required': true"
+      handlers: {  }
+  conference:
+    id: override
+    variant_id: conference
+    element_key: form_type
+    label: 'Conference Submission'
+    notes: 'Webform for submitting conference materials'
+    status: true
+    weight: 7
+    settings:
+      debug: false
+      settings: {  }
+      elements: "submission_type:\r\n  '#type': select\r\n  '#title': 'Submission Type'\r\n  '#description': ''\r\n  '#disabled': false\r\n  '#options': conference_submission_options\r\n  '#empty_option': ' - Select - '\r\n  '#empty_value': \r\n  '#required': true\r\nis_there_a_doi_already_associated_with_this_object_:\r\n  '#access': false\r\nif_there_is_already_a_doi_associated_with_this_item_please_enter:\r\n  '#access': false\r\nif_a_doi_does_not_already_exist_would_you_like_to_create_a_doi_f:\r\n  '#access': false\r\nabstract:\r\n  '#type': textarea\r\n  '#title': Abstract\r\n  '#admin_notes': 'Present in all variants except Minimal Submission.&nbsp; Sometimes labeled Description.'\r\nunits_of_scale:\r\n  '#access': false\r\ndate_of_submission:\r\n  '#access': false\r\njournal_of_publication:\r\n  '#access': false\r\npublisher_name:\r\n  '#access': false\r\nisbn:\r\n  '#access': false\r\npublication_edition:\r\n  '#access': false\r\nupload_element:\r\n  '#type': managed_file\r\n  '#title': 'Upload conference materials'\r\n  '#required': true\r\n  '#file_extensions': 'txt rtf pdf doc docx odt ppt pptx odp xls xlsx ods'\r\nsubmission_status:\r\n  '#type': select\r\n  '#title': 'Submission Status'\r\n  '#options': submission_status_with_in_press\r\n  '#required': true\r\n  '#default_value': new\r\n  '#access_create_roles':\r\n    - administrator\r\n    - submission_reviewer\r\n  '#access_create_users':\r\n    - '1'\r\n  '#access_update_roles':\r\n    - administrator\r\n    - submission_reviewer\r\n  '#access_update_users':\r\n    - '1'\r\n  '#access_view_roles':\r\n    - administrator\r\n    - submission_reviewer\r\n  '#access_view_users':\r\n    - '1'"
+      handlers: {  }
+  data_set:
+    id: override
+    variant_id: data_set
+    element_key: form_type
+    label: 'Data Set Submission'
+    notes: 'Webform for submitting data sets'
+    status: true
+    weight: 7
+    settings:
+      debug: false
+      settings: {  }
+      elements: "submission_type:\r\n  '#empty_option': 'Data Set'\r\n  '#empty_value': data_set\r\ndoi:\r\n  '#access': false\r\nunits_of_scale:\r\n  '#access': false\r\ndate_of_submission:\r\n  '#access': false\r\njournal_of_publication:\r\n  '#access': false\r\npublication_title:\r\n  '#access': false\r\npublisher_name:\r\n  '#access': false\r\npublication_edition:\r\n  '#access': false\r\npublication_volume:\r\n  '#access': false\r\npublication_issue:\r\n  '#access': false\r\npublication_page_range:\r\n  '#access': false\r\nisbn:\r\n  '#access': false\r\npreferred_citation:\r\n  '#access': false\r\nupload_element:\r\n  '#type': managed_file\r\n  '#title': 'Upload Data Set'\r\n  '#file_extensions': 'txt rtf pdf doc docx odt ppt pptx odp xls xlsx ods'\r\nsubmission_status:\r\n  '#options': submission_status_with_in_press"
+      handlers: {  }
+  doctoral_nursing_program_capstone_project:
+    id: override
+    variant_id: doctoral_nursing_program_capstone_project
+    element_key: form_type
+    label: 'Doctoral Nursing Program (DNP) Capstone Project Submission'
+    notes: 'Webform for submitting DNP capstone projects'
+    status: true
+    weight: 7
+    settings:
+      debug: false
+      settings: {  }
+      elements: "department:\r\n  '#type': select\r\n  '#title': Department/Institute/Center/Program\r\n  '#description': 'This element is pre-defined and cannot be edited. <span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:Arial\"><span data-darkreader-inline-color=\"\" style=\"--darkreader-inline-color:#e8e6e3; color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">If you would like to submit to more than one collection, please list additional collections in the &quot;Note to FSU Libraries Staff&quot; field, below.</span></span></span></span></span></span>'\r\n  '#disabled': true\r\n  '#options': fsu_departments\r\n  '#empty_option': 'Doctoral Nursing Program'\r\n  '#empty_value': 'fsu:dnp_project_graduates'\r\n  '#required': true\r\n  '#select2': false\r\nsubmission_type:\r\n  '#empty_option': 'Capstone Project'\r\n  '#empty_value': capstone_project\r\ndoi:\r\n  '#access': false\r\nunits_of_scale:\r\n  '#access': false\r\ndate_of_publication:\r\n  '#access': false\r\njournal_of_publication:\r\n  '#access': false\r\npublication_title:\r\n  '#access': false\r\npublisher_name:\r\n  '#access': false\r\npublication_edition:\r\n  '#access': false\r\npublication_volume:\r\n  '#access': false\r\npublication_issue:\r\n  '#access': false\r\npublication_page_range:\r\n  '#access': false\r\nisbn:\r\n  '#access': false\r\npreferred_citation:\r\n  '#access': false\r\nupload_element:\r\n  '#type': managed_file\r\n  '#title': 'Upload Capstone Project'\r\n  '#required': true"
+      handlers: {  }
+  editorial:
+    id: override
+    variant_id: editorial
+    element_key: form_type
+    label: 'Editorial Submission'
+    notes: 'Webform for submitting Editorials'
+    status: true
+    weight: 8
+    settings:
+      debug: false
+      settings: {  }
+      elements: "submission_type:\r\n  '#empty_option': Editorial\r\n  '#empty_value': editorial\r\nis_there_a_doi_already_associated_with_this_object_:\r\n  '#access': false\r\nif_there_is_already_a_doi_associated_with_this_item_please_enter:\r\n  '#access': false\r\nif_a_doi_does_not_already_exist_would_you_like_to_create_a_doi_f:\r\n  '#access': false\r\nunits_of_scale:\r\n  '#access': false\r\ndate_of_submission:\r\n  '#access': false\r\njournal_of_publication:\r\n  '#access': false\r\npublisher_name:\r\n  '#access': false\r\npublication_edition:\r\n  '#access': false\r\nisbn:\r\n  '#access': false\r\nupload_element:\r\n  '#type': managed_file\r\n  '#title': 'Upload Editorial'\r\n  '#file_extensions': 'txt rtf pdf doc docx odt ppt pptx odp xls xlsx ods'\r\nsubmission_status:\r\n  '#type': select\r\n  '#title': 'Submission Status'\r\n  '#options': submission_status_with_in_press\r\n  '#required': true\r\n  '#default_value': new\r\n  '#admin_notes': 'This element is available in all variants. Some variants use the submission_status options and others use the submission_status_with_in_press options.'\r\n  '#access_create_roles':\r\n    - administrator\r\n    - submission_reviewer\r\n  '#access_create_users':\r\n    - '1'\r\n  '#access_update_roles':\r\n    - administrator\r\n    - submission_reviewer\r\n  '#access_update_users':\r\n    - '1'\r\n  '#access_view_roles':\r\n    - administrator\r\n    - submission_reviewer\r\n  '#access_view_users':\r\n    - '1'"
+      handlers: {  }
+  honors_thesis:
+    id: override
+    variant_id: honors_thesis
+    element_key: form_type
+    label: 'Honors Thesis Submission'
+    notes: 'Webform for submitting undergraduate honors theses'
+    status: true
+    weight: 8
+    settings:
+      debug: false
+      settings: {  }
+      elements: "submission_type:\r\n  '#empty_option': 'Undergraduate Honors Thesis'\r\n  '#empty_value': undergraduate_honors_thesis\r\ndoi:\r\n  '#access': false\r\nunits_of_scale:\r\n  '#access': false\r\ndate_of_publication:\r\n  '#access': false\r\njournal_of_publication:\r\n  '#access': false\r\npublication_title:\r\n  '#access': false\r\npublisher_name:\r\n  '#access': false\r\npublication_edition:\r\n  '#access': false\r\npublication_volume:\r\n  '#access': false\r\npublication_issue:\r\n  '#access': false\r\npublication_page_range:\r\n  '#access': false\r\nisbn:\r\n  '#access': false\r\npreferred_citation:\r\n  '#access': false\r\nupload_element:\r\n  '#type': managed_file\r\n  '#title': 'Upload Honors Thesis'\r\n  '#required': true\r\n  '#file_extensions': 'txt rtf pdf doc docx odt ppt pptx odp xls xlsx ods'\r\nsubmission_status:\r\n  '#type': select\r\n  '#title': 'Submission Status'\r\n  '#options': submission_status_with_in_press\r\n  '#required': true\r\n  '#default_value': new\r\n  '#admin_notes': 'This element is available in all variants. Some variants use the submission_status options and others use the submission_status_with_in_press options.'\r\n  '#access_create_roles':\r\n    - administrator\r\n    - submission_reviewer\r\n  '#access_create_users':\r\n    - '1'\r\n  '#access_update_roles':\r\n    - administrator\r\n    - submission_reviewer\r\n  '#access_update_users':\r\n    - '1'\r\n  '#access_view_roles':\r\n    - administrator\r\n    - submission_reviewer\r\n  '#access_view_users':\r\n    - '1'"
+      handlers: {  }
+  journal_article:
+    id: override
+    variant_id: journal_article
+    element_key: form_type
+    label: 'Journal Article Submission'
+    notes: 'Webform for submitting journal articles'
+    status: true
+    weight: 8
+    settings:
+      debug: false
+      settings: {  }
+      elements: "submission_type:\r\n  '#empty_option': 'Journal Article'\r\n  '#empty_value': journal_article\r\nis_there_a_doi_already_associated_with_this_object_:\r\n  '#access': false\r\nif_there_is_already_a_doi_associated_with_this_item_please_enter:\r\n  '#access': false\r\nif_a_doi_does_not_already_exist_would_you_like_to_create_a_doi_f:\r\n  '#access': false\r\nunits_of_scale:\r\n  '#access': false\r\ndate_of_submission:\r\n  '#access': false\r\njournal_of_publication:\r\n  '#access': false\r\npublisher_name:\r\n  '#access': false\r\npublication_edition:\r\n  '#access': false\r\nisbn:\r\n  '#access': false\r\n\r\nupload_element:\r\n  '#type': managed_file\r\n  '#title': 'Upload Journal Article'\r\n  '#file_extensions': 'txt rtf pdf doc docx odt ppt pptx odp xls xlsx ods'\r\nsubmission_status:\r\n  '#type': select\r\n  '#title': 'Submission Status'\r\n  '#options': submission_status_with_in_press\r\n  '#required': true\r\n  '#default_value': new\r\n  '#admin_notes': 'This element is available in all variants. Some variants use the submission_status options and others use the submission_status_with_in_press options.'\r\n  '#access_create_roles':\r\n    - administrator\r\n    - submission_reviewer\r\n  '#access_create_users':\r\n    - '1'\r\n  '#access_update_roles':\r\n    - administrator\r\n    - submission_reviewer\r\n  '#access_update_users':\r\n    - '1'\r\n  '#access_view_roles':\r\n    - administrator\r\n    - submission_reviewer\r\n  '#access_view_users':\r\n    - '1'"
+      handlers: {  }
+  minimal:
+    id: override
+    variant_id: minimal
+    element_key: form_type
+    label: 'Minimal Submission'
+    notes: 'Webform for minimal submissions'
+    status: true
+    weight: 8
+    settings:
+      debug: false
+      settings: {  }
+      elements: "submission_type:\r\n  '#access': false\r\nsubmission_title:\r\n  '#access': false\r\nsubmission_subtitle:\r\n  '#access': false\r\nauthor:\r\n  '#access': false\r\ndoi:\r\n  '#access': false\r\nis_there_a_doi_already_associated_with_this_object_:\r\n  '#access': false\r\nif_there_is_already_a_doi_associated_with_this_item_please_enter:\r\n  '#access': false\r\nif_a_doi_does_not_already_exist_would_you_like_to_create_a_doi_f:\r\n  '#access': false\r\nabstract:\r\n  '#access': false\r\nkeywords:\r\n  '#access': false\r\nunits_of_scale:\r\n  '#access': false\r\nembargo_period:\r\n  '#access': false\r\nvisibility:\r\n  '#access': false\r\ndate_of_submission:\r\n  '#access': false\r\ndate_of_publication:\r\n  '#access': false\r\njournal_of_publication:\r\n  '#access': false\r\npublication_title:\r\n  '#access': false\r\npublisher_name:\r\n  '#access': false\r\npublication_edition:\r\n  '#access': false\r\npublication_volume:\r\n  '#access': false\r\npublication_issue:\r\n  '#access': false\r\npublication_page_range:\r\n  '#access': false\r\npublication_note:\r\n  '#access': false\r\nisbn:\r\n  '#access': false\r\npreferred_citation:\r\n  '#access': false\r\ngrant_number:\r\n  '#access': false\r\nupload_element:\r\n  '#type': managed_file\r\n  '#title': 'Upload Minimal Submission'\r\n  '#required': true\r\nsubmission_status:\r\n  '#options': submission_status_with_in_press"
+      handlers: {  }
+  other:
+    id: override
+    variant_id: other
+    element_key: form_type
+    label: 'Other Submission'
+    notes: 'Webform for submitting other stuff'
+    status: true
+    weight: 8
+    settings:
+      debug: false
+      settings: {  }
+      elements: "submission_type:\r\n  '#empty_option': Other\r\n  '#empty_value': other\r\ndoi:\r\n  '#access': false\r\nunits_of_scale:\r\n  '#access': false\r\ndate_of_submission:\r\n  '#access': false\r\njournal_of_publication:\r\n  '#access': false\r\npublisher_name:\r\n  '#access': false\r\npublication_edition:\r\n  '#access': false\r\nisbn:\r\n  '#access': false\r\nupload_element:\r\n  '#title': 'Upload generic submission'\r\nsubmission_status:\r\n  '#options': submission_status_with_in_press"
+      handlers: {  }
+  report:
+    id: override
+    variant_id: report
+    element_key: form_type
+    label: 'Report Submission'
+    notes: 'Webform for submitting reports'
+    status: true
+    weight: 8
+    settings:
+      debug: false
+      settings: {  }
+      elements: "submission_type:\r\n  '#options': report_submission_type_options\r\n  '#disabled': false\r\n  '#empty_option': ' - Select - '\r\n  '#empty_value': ''\r\ndoi:\r\n  '#access': false\r\nunits_of_scale:\r\n  '#access': false\r\ndate_of_submission:\r\n  '#access': false\r\npublication_title:\r\n  '#access': false\r\npublisher_name:\r\n  '#access': false\r\npublication_edition:\r\n  '#access': false\r\npublication_volume:\r\n  '#access': false\r\npublication_issue:\r\n  '#access': false\r\npublication_page_range:\r\n  '#access': false\r\nisbn:\r\n  '#access': false\r\npreferred_citation:\r\n  '#access': false\r\nupload_element:\r\n  '#title': 'Upload Report'\r\n  '#file_extensions': 'txt rtf pdf doc docx odt ppt pptx odp xls xlsx ods'\r\nsubmission_status:\r\n  '#options': submission_status_with_in_press"
+      handlers: {  }
+  review:
+    id: override
+    variant_id: review
+    element_key: form_type
+    label: 'Review Submission'
+    notes: 'A webform for submitting Reviews'
+    status: true
+    weight: 8
+    settings:
+      debug: false
+      settings: {  }
+      elements: "submission_type:\r\n  '#disabled': false\r\n  '#options': review_submission_types\r\n  '#empty_option': ' - Select - '\r\n  '#empty_value': \r\nis_there_a_doi_already_associated_with_this_object_:\r\n  '#access': false\r\nif_there_is_already_a_doi_associated_with_this_item_please_enter:\r\n  '#access': false\r\nif_a_doi_does_not_already_exist_would_you_like_to_create_a_doi_f:\r\n  '#access': false\r\nunits_of_scale:\r\n  '#access': false\r\ndate_of_submission:\r\n  '#access': false\r\njournal_of_publication:\r\n  '#access': false\r\npublisher_name:\r\n  '#access': false\r\npublication_edition:\r\n  '#access': false\r\nisbn:\r\n  '#access': false\r\nupload_element:\r\n  '#title': 'Upload Review'\r\n  '#file_extensions': 'txt rtf pdf doc docx odt ppt pptx odp xls xlsx ods'\r\nsubmission_status:\r\n  '#options': submission_status_with_in_press"
+      handlers: {  }
+  video:
+    id: override
+    variant_id: video
+    element_key: form_type
+    label: 'Video Submission'
+    notes: 'Webform for submitting videos'
+    status: true
+    weight: 8
+    settings:
+      debug: false
+      settings: {  }
+      elements: "submission_type:\r\n  '#empty_option': Video\r\n  '#empty_value': video\r\ndoi:\r\n  '#access': false\r\nis_there_a_doi_already_associated_with_this_object_:\r\n  '#access': false\r\nif_there_is_already_a_doi_associated_with_this_item_please_enter:\r\n  '#access': false\r\nif_a_doi_does_not_already_exist_would_you_like_to_create_a_doi_f:\r\n  '#access': false\r\nunits_of_scale:\r\n  '#access': false\r\ndate_of_submission:\r\n  '#access': false\r\njournal_of_publication:\r\n  '#access': false\r\npublication_title:\r\n  '#access': false\r\npublisher_name:\r\n  '#access': false\r\npublication_edition:\r\n  '#access': false\r\npublication_volume:\r\n  '#access': false\r\npublication_issue:\r\n  '#access': false\r\npublication_page_range:\r\n  '#access': false\r\nisbn:\r\n  '#access': false\r\npreferred_citation:\r\n  '#access': false\r\nupload_element:\r\n  '#title': 'Upload video'\r\n  '#file_extensions': 'avi mov mp4 ogg wav webm'"
+      handlers: {  }
+  working_paper:
+    id: override
+    variant_id: working_paper
+    element_key: form_type
+    label: 'Working Paper Submission'
+    notes: 'Webform for submitting working papers'
+    status: true
+    weight: 8
+    settings:
+      debug: false
+      settings: {  }
+      elements: "submission_type:\r\n  '#empty_option': 'Working Paper'\r\n  '#empty_value': working_paper\r\ndoi:\r\n  '#access': false\r\nunits_of_scale:\r\n  '#access': false\r\ndate_of_submission:\r\n  '#access': false\r\njournal_of_publication:\r\n  '#access': false\r\npublisher_name:\r\n  '#access': false\r\npublication_edition:\r\n  '#access': false\r\nisbn:\r\n  '#access': false\r\nupload_element:\r\n  '#title': 'Upload Working Paper'\r\n  '#file_extensions': 'txt rtf pdf doc docx odt ppt pptx odp xls xlsx ods'\r\nsubmission_status:\r\n  '#options': submission_status_with_in_press"
+      handlers: {  }
