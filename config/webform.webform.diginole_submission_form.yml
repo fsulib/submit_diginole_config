@@ -9,10 +9,16 @@ uid: 1
 template: false
 archive: false
 id: diginole_submission_form
-title: 'DigiNole Submission Form'
+title: 'DigiNole Submission'
 description: 'This is the parent webform for DigiNole submissions.&nbsp; Variant forms for each type of submission are built from this form.'
 category: 'DigiNole Submission'
 elements: |-
+  form_type:
+    '#type': webform_variant
+    '#title': Form
+    '#admin_notes': 'This element enables the use of Webform Variants.'
+    '#variant': override
+    '#display_on': both
   first_name:
     '#type': textfield
     '#title': 'First Name'
@@ -423,12 +429,6 @@ elements: |-
       - submission_reviewer
     '#access_view_users':
       - '1'
-  form_type:
-    '#type': webform_variant
-    '#title': 'Form Type'
-    '#admin_notes': 'This element enables the use of Webform Variants.'
-    '#variant': override
-    '#display_on': view
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
@@ -445,7 +445,7 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: ''
+  page_submit_path: /diginole-submission-form
   page_confirm_path: ''
   page_theme_name: ''
   form_title: both
