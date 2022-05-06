@@ -7,17 +7,18 @@ label: 'Webform Selector'
 category: ''
 likert: false
 options: |-
-  '3D_Object_Submission ': '3D Object'
-  'Audio_Submission ': Audio
-  Book_Submission: Book
-  'Capstone_Project_Submission ': 'Capstone Project'
-  Conference_Submission: Conference
-  Data_Set_Submission: 'Data Set'
-  'Doctoral_Nursing_Program_Capstone_Submission ': 'Doctoral Nursing Program Capstone Project'
-  Editorial_Submission: Editorial
-  'Honors_Thesis_Submission ': 'Honors Thesis '
-  Journal_Article_Submission: 'Journal Article'
-  Report_Submission: Report
-  Review_Submission: Review
-  Video_Submission: Video
-  Working_Paper_Submission: 'Working Paper'
+  3d_object: '3D Object'
+  audio: Audio
+  book: Book
+  capstone_project: 'Capstone Project'
+  conference: Conference
+  data_set: 'Data Set'
+  doctoral_nursing_program_capstone_project: 'Doctoral Nursing Program Capstone Project'
+  editorial: Editorial
+  honors_thesis: 'Honors Thesis '
+  journal_article: 'Journal Article'
+  report: Report
+  review: Review
+  video: Video
+  working_paper: 'Working Paper'
+  other: Other
