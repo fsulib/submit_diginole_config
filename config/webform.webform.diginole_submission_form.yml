@@ -386,7 +386,7 @@ elements: |-
   submission_status:
     '#type': select
     '#title': 'Submission Status'
-    '#options': submission_status
+    '#options': submission_status_with_in_press
     '#required': true
     '#default_value': new
     '#admin_notes': 'This element is available in all variants. Some variants use the submission_status options and others use the submission_status_with_in_press options.'
@@ -492,7 +492,12 @@ settings:
   submission_excluded_elements: {  }
   submission_exclude_empty: false
   submission_exclude_empty_checkbox: false
-  submission_views: {  }
+  submission_views:
+    manage-diginole-submissions:
+      title: 'Manage DigiNole Submissions'
+      view: 'webform_submissions:embed_1'
+      webform_routes:
+        - entity.webform.results_submissions
   submission_views_replace: {  }
   submission_user_columns: {  }
   submission_user_duplicate: false
