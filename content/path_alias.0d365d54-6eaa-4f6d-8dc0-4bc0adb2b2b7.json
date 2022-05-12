@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "0d365d54-6eaa-4f6d-8dc0-4bc0adb2b2b7"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/diginole_submission_form\/drafts"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/diginole-submission-form\/drafts"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

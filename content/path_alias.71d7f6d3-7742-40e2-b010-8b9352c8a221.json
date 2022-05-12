@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "71d7f6d3-7742-40e2-b010-8b9352c8a221"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/diginole_submission_form\/submissions"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/diginole-submission-form\/submissions"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}
