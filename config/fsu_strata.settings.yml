@@ -15,7 +15,7 @@ logo:
   url: ''
   use_default: false
 cdn_provider: ''
-color: default
+color: white
 strata_twitter: ''
 strata_linkedin: ''
 strata_instagram: ''
@@ -65,7 +65,7 @@ cdn_cache_ttl_assets: 0
 cdn_cache_ttl_library: 0
 reset_http_request_cache: ''
 table: ''
-strataversion: '3.1'
+strataversion: 3.1.6
 logoselection: fsu-seal-3d-160x160
 overrideaddress:
   value: ''
