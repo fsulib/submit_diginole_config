@@ -35,7 +35,7 @@ elements: |-
     '#type': webform_actions
     '#title': 'Submit button(s)'
     '#submit__label': 'Take me to the submission form'
-css: ''
+css: "#webform-submission-home-page-webform-add-form {\r\nwidth: 95%\r\n}"
 javascript: ''
 settings:
   ajax: false
