@@ -1473,16 +1473,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.3.12",
+            "version": "9.3.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "ed6af33093f66a9c5048d02f9f2c326ad0e7e90c"
+                "reference": "02ba7a3a42612a04124ac5131df0726e1e5097c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/ed6af33093f66a9c5048d02f9f2c326ad0e7e90c",
-                "reference": "ed6af33093f66a9c5048d02f9f2c326ad0e7e90c",
+                "url": "https://api.github.com/repos/drupal/core/zipball/02ba7a3a42612a04124ac5131df0726e1e5097c6",
+                "reference": "02ba7a3a42612a04124ac5131df0726e1e5097c6",
                 "shasum": ""
             },
             "require": {
@@ -1723,11 +1723,11 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2022-04-20T14:25:27+00:00"
+            "time": "2022-05-11T09:20:58+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "9.3.12",
+            "version": "9.3.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -1774,16 +1774,16 @@
         },
         {
             "name": "drupal/core-recommended",
-            "version": "9.3.12",
+            "version": "9.3.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "a8fa50016c1aa1eb7f4e54f590e6343d286c418f"
+                "reference": "0fe76c7af47fafcff37d8cb6053014e52e0f4a69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/a8fa50016c1aa1eb7f4e54f590e6343d286c418f",
-                "reference": "a8fa50016c1aa1eb7f4e54f590e6343d286c418f",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/0fe76c7af47fafcff37d8cb6053014e52e0f4a69",
+                "reference": "0fe76c7af47fafcff37d8cb6053014e52e0f4a69",
                 "shasum": ""
             },
             "require": {
@@ -1792,7 +1792,7 @@
                 "doctrine/annotations": "1.13.2",
                 "doctrine/lexer": "1.2.1",
                 "doctrine/reflection": "1.2.2",
-                "drupal/core": "9.3.12",
+                "drupal/core": "9.3.13",
                 "egulias/email-validator": "3.1.2",
                 "guzzlehttp/guzzle": "6.5.5",
                 "guzzlehttp/promises": "1.5.1",
@@ -1853,7 +1853,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
-            "time": "2022-04-20T14:25:27+00:00"
+            "time": "2022-05-11T09:20:58+00:00"
         },
         {
             "name": "drupal/externalauth",
@@ -2801,12 +2801,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fsulib/fsu_strata.git",
-                "reference": "5b1b4c2f03a0ce37183576c0aaa568184b6bdacc"
+                "reference": "e3f56f094bc5f3a1d86ee3f5c05088b49f3b24aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fsulib/fsu_strata/zipball/5b1b4c2f03a0ce37183576c0aaa568184b6bdacc",
-                "reference": "5b1b4c2f03a0ce37183576c0aaa568184b6bdacc",
+                "url": "https://api.github.com/repos/fsulib/fsu_strata/zipball/e3f56f094bc5f3a1d86ee3f5c05088b49f3b24aa",
+                "reference": "e3f56f094bc5f3a1d86ee3f5c05088b49f3b24aa",
                 "shasum": ""
             },
             "type": "drupal-custom-theme",
@@ -2839,7 +2839,7 @@
                 "source": "https://github.com/fsulib/fsu_strata/tree/master",
                 "issues": "https://github.com/fsulib/fsu_strata/issues"
             },
-            "time": "2022-05-10T01:36:37+00:00"
+            "time": "2022-05-12T00:02:36+00:00"
         },
         {
             "name": "fsulib/fsu_twig_filter",
@@ -8432,7 +8432,7 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "9.3.12",
+            "version": "9.3.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
