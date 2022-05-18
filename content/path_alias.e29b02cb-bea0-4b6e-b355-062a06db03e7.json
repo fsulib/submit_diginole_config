@@ -1,7 +1,7 @@
 {
     "uuid": [
         {
-            "value": "9aed0c3e-4c84-48f2-84d2-5524b1e1ee74"
+            "value": "e29b02cb-bea0-4b6e-b355-062a06db03e7"
         }
     ],
     "langcode": [
@@ -11,12 +11,12 @@
     ],
     "path": [
         {
-            "value": "\/webform\/honors_thesis_submission"
+            "value": "\/webform\/research_repository_submission\/confirmation"
         }
     ],
     "alias": [
         {
-            "value": "\/honors-thesis-submission-form"
+            "value": "\/research-repository-submission-form\/confirmation"
         }
     ],
     "status": [

@@ -1,7 +1,7 @@
 {
     "uuid": [
         {
-            "value": "f83c2c48-1420-4e4d-ad64-724881acc9ff"
+            "value": "56394472-c0cd-4314-8a18-b3bbb0a6a541"
         }
     ],
     "langcode": [
@@ -11,12 +11,12 @@
     ],
     "path": [
         {
-            "value": "\/webform\/diginole_submission_form\/confirmation"
+            "value": "\/node\/d112f245-161a-4162-801d-d725db2acc99"
         }
     ],
     "alias": [
         {
-            "value": "\/diginole-submission-form\/confirmation"
+            "value": "\/help"
         }
     ],
     "status": [

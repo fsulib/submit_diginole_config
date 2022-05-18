@@ -248,7 +248,7 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: /Honors_Thesis_Submission
+  page_submit_path: /honors-thesis-submission-form
   page_confirm_path: ''
   page_theme_name: ''
   form_title: both

@@ -1,7 +1,7 @@
 {
     "uuid": [
         {
-            "value": "0d365d54-6eaa-4f6d-8dc0-4bc0adb2b2b7"
+            "value": "0e74a18b-6463-471b-96cb-003c465e3960"
         }
     ],
     "langcode": [
@@ -11,12 +11,12 @@
     ],
     "path": [
         {
-            "value": "\/webform\/diginole_submission_form\/drafts"
+            "value": "\/webform\/research_repository_submission\/submissions"
         }
     ],
     "alias": [
         {
-            "value": "\/diginole-submission-form\/drafts"
+            "value": "\/research-repository-submission-form\/submissions"
         }
     ],
     "status": [

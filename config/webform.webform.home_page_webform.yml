@@ -138,7 +138,7 @@ settings:
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
   confirmation_type: url
-  confirmation_url: '/diginole-submission-form?form_type=[webform_submission:values:submission_type:raw]'
+  confirmation_url: '/research-repository-submission-form?form_type=[webform_submission:values:submission_type:raw]'
   confirmation_title: ''
   confirmation_message: ''
   confirmation_attributes: {  }

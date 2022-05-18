@@ -1,7 +1,7 @@
 {
     "uuid": [
         {
-            "value": "624eeea7-8089-4429-8da0-805fe02f93d5"
+            "value": "79b77350-c458-47ab-a588-e053b4607063"
         }
     ],
     "langcode": [
@@ -11,12 +11,12 @@
     ],
     "path": [
         {
-            "value": "\/webform\/university_records_submission\/drafts"
+            "value": "\/webform\/research_repository_submission"
         }
     ],
     "alias": [
         {
-            "value": "\/university-records-submission-form\/drafts"
+            "value": "\/research-repository-submission-form"
         }
     ],
     "status": [
