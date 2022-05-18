@@ -1,0 +1,9 @@
+uuid: cd5b3602-e844-41ba-bfc1-4a978f11c201
+langcode: en
+status: true
+dependencies: {  }
+id: university_records_reviewer
+label: 'University Records Reviewer'
+weight: 5
+is_admin: null
+permissions: {  }

@@ -1,0 +1,14 @@
+uuid: 4e04195d-7d20-4bac-92a7-238dcf33eb96
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.research_repository_reviewer
+  module:
+    - user
+id: user_remove_role_action.research_repository_reviewer
+label: 'Remove the Research Repository Reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: research_repository_reviewer

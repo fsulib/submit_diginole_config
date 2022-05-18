@@ -583,43 +583,60 @@ access:
     users: {  }
     permissions: {  }
   view_any:
-    roles: {  }
+    roles:
+      - administrator
+      - research_repository_reviewer
     users: {  }
     permissions: {  }
   update_any:
-    roles: {  }
+    roles:
+      - administrator
+      - research_repository_reviewer
     users: {  }
     permissions: {  }
   delete_any:
-    roles: {  }
+    roles:
+      - administrator
+      - research_repository_reviewer
     users: {  }
     permissions: {  }
   purge_any:
-    roles: {  }
+    roles:
+      - administrator
+      - research_repository_reviewer
     users: {  }
     permissions: {  }
   view_own:
-    roles: {  }
+    roles:
+      - administrator
+      - research_repository_reviewer
     users: {  }
     permissions: {  }
   update_own:
-    roles: {  }
+    roles:
+      - administrator
+      - research_repository_reviewer
     users: {  }
     permissions: {  }
   delete_own:
-    roles: {  }
+    roles:
+      - administrator
+      - research_repository_reviewer
     users: {  }
     permissions: {  }
   administer:
-    roles: {  }
+    roles:
+      - administrator
     users: {  }
     permissions: {  }
   test:
-    roles: {  }
+    roles:
+      - administrator
     users: {  }
     permissions: {  }
   configuration:
-    roles: {  }
+    roles:
+      - administrator
     users: {  }
     permissions: {  }
 handlers: {  }
@@ -727,19 +744,6 @@ variants:
       debug: false
       settings: {  }
       elements: "submission_type:\r\n  '#empty_option': Editorial\r\n  '#empty_value': editorial\r\nis_there_a_doi_already_associated_with_this_object_:\r\n  '#access': false\r\nif_there_is_already_a_doi_associated_with_this_item_please_enter:\r\n  '#access': false\r\nif_a_doi_does_not_already_exist_would_you_like_to_create_a_doi_f:\r\n  '#access': false\r\nunits_of_scale:\r\n  '#access': false\r\ndate_of_submission:\r\n  '#access': false\r\njournal_of_publication:\r\n  '#access': false\r\npublisher_name:\r\n  '#access': false\r\npublication_edition:\r\n  '#access': false\r\nisbn:\r\n  '#access': false\r\nupload_element:\r\n  '#type': managed_file\r\n  '#title': 'Upload Editorial'\r\n  '#file_extensions': 'txt rtf pdf doc docx odt ppt pptx odp xls xlsx ods'\r\nsubmission_status:\r\n  '#type': select\r\n  '#title': 'Submission Status'\r\n  '#options': submission_status_with_in_press\r\n  '#required': true\r\n  '#default_value': new\r\n  '#admin_notes': 'This element is available in all variants. Some variants use the submission_status options and others use the submission_status_with_in_press options.'\r\n  '#access_create_roles':\r\n    - administrator\r\n    - submission_reviewer\r\n  '#access_create_users':\r\n    - '1'\r\n  '#access_update_roles':\r\n    - administrator\r\n    - submission_reviewer\r\n  '#access_update_users':\r\n    - '1'\r\n  '#access_view_roles':\r\n    - administrator\r\n    - submission_reviewer\r\n  '#access_view_users':\r\n    - '1'"
-      handlers: {  }
-  honors_thesis:
-    id: override
-    variant_id: honors_thesis
-    element_key: form_type
-    label: 'Honors Thesis Submission'
-    notes: 'Webform for submitting undergraduate honors theses'
-    status: true
-    weight: 8
-    settings:
-      debug: false
-      settings: {  }
-      elements: "submission_type:\r\n  '#empty_option': 'Undergraduate Honors Thesis'\r\n  '#empty_value': undergraduate_honors_thesis\r\ndoi:\r\n  '#access': false\r\nunits_of_scale:\r\n  '#access': false\r\ndate_of_publication:\r\n  '#access': false\r\njournal_of_publication:\r\n  '#access': false\r\npublication_title:\r\n  '#access': false\r\npublisher_name:\r\n  '#access': false\r\npublication_edition:\r\n  '#access': false\r\npublication_volume:\r\n  '#access': false\r\npublication_issue:\r\n  '#access': false\r\npublication_page_range:\r\n  '#access': false\r\nisbn:\r\n  '#access': false\r\npreferred_citation:\r\n  '#access': false\r\nupload_element:\r\n  '#type': managed_file\r\n  '#title': 'Upload Honors Thesis'\r\n  '#required': true\r\n  '#file_extensions': 'txt rtf pdf doc docx odt ppt pptx odp xls xlsx ods'\r\nsubmission_status:\r\n  '#type': select\r\n  '#title': 'Submission Status'\r\n  '#options': submission_status_with_in_press\r\n  '#required': true\r\n  '#default_value': new\r\n  '#admin_notes': 'This element is available in all variants. Some variants use the submission_status options and others use the submission_status_with_in_press options.'\r\n  '#access_create_roles':\r\n    - administrator\r\n    - submission_reviewer\r\n  '#access_create_users':\r\n    - '1'\r\n  '#access_update_roles':\r\n    - administrator\r\n    - submission_reviewer\r\n  '#access_update_users':\r\n    - '1'\r\n  '#access_view_roles':\r\n    - administrator\r\n    - submission_reviewer\r\n  '#access_view_users':\r\n    - '1'"
       handlers: {  }
   journal_article:
     id: override

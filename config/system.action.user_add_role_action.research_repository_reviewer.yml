@@ -1,0 +1,14 @@
+uuid: 6d6b3e99-ce07-4dbb-bc6c-1e92980566b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.research_repository_reviewer
+  module:
+    - user
+id: user_add_role_action.research_repository_reviewer
+label: 'Add the Research Repository Reviewer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: research_repository_reviewer

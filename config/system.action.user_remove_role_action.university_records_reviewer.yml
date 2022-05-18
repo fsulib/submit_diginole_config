@@ -1,0 +1,14 @@
+uuid: 7041660f-2d47-4a1c-8cd7-9e2727e1199d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.university_records_reviewer
+  module:
+    - user
+id: user_remove_role_action.university_records_reviewer
+label: 'Remove the University Records Reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: university_records_reviewer

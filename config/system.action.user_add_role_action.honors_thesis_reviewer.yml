@@ -1,0 +1,14 @@
+uuid: b78a529d-06b0-40ce-8b2b-3b49c1f9466a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.honors_thesis_reviewer
+  module:
+    - user
+id: user_add_role_action.honors_thesis_reviewer
+label: 'Add the Honors Thesis Reviewer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: honors_thesis_reviewer
