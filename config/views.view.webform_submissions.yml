@@ -615,7 +615,7 @@ display:
           entity_type: webform_submission
           plugin_id: webform_submission_bulk_form
           label: 'Webform submission operations bulk form'
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -1125,9 +1125,9 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        webform_submission_value:
-          id: webform_submission_value
-          table: webform_submission_field_diginole_submission_form_submission_status
+        webform_submission_value_3:
+          id: webform_submission_value_3
+          table: webform_submission_field_research_repository_submission_submission_status
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -1178,9 +1178,9 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           webform_check_access: 1
-        webform_submission_value_1:
-          id: webform_submission_value_1
-          table: webform_submission_field_diginole_submission_form_submission_title
+        webform_submission_value_4:
+          id: webform_submission_value_4
+          table: webform_submission_field_research_repository_submission_submission_title
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -1231,9 +1231,9 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           webform_check_access: 1
-        webform_submission_value_2:
-          id: webform_submission_value_2
-          table: webform_submission_field_diginole_submission_form_submission_type
+        webform_submission_value_5:
+          id: webform_submission_value_5
+          table: webform_submission_field_research_repository_submission_submission_type
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -1294,7 +1294,7 @@ display:
           entity_type: webform_submission
           plugin_id: entity_link
           label: Operations
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1347,7 +1347,7 @@ display:
           entity_type: webform_submission
           plugin_id: entity_link_edit
           label: Operations
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1471,7 +1471,7 @@ display:
           plugin_id: bundle
           operator: in
           value:
-            research_repository_submission_form: research_repository_submission_form
+            research_repository_submission: research_repository_submission
           group: 1
           exposed: false
           expose:
@@ -1501,9 +1501,9 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-        webform_submission_value:
-          id: webform_submission_value
-          table: webform_submission_field_diginole_submission_form_submission_type
+        webform_submission_value_3:
+          id: webform_submission_value_3
+          table: webform_submission_field_research_repository_submission_submission_type
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -1514,14 +1514,14 @@ display:
           group: 1
           exposed: true
           expose:
-            operator_id: webform_submission_value_op
+            operator_id: webform_submission_value_3_op
             label: 'Submission Type'
             description: ''
             use_operator: false
-            operator: webform_submission_value_op
+            operator: webform_submission_value_3_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: webform_submission_value
+            identifier: webform_submission_value_3
             required: false
             remember: false
             multiple: false
@@ -1529,7 +1529,9 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
-              submission_reviewer: '0'
+              research_repository_reviewer: '0'
+              honors_thesis_reviewer: '0'
+              university_records_reviewer: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -1543,9 +1545,9 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-        webform_submission_value_1:
-          id: webform_submission_value_1
-          table: webform_submission_field_diginole_submission_form_submission_status
+        webform_submission_value_2:
+          id: webform_submission_value_2
+          table: webform_submission_field_research_repository_submission_submission_status
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -1556,14 +1558,14 @@ display:
           group: 1
           exposed: true
           expose:
-            operator_id: webform_submission_value_1_op
+            operator_id: webform_submission_value_2_op
             label: 'Submission Status'
             description: ''
             use_operator: false
-            operator: webform_submission_value_1_op
+            operator: webform_submission_value_2_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: webform_submission_value_1
+            identifier: webform_submission_value_2
             required: false
             remember: false
             multiple: false
@@ -1571,7 +1573,9 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
-              submission_reviewer: '0'
+              research_repository_reviewer: '0'
+              honors_thesis_reviewer: '0'
+              university_records_reviewer: '0'
             reduce: false
           is_grouped: false
           group_info:
