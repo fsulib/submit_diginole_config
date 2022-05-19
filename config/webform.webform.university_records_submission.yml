@@ -206,6 +206,9 @@ elements: |-
       - submission_reviewer
     '#access_view_users':
       - '1'
+  captcha:
+    '#type': captcha
+    '#captcha_type': recaptcha/reCAPTCHA
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
