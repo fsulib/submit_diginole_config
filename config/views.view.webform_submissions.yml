@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - webform.webform.research_repository_submission_form
+    - webform.webform.research_repository_submission
   module:
     - user
     - webform
