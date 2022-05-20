@@ -47,6 +47,7 @@
         "drupal/upgrade_status": "^3.14",
         "drupal/webform": "^6.0",
         "drupal/webform_views": "^5.0@beta",
+        "drupal/webform_workflows_element": "^1.0@alpha",
         "drush/drush": "^10.3",
         "fsulib/diginole_submission_ais": "dev-main",
         "fsulib/fsu_strata": "dev-master",

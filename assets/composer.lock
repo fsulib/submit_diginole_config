@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9e631ff9a02f9fd83763f71966911875",
+    "content-hash": "0f8c27936330e42c472d1b8b18e17dc8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2635,6 +2635,55 @@
             "homepage": "https://www.drupal.org/project/webform_views",
             "support": {
                 "source": "https://git.drupalcode.org/project/webform_views"
+            }
+        },
+        {
+            "name": "drupal/webform_workflows_element",
+            "version": "1.0.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform_workflows_element.git",
+                "reference": "1.0.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_workflows_element-1.0.0-alpha2.zip",
+                "reference": "1.0.0-alpha2",
+                "shasum": "b29f564796d5d0802f860fe2b1e5b4f3e9427de4"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/webform": "*"
+            },
+            "require-dev": {
+                "drupal/maestro": "*",
+                "drupal/webform_query": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-alpha2",
+                    "datestamp": "1645183859",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "maxwellkeeble",
+                    "homepage": "https://www.drupal.org/user/3653834"
+                }
+            ],
+            "description": "Provides a webform element that hooks into the core Workflows module to allow transitioning submissions through workflow states.",
+            "homepage": "https://www.drupal.org/project/webform_workflows_element",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform_workflows_element"
             }
         },
         {
@@ -11469,6 +11518,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/webform_views": 10,
+        "drupal/webform_workflows_element": 15,
         "fsulib/diginole_submission_ais": 20,
         "fsulib/fsu_strata": 20,
         "fsulib/fsu_twig_filter": 20
