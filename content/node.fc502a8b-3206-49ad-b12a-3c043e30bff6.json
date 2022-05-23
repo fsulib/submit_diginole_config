@@ -18,7 +18,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2022-04-19T14:10:46+00:00",
+            "value": "2022-05-23T20:15:00+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -53,7 +53,7 @@
     ],
     "changed": [
         {
-            "value": "2022-04-19T14:10:46+00:00",
+            "value": "2022-05-23T20:15:00+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -85,7 +85,7 @@
     ],
     "body": [
         {
-            "value": "<p>On this page you will find links to policies related to materials submitted to DigiNole.<\/p>\r\n\r\n<ol>\r\n\t<li><a href=\"https:\/\/diginole.lib.fsu.edu\/copyright-and-legal-information\">Copyright &amp; Legal<\/a><\/li>\r\n\t<li><a href=\"https:\/\/www.lib.fsu.edu\/data-deposit-policy\">Data Deposit<\/a><\/li>\r\n\t<li><a href=\"https:\/\/policies.vpfa.fsu.edu\/policies-and-procedures\/technology\/information-privacy-policy\">Information Privacy (Option 1, currently in the footer of DigiNole)<\/a><\/li>\r\n\t<li><a href=\"https:\/\/www.fsu.edu\/\/misc\/policy.html\">Information Privacy (Option 2, currently in the footer of the Strata theme)<\/a><\/li>\r\n\t<li><a href=\"https:\/\/diginole.lib.fsu.edu\/copyright-and-legal-information#author-agreement\">DigiNole Author Agreement<\/a><\/li>\r\n\t<li><a href=\"http:\/\/openaccess.fsu.edu\/policy-text\/\">Open Access Policy<\/a><\/li>\r\n\t<li><a href=\"https:\/\/www.lib.fsu.edu\/sites\/default\/files\/sites\/default\/files\/upload\/diginoleharvestpolicy.v1-1.pdf\">Metadata Harvest Policy<\/a><\/li>\r\n<\/ol>\r\n",
+            "value": "<p>On this page you will find links to policies related to materials submitted to DigiNole.<\/p>\r\n\r\n<ol>\r\n\t<li><a href=\"https:\/\/diginole.lib.fsu.edu\/copyright-and-legal-information\">Copyright &amp; Legal<\/a><\/li>\r\n\t<li><a href=\"https:\/\/www.lib.fsu.edu\/data-deposit-policy\">Data Deposit<\/a><\/li>\r\n\t<li><a href=\"https:\/\/policies.vpfa.fsu.edu\/policies-and-procedures\/technology\/information-privacy-policy\">Information Privacy Policy (detailed)<\/a><\/li>\r\n\t<li><a href=\"https:\/\/www.fsu.edu\/\/misc\/policy.html\">FSU\u2019s Internet Privacy Policy (overview)<\/a><\/li>\r\n\t<li><a href=\"https:\/\/diginole.lib.fsu.edu\/copyright-and-legal-information#author-agreement\">DigiNole Author Agreement<\/a><\/li>\r\n\t<li><a href=\"http:\/\/openaccess.fsu.edu\/policy-text\/\">Open Access Policy<\/a><\/li>\r\n\t<li><a href=\"https:\/\/www.lib.fsu.edu\/sites\/default\/files\/sites\/default\/files\/upload\/diginoleharvestpolicy.v1-1.pdf\">Metadata Harvest Policy<\/a><\/li>\r\n<\/ol>\r\n",
             "format": "basic_html",
             "summary": ""
         }

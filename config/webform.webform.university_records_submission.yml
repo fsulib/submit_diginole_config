@@ -218,7 +218,7 @@ elements: |-
           value: 'Yes'
         ':input[name="submission_agreement_acknowledgment_"]':
           checked: true
-css: ''
+css: "legend#edit-visibility--wrapper-legend {\r\nfont-size: inherit;\r\nmargin-bottom: 0px;\r\nborder-bottom: none;\r\ncolor: #000;\r\nfont-weight: bold;\r\n}\r\n.select2-container--default \r\n.select2-selection--single \r\n.select2-selection__placeholder {\r\ncolor: #000;\r\n}\r\n.form-control[disabled] {\r\ncolor: #000;\r\n}\r\n#edit-author-add-submit, #edit-submission-log-add-submit {\r\nbackground-color: #47222a;\r\nborder-color: #0c0607;\r\n}\r\nform .btn-success, form .btn-success:active, form .btn-success:hover, form .btn-success:focus {\r\nbackground-color: #47222a;\r\nborder-color: #0c0607;\r\n}\r\n#edit-is-there-a-doi-already-associated-with-this-object-, #edit-units-of-scale-select, #edit-embargo-period, #edit-date-of-submission, #edit-date-of-publication, #edit-license, #edit-upload-element-upload, #edit-diginole-collection, #edit-submission-status, form .form-text {\r\ncolor: #000;\r\n}\r\nform .form-control {\r\nheight: 42px;\r\nwidth: 97%\r\n}\r\nform .select-wrapper {\r\nwidth: 97%;\r\n}\r\nform .help-block {\r\ncolor: #000;\r\nwidth: 97%;\r\n}"
 javascript: ''
 settings:
   ajax: false

@@ -54,7 +54,7 @@ elements: |-
     '#description': '<span style="font-size:11pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span data-darkreader-inline-color="" style="--darkreader-inline-color:#e8e6e3; color:#000000"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">All authors involved, listed in the order they appear on the document.</span></span></span></span></span></span>'
     '#required': true
     '#multiple__header': false
-    '#multiple__item_label': author
+    '#multiple__item_label': Author
     '#multiple__min_items': 1
     '#multiple__sorting': false
     '#multiple__add': false
@@ -142,6 +142,7 @@ elements: |-
     '#type': webform_document_file
     '#title': 'Upload Honors Thesis'
     '#required': true
+    '#file_placeholder': '<em>&nbsp;If the file you are intending to upload is larger than 100MB, please submit this form without an attached file and send a follow-up email to lib-support@fsu.edu. A member of the DigiNole support team will coordinate with you on receiving your submission via another service (e.g. Dropbox, Google Drive, etc). </em>'
   note_to_library_staff:
     '#type': textarea
     '#title': 'Note to Library staff'
@@ -242,7 +243,7 @@ elements: |-
       visible:
         ':input[name="submission_agreement_acknowledgment"]':
           checked: true
-css: ''
+css: "legend#edit-visibility--wrapper-legend {\r\nfont-size: inherit;\r\nmargin-bottom: 0px;\r\nborder-bottom: none;\r\ncolor: #000;\r\nfont-weight: bold;\r\n}\r\n.select2-container--default \r\n.select2-selection--single \r\n.select2-selection__placeholder {\r\ncolor: #000;\r\n}\r\n.form-control[disabled] {\r\ncolor: #000;\r\n}\r\n#edit-author-add-submit, #edit-submission-log-add-submit {\r\nbackground-color: #47222a;\r\nborder-color: #0c0607;\r\n}\r\nform .btn-success, form .btn-success:active, form .btn-success:hover, form .btn-success:focus {\r\nbackground-color: #47222a;\r\nborder-color: #0c0607;\r\n}\r\n#edit-is-there-a-doi-already-associated-with-this-object-, #edit-units-of-scale-select, #edit-embargo-period, #edit-date-of-submission, #edit-date-of-publication, #edit-license, #edit-upload-element-upload, #edit-diginole-collection, #edit-submission-status, form .form-text {\r\ncolor: #000;\r\n}\r\nform .form-control {\r\nheight: 42px;\r\nwidth: 97%\r\n}\r\nform .select-wrapper {\r\nwidth: 97%;\r\n}\r\nform .help-block {\r\ncolor: #000;\r\nwidth: 97%;\r\n}"
 javascript: ''
 settings:
   ajax: false

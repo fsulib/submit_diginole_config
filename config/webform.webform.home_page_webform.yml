@@ -35,6 +35,11 @@ elements: |-
     '#type': webform_actions
     '#title': 'Submit button(s)'
     '#submit__label': 'Take me to the submission form'
+  processed_text_01:
+    '#type': processed_text
+    '#text': |
+      <p><em>If you encounter any issues using this submission system or have further questions or feedback, please contact FSU Libraries’ DigiNole support team at <a href="mailto:lib-support@fsu.edu">lib-support@fsu.edu</a>.</em></p>
+    '#format': full_html
 css: "#webform-submission-home-page-webform-add-form {\r\nwidth: 95%\r\n}"
 javascript: ''
 settings:
