@@ -33,14 +33,6 @@ elements: |-
     '#options': fsu_departments
     '#select2': true
     '#required': true
-  submissi:
-    '#type': select
-    '#title': 'Submission Type'
-    '#description': 'This field is pre-defined and cannot be edited'
-    '#disabled': true
-    '#options': submission_types
-    '#empty_option': 'Undergraduate Honors Thesis'
-    '#required': true
   submission_title:
     '#type': textfield
     '#title': 'Submission Title'
@@ -141,7 +133,6 @@ elements: |-
   upload_honors_thesis:
     '#type': webform_document_file
     '#title': 'Upload Honors Thesis'
-    '#required': true
     '#file_placeholder': '<em>&nbsp;If the file you are intending to upload is larger than 100MB, please submit this form without an attached file and send a follow-up email to lib-support@fsu.edu. A member of the DigiNole support team will coordinate with you on receiving your submission via another service (e.g. Dropbox, Google Drive, etc). </em>'
   note_to_library_staff:
     '#type': textarea

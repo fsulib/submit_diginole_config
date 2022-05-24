@@ -104,7 +104,6 @@ elements: |-
   upload_university_records:
     '#type': managed_file
     '#title': 'Upload University Records'
-    '#required': true
     '#states':
       visible:
         ':input[name="have_you_contacted_the_university_archivist"]':
