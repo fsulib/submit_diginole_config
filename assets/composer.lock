@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7b131041ec1a8be3ad9c2ae2af638335",
+    "content-hash": "6fee672d8e6cb6f844f7281ace3333e3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2063,111 +2063,6 @@
             }
         },
         {
-            "name": "drupal/rules",
-            "version": "3.0.0-alpha7",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/rules.git",
-                "reference": "8.x-3.0-alpha7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/rules-8.x-3.0-alpha7.zip",
-                "reference": "8.x-3.0-alpha7",
-                "shasum": "6803aeaecea21cd64301a72b209d5db2f57f92b4"
-            },
-            "require": {
-                "drupal/core": "^8.8.2 || ^9",
-                "drupal/typed_data": "^1.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-3.0-alpha7",
-                    "datestamp": "1638768619",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
-                    }
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^9 || ^10"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "TR",
-                    "homepage": "https://www.drupal.org/user/202830"
-                },
-                {
-                    "name": "fago",
-                    "homepage": "https://www.drupal.org/user/16747"
-                },
-                {
-                    "name": "klausi",
-                    "homepage": "https://www.drupal.org/user/262198"
-                }
-            ],
-            "description": "React on events and conditionally evaluate actions.",
-            "homepage": "https://www.drupal.org/project/rules",
-            "support": {
-                "source": "https://git.drupalcode.org/project/rules",
-                "issues": "https://www.drupal.org/project/issues/rules"
-            }
-        },
-        {
-            "name": "drupal/rules_webform",
-            "version": "3.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/rules_webform.git",
-                "reference": "3.0.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/rules_webform-3.0.1.zip",
-                "reference": "3.0.1",
-                "shasum": "ce244cc1e861a9b23c728693220aebbde7c3e3f1"
-            },
-            "require": {
-                "drupal/core": "^9",
-                "drupal/rules": "*",
-                "drupal/webform": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "3.0.1",
-                    "datestamp": "1612403944",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "wombatbuddy",
-                    "homepage": "https://www.drupal.org/user/3547848"
-                }
-            ],
-            "description": "Allows to use Webform submission data in Rules.",
-            "homepage": "https://www.drupal.org/project/rules_webform",
-            "support": {
-                "source": "https://git.drupalcode.org/project/rules_webform"
-            }
-        },
-        {
             "name": "drupal/smtp",
             "version": "1.0.0",
             "source": {
@@ -2488,60 +2383,6 @@
             }
         },
         {
-            "name": "drupal/typed_data",
-            "version": "1.0.0-beta1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/typed_data.git",
-                "reference": "8.x-1.0-beta1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/typed_data-8.x-1.0-beta1.zip",
-                "reference": "8.x-1.0-beta1",
-                "shasum": "73d079f29c7a5679e0db3e28ae888e8cce2f1335"
-            },
-            "require": {
-                "drupal/core": "^8.8.2 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0-beta1",
-                    "datestamp": "1635839873",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
-                    }
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^9 || ^10"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "TR",
-                    "homepage": "https://www.drupal.org/user/202830"
-                },
-                {
-                    "name": "fago",
-                    "homepage": "https://www.drupal.org/user/16747"
-                }
-            ],
-            "description": "Extends the core Typed Data API with new APIs and features.",
-            "homepage": "https://www.drupal.org/project/typed_data",
-            "support": {
-                "source": "https://git.drupalcode.org/project/typed_data",
-                "issues": "https://www.drupal.org/project/issues/typed_data"
-            }
-        },
-        {
             "name": "drupal/upgrade_status",
             "version": "3.14.0",
             "source": {
@@ -2725,6 +2566,51 @@
                 "issues": "https://www.drupal.org/project/issues/webform?version=8.x",
                 "docs": "https://www.drupal.org/docs/8/modules/webform",
                 "forum": "https://drupal.stackexchange.com/questions/tagged/webform"
+            }
+        },
+        {
+            "name": "drupal/webform_query",
+            "version": "1.0.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform_query.git",
+                "reference": "8.x-1.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_query-8.x-1.0-alpha2.zip",
+                "reference": "8.x-1.0-alpha2",
+                "shasum": "3592f4310b906181312a860b9d96c70c7e94f5cd"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/webform": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-alpha2",
+                    "datestamp": "1629678143",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "imclean",
+                    "homepage": "https://www.drupal.org/user/112588"
+                }
+            ],
+            "description": "Query webform submission data.",
+            "homepage": "https://www.drupal.org/project/webform_query",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform_query"
             }
         },
         {
@@ -11627,6 +11513,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/webform_query": 15,
         "drupal/webform_views": 10,
         "fsulib/diginole_submission_ais": 20,
         "fsulib/fsu_strata": 20,
