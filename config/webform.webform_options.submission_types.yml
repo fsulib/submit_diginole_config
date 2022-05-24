@@ -7,7 +7,6 @@ label: 'Submission Types'
 category: ''
 likert: false
 options: |-
-  undergraduate_honors_thesis: 'Undergraduate Honors Thesis'
   audio: Audio
   journal_article: 'Journal Article'
   book: Book

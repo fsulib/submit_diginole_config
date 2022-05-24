@@ -446,5 +446,85 @@ access:
       - administrator
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  honors_thesis_submitter_confirmation:
+    id: email
+    handler_id: honors_thesis_submitter_confirmation
+    label: 'Honors Thesis Submitter Confirmation'
+    notes: 'Confirmation email sent to submitter.'
+    status: true
+    conditions:
+      enabled:
+        ':input[name="submission_status"]':
+          value: new
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: '[webform_submission:values:submission_title:raw]'
+      body: 'Your submission &quot;[webform_submission:values:submission_title]&quot; has been recieved.'
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  honors_thesis_reviewer_new_submission_notification:
+    id: email
+    handler_id: honors_thesis_reviewer_new_submission_notification
+    label: 'Honors Thesis Reviewer New Submission Notification'
+    notes: 'Notification email sent to reviewers for new submissions.'
+    status: true
+    conditions:
+      enabled:
+        ':input[name="submission_status"]':
+          value: new
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_role:honors_thesis_reviewer]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: _default
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
 variants: {  }
