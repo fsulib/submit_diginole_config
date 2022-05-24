@@ -1,9 +1,9 @@
-uuid: ebe2feb8-0a62-480b-9515-f3a3d77b3f78
+uuid: ff4b5ae2-aaeb-410d-8a97-e58ec72c6b01
 langcode: en
 status: true
 dependencies:
   config:
-    - webform.webform.research_repository_submission
+    - webform.webform.university_records_submission
   module:
     - user
     - webform
@@ -13,8 +13,8 @@ dependencies:
       - webform
 _core:
   default_config_hash: YPgxGC8TmLtfCOLGCCHJcdH2llA7QksUkdi1abhB7Ro
-id: research_repository_submissions
-label: 'Research Repository Submissions'
+id: university_records_submissions
+label: 'University Records Submissions'
 module: views
 description: 'Default webform submissions views.'
 tag: ''
@@ -27,7 +27,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Research Repository Submissions'
+      title: 'University Records Submissions'
       fields:
         sid:
           id: sid
@@ -2043,9 +2043,62 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        webform_submission_value:
-          id: webform_submission_value
-          table: webform_submission_field_research_repository_submission_submission_status
+        webform_submission_value_3:
+          id: webform_submission_value_3
+          table: webform_submission_field_university_records_submission_what_type_s_of_files_are_you_uploading_
+          field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: webform_submission_field
+          label: 'What type(s) of files are you uploading?'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          webform_element_format: value
+          webform_multiple_value: true
+          webform_multiple_delta: 0
+          webform_check_access: 1
+        webform_submission_value_2:
+          id: webform_submission_value_2
+          table: webform_submission_field_university_records_submission_submission_status
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -2098,13 +2151,13 @@ display:
           webform_check_access: 1
         webform_submission_value_1:
           id: webform_submission_value_1
-          table: webform_submission_field_research_repository_submission_submission_title
+          table: webform_submission_field_university_records_submission_last_name
           field: webform_submission_value
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: webform_submission_field
-          label: 'Submission Title'
+          label: 'Last Name'
           exclude: false
           alter:
             alter_text: false
@@ -2149,15 +2202,15 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           webform_check_access: 1
-        webform_submission_value_2:
-          id: webform_submission_value_2
-          table: webform_submission_field_research_repository_submission_submission_type
+        webform_submission_value:
+          id: webform_submission_value
+          table: webform_submission_field_university_records_submission_first_name
           field: webform_submission_value
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: webform_submission_field
-          label: 'Submission Type'
+          label: 'First Name'
           exclude: false
           alter:
             alter_text: false
@@ -2386,67 +2439,23 @@ display:
           plugin_id: bundle
           operator: in
           value:
-            research_repository_submission: research_repository_submission
+            university_records_submission: university_records_submission
           group: 1
           exposed: false
           expose:
-            operator_id: ''
-            label: ''
-            description: ''
+            operator_id: webform_id_op
+            label: Webform
+            description: null
             use_operator: false
-            operator: ''
+            operator: webform_id_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: ''
+            identifier: webform_id
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-        webform_submission_value_1:
-          id: webform_submission_value_1
-          table: webform_submission_field_research_repository_submission_submission_type
-          field: webform_submission_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: webform_submission_select_filter
-          operator: in
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: webform_submission_value_1_op
-            label: 'Submission Type'
-            description: ''
-            use_operator: false
-            operator: webform_submission_value_1_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: webform_submission_value_1
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              research_repository_reviewer: '0'
-              honors_thesis_reviewer: '0'
-              university_records_reviewer: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -2462,7 +2471,7 @@ display:
             group_items: {  }
         webform_submission_value:
           id: webform_submission_value
-          table: webform_submission_field_research_repository_submission_submission_status
+          table: webform_submission_field_university_records_submission_submission_status
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -2506,8 +2515,7 @@ display:
             group_items: {  }
       filter_groups:
         operator: AND
-        groups:
-          1: AND
+        groups: {  }
       style:
         type: table
         options:

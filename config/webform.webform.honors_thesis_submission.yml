@@ -302,7 +302,7 @@ settings:
   submission_views:
     manage-honors-thesis-submissions:
       title: 'Manage Honors Thesis Submissions'
-      view: 'webform_submissions:embed_2'
+      view: 'honors_thesis_submissions:embed_manage'
       webform_routes:
         - entity.webform.results_submissions
   submission_views_replace: {  }
