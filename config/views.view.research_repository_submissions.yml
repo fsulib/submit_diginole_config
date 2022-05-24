@@ -1,15 +1,11 @@
-uuid: 9c61b6e4-6fb5-48cd-a1a5-efecefb2c25b
+uuid: ebe2feb8-0a62-480b-9515-f3a3d77b3f78
 langcode: en
 status: true
 dependencies:
   config:
     - user.role.administrator
-    - user.role.honors_thesis_reviewer
     - user.role.research_repository_reviewer
-    - user.role.university_records_reviewer
-    - webform.webform.honors_thesis_submission
     - webform.webform.research_repository_submission
-    - webform.webform.university_records_submission
   module:
     - user
     - webform
@@ -19,8 +15,8 @@ dependencies:
       - webform
 _core:
   default_config_hash: YPgxGC8TmLtfCOLGCCHJcdH2llA7QksUkdi1abhB7Ro
-id: webform_submissions
-label: 'Webform submissions'
+id: research_repository_submissions
+label: 'Research Repository Submissions'
 module: views
 description: 'Default webform submissions views.'
 tag: ''
@@ -1582,10 +1578,7 @@ display:
           action_title: Action
           include_exclude: include
           selected_actions:
-            - webform_submission_make_lock_action
-            - webform_submission_make_sticky_action
-            - webform_submission_make_unlock_action
-            - webform_submission_make_unsticky_action
+            - webform_submission_delete_action
         sid:
           id: sid
           table: webform_submission
@@ -1663,7 +1656,7 @@ display:
           entity_field: in_draft
           plugin_id: field
           label: Draft
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1730,7 +1723,7 @@ display:
           entity_field: sticky
           plugin_id: field
           label: Sticky
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1797,7 +1790,7 @@ display:
           entity_field: locked
           plugin_id: field
           label: Locked
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1931,7 +1924,7 @@ display:
           entity_field: completed
           plugin_id: field
           label: Completed
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1998,7 +1991,7 @@ display:
           entity_field: remote_addr
           plugin_id: field
           label: 'IP address'
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -2052,16 +2045,15 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        view_webform_submission:
-          id: view_webform_submission
-          table: webform_submission
-          field: view_webform_submission
+        webform_submission_value:
+          id: webform_submission_value
+          table: webform_submission_field_research_repository_submission_submission_status
+          field: webform_submission_value
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: webform_submission
-          plugin_id: entity_link
-          label: Operations
+          plugin_id: webform_submission_field
+          label: 'Submission Status'
           exclude: false
           alter:
             alter_text: false
@@ -2102,7 +2094,167 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: view
+          webform_element_format: value
+          webform_multiple_value: true
+          webform_multiple_delta: 0
+          webform_check_access: 1
+        webform_submission_value_1:
+          id: webform_submission_value_1
+          table: webform_submission_field_research_repository_submission_submission_title
+          field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: webform_submission_field
+          label: 'Submission Title'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          webform_element_format: value
+          webform_multiple_value: true
+          webform_multiple_delta: 0
+          webform_check_access: 1
+        webform_submission_value_2:
+          id: webform_submission_value_2
+          table: webform_submission_field_research_repository_submission_submission_type
+          field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: webform_submission_field
+          label: 'Submission Type'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          webform_element_format: value
+          webform_multiple_value: true
+          webform_multiple_delta: 0
+          webform_check_access: 1
+        view_webform_submission:
+          id: view_webform_submission
+          table: webform_submission
+          field: view_webform_submission
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: webform_submission
+          plugin_id: entity_link
+          label: Operations
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          text: View
           output_url_as_text: false
           absolute: false
         edit_webform_submission:
@@ -2115,6 +2267,58 @@ display:
           entity_type: webform_submission
           plugin_id: entity_link_edit
           label: Operations
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          text: Edit
+          output_url_as_text: false
+          absolute: false
+        dropbutton:
+          id: dropbutton
+          table: views
+          field: dropbutton
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: dropbutton
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -2155,44 +2359,55 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: edit
-          output_url_as_text: false
-          absolute: false
+          destination: true
+          fields:
+            view_webform_submission: view_webform_submission
+            edit_webform_submission: edit_webform_submission
+            webform_submission_bulk_form: '0'
+            sid: '0'
+            in_draft: '0'
+            sticky: '0'
+            locked: '0'
+            created: '0'
+            completed: '0'
+            remote_addr: '0'
       access:
-        type: perm
+        type: role
         options:
-          perm: 'edit any webform submission'
+          role:
+            administrator: administrator
+            research_repository_reviewer: research_repository_reviewer
       filters:
-        in_draft:
-          id: in_draft
+        webform_id:
+          id: webform_id
           table: webform_submission
-          field: in_draft
+          field: webform_id
           relationship: none
           group_type: group
           admin_label: ''
           entity_type: webform_submission
-          entity_field: in_draft
-          plugin_id: boolean
-          operator: '='
-          value: All
+          entity_field: webform_id
+          plugin_id: bundle
+          operator: in
+          value:
+            research_repository_submission: research_repository_submission
           group: 1
-          exposed: true
+          exposed: false
           expose:
             operator_id: ''
-            label: 'Is draft'
+            label: ''
             description: ''
             use_operator: false
-            operator: in_draft_op
+            operator: ''
             operator_limit_selection: false
             operator_list: {  }
-            identifier: in_draft
+            identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
+            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -2205,29 +2420,27 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-        sticky:
-          id: sticky
-          table: webform_submission
-          field: sticky
+        webform_submission_value_1:
+          id: webform_submission_value_1
+          table: webform_submission_field_research_repository_submission_submission_type
+          field: webform_submission_value
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: webform_submission
-          entity_field: sticky
-          plugin_id: boolean
-          operator: '='
-          value: All
+          plugin_id: webform_submission_select_filter
+          operator: in
+          value: {  }
           group: 1
           exposed: true
           expose:
-            operator_id: ''
-            label: Sticky
+            operator_id: webform_submission_value_1_op
+            label: 'Submission Type'
             description: ''
             use_operator: false
-            operator: sticky_op
+            operator: webform_submission_value_1_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: sticky
+            identifier: webform_submission_value_1
             required: false
             remember: false
             multiple: false
@@ -2235,6 +2448,10 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+              research_repository_reviewer: '0'
+              honors_thesis_reviewer: '0'
+              university_records_reviewer: '0'
+            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -2247,29 +2464,27 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-        locked:
-          id: locked
-          table: webform_submission
-          field: locked
+        webform_submission_value:
+          id: webform_submission_value
+          table: webform_submission_field_research_repository_submission_submission_status
+          field: webform_submission_value
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: webform_submission
-          entity_field: locked
-          plugin_id: boolean
-          operator: '='
-          value: All
+          plugin_id: webform_submission_select_filter
+          operator: in
+          value: {  }
           group: 1
           exposed: true
           expose:
-            operator_id: ''
-            label: Locked
+            operator_id: webform_submission_value_op
+            label: 'Submission Status'
             description: ''
             use_operator: false
-            operator: locked_op
+            operator: webform_submission_value_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: locked
+            identifier: webform_submission_value
             required: false
             remember: false
             multiple: false
@@ -2277,7 +2492,10 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
-              demo_region: '0'
+              research_repository_reviewer: '0'
+              honors_thesis_reviewer: '0'
+              university_records_reviewer: '0'
+            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -2411,7 +2629,7 @@ display:
         - url
         - url.query_args
         - user
-        - user.permissions
+        - user.roles
       tags: {  }
   embed_review:
     id: embed_review

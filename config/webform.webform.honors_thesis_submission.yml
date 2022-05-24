@@ -158,17 +158,17 @@ elements: |-
     '#options': diginole_collection
     '#access_create_roles':
       - administrator
-      - submission_reviewer
+      - honors_thesis_reviewer
     '#access_create_users':
       - '1'
     '#access_update_roles':
       - administrator
-      - submission_reviewer
+      - honors_thesis_reviewer
     '#access_update_users':
       - '1'
     '#access_view_roles':
       - administrator
-      - submission_reviewer
+      - honors_thesis_reviewer
     '#access_view_users':
       - '1'
   diginole_purl:
@@ -176,17 +176,17 @@ elements: |-
     '#title': 'DigiNole PURL'
     '#access_create_roles':
       - administrator
-      - submission_reviewer
+      - honors_thesis_reviewer
     '#access_create_users':
       - '1'
     '#access_update_roles':
       - administrator
-      - submission_reviewer
+      - honors_thesis_reviewer
     '#access_update_users':
       - '1'
     '#access_view_roles':
       - administrator
-      - submission_reviewer
+      - honors_thesis_reviewer
     '#access_view_users':
       - '1'
   submission_status:
@@ -197,17 +197,17 @@ elements: |-
     '#default_value': new
     '#access_create_roles':
       - administrator
-      - submission_reviewer
+      - honors_thesis_reviewer
     '#access_create_users':
       - '1'
     '#access_update_roles':
       - administrator
-      - submission_reviewer
+      - honors_thesis_reviewer
     '#access_update_users':
       - '1'
     '#access_view_roles':
       - administrator
-      - submission_reviewer
+      - honors_thesis_reviewer
     '#access_view_users':
       - '1'
   submission_log:
@@ -220,17 +220,17 @@ elements: |-
     '#multiple__add_more_button_label': 'Add another Log Entry'
     '#access_create_roles':
       - administrator
-      - submission_reviewer
+      - honors_thesis_reviewer
     '#access_create_users':
       - '1'
     '#access_update_roles':
       - administrator
-      - submission_reviewer
+      - honors_thesis_reviewer
     '#access_update_users':
       - '1'
     '#access_view_roles':
       - administrator
-      - submission_reviewer
+      - honors_thesis_reviewer
     '#access_view_users':
       - '1'
   captcha:
@@ -299,7 +299,12 @@ settings:
   submission_excluded_elements: {  }
   submission_exclude_empty: false
   submission_exclude_empty_checkbox: false
-  submission_views: {  }
+  submission_views:
+    manage-honors-thesis-submissions:
+      title: 'Manage Honors Thesis Submissions'
+      view: 'webform_submissions:embed_2'
+      webform_routes:
+        - entity.webform.results_submissions
   submission_views_replace: {  }
   submission_user_columns: {  }
   submission_user_duplicate: false

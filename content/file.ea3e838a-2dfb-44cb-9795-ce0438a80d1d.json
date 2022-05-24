@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "ea3e838a-2dfb-44cb-9795-ce0438a80d1d"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "dd60c32b-46de-4e9e-a31b-333e03a0c032"
+        }
+    ],
+    "filename": [
+        {
+            "value": "upload_university_records.pdf"
+        }
+    ],
+    "uri": [
+        {
+            "value": "private:\/\/webform\/university_records_submission\/_sid_\/upload_university_records.pdf"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "application\/pdf"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 4975
+        }
+    ],
+    "status": [
+        {
+            "value": false
+        }
+    ],
+    "created": [
+        {
+            "value": "2022-05-24T14:47:52+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2022-05-24T14:47:52+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

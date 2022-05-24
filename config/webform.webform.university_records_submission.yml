@@ -119,17 +119,17 @@ elements: |-
           value: 'Yes'
     '#access_create_roles':
       - administrator
-      - submission_reviewer
+      - university_records_reviewer
     '#access_create_users':
       - '1'
     '#access_update_roles':
       - administrator
-      - submission_reviewer
+      - university_records_reviewer
     '#access_update_users':
       - '1'
     '#access_view_roles':
       - administrator
-      - submission_reviewer
+      - university_records_reviewer
     '#access_view_users':
       - '1'
   diginole_purl:
@@ -141,17 +141,17 @@ elements: |-
           value: 'Yes'
     '#access_create_roles':
       - administrator
-      - submission_reviewer
+      - university_records_reviewer
     '#access_create_users':
       - '1'
     '#access_update_roles':
       - administrator
-      - submission_reviewer
+      - university_records_reviewer
     '#access_update_users':
       - '1'
     '#access_view_roles':
       - administrator
-      - submission_reviewer
+      - university_records_reviewer
     '#access_view_users':
       - '1'
   submission_status:
@@ -166,17 +166,17 @@ elements: |-
     '#default_value': new
     '#access_create_roles':
       - administrator
-      - submission_reviewer
+      - university_records_reviewer
     '#access_create_users':
       - '1'
     '#access_update_roles':
       - administrator
-      - submission_reviewer
+      - university_records_reviewer
     '#access_update_users':
       - '1'
     '#access_view_roles':
       - administrator
-      - submission_reviewer
+      - university_records_reviewer
     '#access_view_users':
       - '1'
   submission_log:
@@ -193,17 +193,17 @@ elements: |-
     '#multiple__add_more_button_label': 'Add another Log Entry'
     '#access_create_roles':
       - administrator
-      - submission_reviewer
+      - university_records_reviewer
     '#access_create_users':
       - '1'
     '#access_update_roles':
       - administrator
-      - submission_reviewer
+      - university_records_reviewer
     '#access_update_users':
       - '1'
     '#access_view_roles':
       - administrator
-      - submission_reviewer
+      - university_records_reviewer
     '#access_view_users':
       - '1'
   captcha:

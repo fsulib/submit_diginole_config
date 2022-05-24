@@ -351,17 +351,17 @@ elements: |-
     '#admin_notes': 'Present in all variants.'
     '#access_create_roles':
       - administrator
-      - submission_reviewer
+      - research_repository_reviewer
     '#access_create_users':
       - '1'
     '#access_update_roles':
       - administrator
-      - submission_reviewer
+      - research_repository_reviewer
     '#access_update_users':
       - '1'
     '#access_view_roles':
       - administrator
-      - submission_reviewer
+      - research_repository_reviewer
     '#access_view_users':
       - '1'
   diginole_purl:
@@ -370,17 +370,17 @@ elements: |-
     '#admin_notes': 'Present in all variants.'
     '#access_create_roles':
       - administrator
-      - submission_reviewer
+      - research_repository_reviewer
     '#access_create_users':
       - '1'
     '#access_update_roles':
       - administrator
-      - submission_reviewer
+      - research_repository_reviewer
     '#access_update_users':
       - '1'
     '#access_view_roles':
       - administrator
-      - submission_reviewer
+      - research_repository_reviewer
     '#access_view_users':
       - '1'
   submission_status:
@@ -392,17 +392,17 @@ elements: |-
     '#admin_notes': 'This element is available in all variants. Some variants use the submission_status options and others use the submission_status_with_in_press options.'
     '#access_create_roles':
       - administrator
-      - submission_reviewer
+      - research_repository_reviewer
     '#access_create_users':
       - '1'
     '#access_update_roles':
       - administrator
-      - submission_reviewer
+      - research_repository_reviewer
     '#access_update_users':
       - '1'
     '#access_view_roles':
       - administrator
-      - submission_reviewer
+      - research_repository_reviewer
     '#access_view_users':
       - '1'
   submission_log:
@@ -416,17 +416,17 @@ elements: |-
     '#admin_notes': 'Present in all variants'
     '#access_create_roles':
       - administrator
-      - submission_reviewer
+      - research_repository_reviewer
     '#access_create_users':
       - '1'
     '#access_update_roles':
       - administrator
-      - submission_reviewer
+      - research_repository_reviewer
     '#access_update_users':
       - '1'
     '#access_view_roles':
       - administrator
-      - submission_reviewer
+      - research_repository_reviewer
     '#access_view_users':
       - '1'
   captcha:
@@ -496,9 +496,9 @@ settings:
   submission_exclude_empty: false
   submission_exclude_empty_checkbox: false
   submission_views:
-    manage-diginole-submissions:
-      title: 'Manage DigiNole Submissions'
-      view: 'webform_submissions:embed_1'
+    manage-repository-submissions:
+      title: 'Manage Research Repository Submissions'
+      view: 'research_repository_submissions:embed_manage'
       webform_routes:
         - entity.webform.results_submissions
   submission_views_replace: {  }
