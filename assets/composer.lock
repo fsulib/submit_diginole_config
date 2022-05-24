@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f8c27936330e42c472d1b8b18e17dc8",
+    "content-hash": "9e631ff9a02f9fd83763f71966911875",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2638,55 +2638,6 @@
             }
         },
         {
-            "name": "drupal/webform_workflows_element",
-            "version": "1.0.0-alpha2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/webform_workflows_element.git",
-                "reference": "1.0.0-alpha2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform_workflows_element-1.0.0-alpha2.zip",
-                "reference": "1.0.0-alpha2",
-                "shasum": "b29f564796d5d0802f860fe2b1e5b4f3e9427de4"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9",
-                "drupal/webform": "*"
-            },
-            "require-dev": {
-                "drupal/maestro": "*",
-                "drupal/webform_query": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "1.0.0-alpha2",
-                    "datestamp": "1645183859",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "maxwellkeeble",
-                    "homepage": "https://www.drupal.org/user/3653834"
-                }
-            ],
-            "description": "Provides a webform element that hooks into the core Workflows module to allow transitioning submissions through workflow states.",
-            "homepage": "https://www.drupal.org/project/webform_workflows_element",
-            "support": {
-                "source": "https://git.drupalcode.org/project/webform_workflows_element"
-            }
-        },
-        {
             "name": "drush/drush",
             "version": "10.6.2",
             "source": {
@@ -3005,12 +2956,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fsulib/fsu_strata.git",
-                "reference": "e3f56f094bc5f3a1d86ee3f5c05088b49f3b24aa"
+                "reference": "7558876ab2391f1b5f0b051b35bb4f796e1f1887"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fsulib/fsu_strata/zipball/e3f56f094bc5f3a1d86ee3f5c05088b49f3b24aa",
-                "reference": "e3f56f094bc5f3a1d86ee3f5c05088b49f3b24aa",
+                "url": "https://api.github.com/repos/fsulib/fsu_strata/zipball/7558876ab2391f1b5f0b051b35bb4f796e1f1887",
+                "reference": "7558876ab2391f1b5f0b051b35bb4f796e1f1887",
                 "shasum": ""
             },
             "type": "drupal-custom-theme",
@@ -3043,7 +2994,7 @@
                 "source": "https://github.com/fsulib/fsu_strata/tree/master",
                 "issues": "https://github.com/fsulib/fsu_strata/issues"
             },
-            "time": "2022-05-12T00:02:36+00:00"
+            "time": "2022-05-23T18:36:55+00:00"
         },
         {
             "name": "fsulib/fsu_twig_filter",
@@ -4639,16 +4590,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.6.8",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "d76498c5531232cb8386ceb6004f7e013138d3ba"
+                "reference": "509b3d6da631de31494dc21adedb30d73970e5aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/d76498c5531232cb8386ceb6004f7e013138d3ba",
-                "reference": "d76498c5531232cb8386ceb6004f7e013138d3ba",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/509b3d6da631de31494dc21adedb30d73970e5aa",
+                "reference": "509b3d6da631de31494dc21adedb30d73970e5aa",
                 "shasum": ""
             },
             "require": {
@@ -4690,7 +4641,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-10T06:54:21+00:00"
+            "time": "2022-05-23T15:11:29+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
@@ -8369,16 +8320,16 @@
         },
         {
             "name": "composer/spdx-licenses",
-            "version": "1.5.6",
+            "version": "1.5.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/spdx-licenses.git",
-                "reference": "a30d487169d799745ca7280bc90fdfa693536901"
+                "reference": "c848241796da2abf65837d51dce1fae55a960149"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/spdx-licenses/zipball/a30d487169d799745ca7280bc90fdfa693536901",
-                "reference": "a30d487169d799745ca7280bc90fdfa693536901",
+                "url": "https://api.github.com/repos/composer/spdx-licenses/zipball/c848241796da2abf65837d51dce1fae55a960149",
+                "reference": "c848241796da2abf65837d51dce1fae55a960149",
                 "shasum": ""
             },
             "require": {
@@ -8440,7 +8391,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-11-18T10:14:14+00:00"
+            "time": "2022-05-23T07:37:50+00:00"
         },
         {
             "name": "composer/xdebug-handler",
@@ -11518,7 +11469,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/webform_views": 10,
-        "drupal/webform_workflows_element": 15,
         "fsulib/diginole_submission_ais": 20,
         "fsulib/fsu_strata": 20,
         "fsulib/fsu_twig_filter": 20
