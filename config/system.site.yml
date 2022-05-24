@@ -3,7 +3,7 @@ _core:
 langcode: en
 uuid: 0734e930-32e6-4075-8e2e-cc4c0286b4c1
 name: 'Submit to DigiNole'
-mail: admin@admin.edu
+mail: lib-support@fsu.edu
 slogan: ''
 page:
   403: ''

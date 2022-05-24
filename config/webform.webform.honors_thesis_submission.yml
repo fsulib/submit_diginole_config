@@ -475,7 +475,7 @@ handlers:
       sender_mail: ''
       sender_name: ''
       subject: '[webform_submission:values:submission_title:raw]'
-      body: 'Your submission &quot;[webform_submission:values:submission_title]&quot; has been recieved.'
+      body: 'Your submission &quot;[webform_submission:values:submission_title]&quot; has been received.'
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
