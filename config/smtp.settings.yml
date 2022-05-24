@@ -9,7 +9,7 @@ smtp_autotls: true
 smtp_timeout: 30
 smtp_username: '0'
 smtp_password: '0'
-smtp_from: do-not-reply@submit.diginole.lib.fsu.edu
+smtp_from: lib-support@fsu.edu
 smtp_fromname: submit.diginole
 smtp_client_hostname: ''
 smtp_client_helo: ''
