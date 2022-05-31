@@ -420,5 +420,165 @@ access:
       - administrator
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  university_records_submitter_confirmation:
+    id: email
+    handler_id: university_records_submitter_confirmation
+    label: 'University Records Submitter Confirmation'
+    notes: 'Confirmation email sent to submitter upon submission'
+    status: true
+    conditions:
+      enabled:
+        ':input[name="submission_status"]':
+          value: new
+    weight: -49
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Your University Records submission has been received'
+      body: "<p style=\"line-height:1.38\"><span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:Arial\"><span data-darkreader-inline-color=\"\" style=\"--darkreader-inline-color:#e8e6e3; color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Thank you for your submission to Heritage &amp; University Archives.&nbsp;</span></span></span></span></span></span></p>\r\n\r\n<p style=\"line-height:1.38\"><span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:Arial\"><span data-darkreader-inline-color=\"\" style=\"--darkreader-inline-color:#e8e6e3; color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">You will receive a notification when the University Archivist begins reviewing your materials. If you have any questions in the meantime, please email </span></span></span></span></span></span><a href=\"mailto:lib-specialcollections@fsu.edu\" style=\"text-decoration:none\"><span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:Arial\"><span data-darkreader-inline-color=\"\" style=\"--darkreader-inline-color:#56a3f1; color:#1155cc\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:underline\"><span style=\"-webkit-text-decoration-skip:none\"><span style=\"text-decoration-skip-ink:none\">lib-specialcollections@fsu.edu</span></span></span></span></span></span></span></span></a><span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:Arial\"><span data-darkreader-inline-color=\"\" style=\"--darkreader-inline-color:#e8e6e3; color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">.&nbsp;</span></span></span></span></span></span></p>\r\n\r\n<p style=\"line-height:1.38\"><span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:Arial\"><span data-darkreader-inline-color=\"\" style=\"--darkreader-inline-color:#e8e6e3; color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Thank you,</span></span></span></span></span></span></p>\r\n\r\n<p style=\"line-height:1.38\"><span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:Arial\"><span data-darkreader-inline-color=\"\" style=\"--darkreader-inline-color:#e8e6e3; color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Heritage &amp; University Archives</span></span></span></span></span></span></p>"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  university_records_reviewer_new_submission_email:
+    id: email
+    handler_id: university_records_reviewer_new_submission_email
+    label: 'University Records Reviewer New Submission Email'
+    notes: 'Notification email sent to reviewers for new submissions.'
+    status: true
+    conditions:
+      enabled:
+        ':input[name="submission_status"]':
+          value: new
+    weight: -50
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_role:university_records_reviewer]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'A new University Records submission has been submitted to DigiNole and is awaiting review'
+      body: "Submitted on [webform_submission:created]<br />\r\n<br />\r\nSubmitted by: [webform_submission:user]<br />\r\n<br />\r\nView submission <a href=\"[webform_submission:token-view-url]\">here</a>."
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  university_records_submitter_under_review:
+    id: email
+    handler_id: university_records_submitter_under_review
+    label: 'University Records Submitter Under Review'
+    notes: 'Notification email sent to submitter when their materials are under review'
+    status: true
+    conditions:
+      enabled:
+        ':input[name="submission_status"]':
+          value: in_review
+    weight: -48
+    settings:
+      states:
+        - updated
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Your submission to Heritage & University Archives is now under review'
+      body: "<p style=\"line-height:1.38\"><span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:Arial\"><span data-darkreader-inline-color=\"\" style=\"--darkreader-inline-color:#e8e6e3; color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Your submission to Heritage &amp; University Archives is now under review. You will be contacted directly if there are any questions with your submission. The review process can take up to 30 business days and you will be notified when your submission is accepted by the University Archives.&nbsp;</span></span></span></span></span></span></p>\r\n\r\n<p style=\"line-height:1.38\"><span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:Arial\"><span data-darkreader-inline-color=\"\" style=\"--darkreader-inline-color:#e8e6e3; color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">If you have any questions in the meantime, please email </span></span></span></span></span></span><a href=\"mailto:lib-specialcollections@fsu.edu\" style=\"text-decoration:none\"><span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:Arial\"><span data-darkreader-inline-color=\"\" style=\"--darkreader-inline-color:#56a3f1; color:#1155cc\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:underline\"><span style=\"-webkit-text-decoration-skip:none\"><span style=\"text-decoration-skip-ink:none\">lib-specialcollections@fsu.edu</span></span></span></span></span></span></span></span></a><span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:Arial\"><span data-darkreader-inline-color=\"\" style=\"--darkreader-inline-color:#e8e6e3; color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">.&nbsp;</span></span></span></span></span></span></p>\r\n\r\n<p style=\"line-height:1.38\"><span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:Arial\"><span data-darkreader-inline-color=\"\" style=\"--darkreader-inline-color:#e8e6e3; color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Thank you,</span></span></span></span></span></span></p>\r\n\r\n<p style=\"line-height:1.38\"><span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:Arial\"><span data-darkreader-inline-color=\"\" style=\"--darkreader-inline-color:#e8e6e3; color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Heritage &amp; University Archives</span></span></span></span></span></span></p>"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  university_records_submitter_accepted:
+    id: email
+    handler_id: university_records_submitter_accepted
+    label: 'University Records Submitter Accepted'
+    notes: 'Notification email sent to submitter when their submission has been acceted'
+    status: true
+    conditions:
+      enabled:
+        ':input[name="submission_status"]':
+          value: approved
+    weight: -47
+    settings:
+      states:
+        - updated
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Your submission to Heritage & University Archives has been accepted'
+      body: "<p style=\"line-height:1.38\"><span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:Arial\"><span data-darkreader-inline-color=\"\" style=\"--darkreader-inline-color:#e8e6e3; color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Your submission to Heritage &amp; University Archives has been accepted.&nbsp;</span></span></span></span></span></span></p>\r\n\r\n<p style=\"line-height:1.38\"><span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:Arial\"><span data-darkreader-inline-color=\"\" style=\"--darkreader-inline-color:#e8e6e3; color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Thank you,</span></span></span></span></span></span></p>\r\n\r\n<p style=\"line-height:1.38\"><span style=\"font-size:11pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:Arial\"><span data-darkreader-inline-color=\"\" style=\"--darkreader-inline-color:#e8e6e3; color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Heritage &amp; University Archives</span></span></span></span></span></span></p>"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
 variants: {  }

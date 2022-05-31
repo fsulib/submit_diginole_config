@@ -11,6 +11,7 @@ module:
   breakpoint: 0
   captcha: 0
   cas: 0
+  cas_attributes: 0
   ckeditor: 0
   color: 0
   comment: 0

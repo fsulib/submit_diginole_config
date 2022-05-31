@@ -38,6 +38,7 @@
         "drupal/asset_injector": "^2.10",
         "drupal/bootstrap": "^3.23",
         "drupal/cas": "^1.7",
+        "drupal/cas_attributes": "^2.0@beta",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-recommended": "^9.1",
         "drupal/recaptcha": "^3.0",

@@ -1,12 +1,12 @@
 {
     "uid": [
         {
-            "value": 0
+            "value": 8
         }
     ],
     "uuid": [
         {
-            "value": "16c53c26-1d50-42df-9cc7-3451907cefc6"
+            "value": "9e81d5c4-7e2f-4fe6-ac5a-9b06f7314139"
         }
     ],
     "langcode": [
@@ -22,10 +22,14 @@
     "preferred_admin_langcode": [],
     "name": [
         {
-            "value": ""
+            "value": "bjbrown"
         }
     ],
-    "mail": [],
+    "mail": [
+        {
+            "value": "bjbrown@fsu.edu"
+        }
+    ],
     "timezone": [
         {
             "value": "America\/New_York"
@@ -33,22 +37,28 @@
     ],
     "status": [
         {
-            "value": false
+            "value": true
         }
     ],
     "created": [
         {
-            "value": "2022-03-14T01:59:03+00:00",
+            "value": "2022-05-26T18:43:29+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": "2022-03-14T01:59:03+00:00",
+            "value": "2022-05-26T18:44:04+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
-    "roles": [],
+    "roles": [
+        {
+            "target_id": "administrator",
+            "target_type": "user_role",
+            "target_uuid": "3716f7d6-ad17-4784-a0e9-6a2d801b203e"
+        }
+    ],
     "default_langcode": [
         {
             "value": true

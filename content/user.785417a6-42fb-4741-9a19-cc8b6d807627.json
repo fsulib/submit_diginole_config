@@ -1,12 +1,12 @@
 {
     "uid": [
         {
-            "value": 1
+            "value": 2
         }
     ],
     "uuid": [
         {
-            "value": "dd60c32b-46de-4e9e-a31b-333e03a0c032"
+            "value": "785417a6-42fb-4741-9a19-cc8b6d807627"
         }
     ],
     "langcode": [
@@ -22,12 +22,12 @@
     "preferred_admin_langcode": [],
     "name": [
         {
-            "value": "admin"
+            "value": "dwr16"
         }
     ],
     "mail": [
         {
-            "value": "bryjbrown@gmail.com"
+            "value": "dwrodriguez@fsu.edu"
         }
     ],
     "timezone": [
@@ -42,13 +42,13 @@
     ],
     "created": [
         {
-            "value": "2022-03-14T01:59:03+00:00",
+            "value": "2022-05-25T14:29:52+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": "2022-05-25T15:37:30+00:00",
+            "value": "2022-05-26T14:17:43+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -59,9 +59,19 @@
             "target_uuid": "3716f7d6-ad17-4784-a0e9-6a2d801b203e"
         },
         {
+            "target_id": "research_repository_reviewer",
+            "target_type": "user_role",
+            "target_uuid": "f6548250-c5c0-43b9-809c-5cf497d33c78"
+        },
+        {
             "target_id": "honors_thesis_reviewer",
             "target_type": "user_role",
             "target_uuid": "6387f7ac-4d9f-4688-9f9a-bd5c972cbc7d"
+        },
+        {
+            "target_id": "university_records_reviewer",
+            "target_type": "user_role",
+            "target_uuid": "cd5b3602-e844-41ba-bfc1-4a978f11c201"
         }
     ],
     "default_langcode": [
@@ -69,6 +79,14 @@
             "value": true
         }
     ],
-    "field_first_name": [],
-    "field_last_name": []
+    "field_first_name": [
+        {
+            "value": "dave"
+        }
+    ],
+    "field_last_name": [
+        {
+            "value": "rodriguez"
+        }
+    ]
 }

@@ -1,12 +1,12 @@
 {
     "uid": [
         {
-            "value": 0
+            "value": 3
         }
     ],
     "uuid": [
         {
-            "value": "16c53c26-1d50-42df-9cc7-3451907cefc6"
+            "value": "36f6798b-7a90-4c76-b244-687d976dc989"
         }
     ],
     "langcode": [
@@ -22,10 +22,14 @@
     "preferred_admin_langcode": [],
     "name": [
         {
-            "value": ""
+            "value": "rs15r"
         }
     ],
-    "mail": [],
+    "mail": [
+        {
+            "value": "rs15r@fsu.edu"
+        }
+    ],
     "timezone": [
         {
             "value": "America\/New_York"
@@ -33,18 +37,18 @@
     ],
     "status": [
         {
-            "value": false
+            "value": true
         }
     ],
     "created": [
         {
-            "value": "2022-03-14T01:59:03+00:00",
+            "value": "2022-05-25T15:36:02+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": "2022-03-14T01:59:03+00:00",
+            "value": "2022-05-25T15:36:02+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],

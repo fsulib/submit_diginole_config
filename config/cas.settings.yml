@@ -6,7 +6,7 @@ login_success_message: 'You have successfully logged in'
 server:
   version: '2.0'
   protocol: https
-  hostname: casqna.fsu.edu
+  hostname: cas.fsu.edu
   port: 443
   path: /cas
   verify: 1
@@ -28,7 +28,7 @@ user_accounts:
   auto_register: true
   email_assignment_strategy: 0
   email_hostname: fsu.edu
-  email_attribute: ''
+  email_attribute: '[cas:attribute:email]'
   auto_assigned_roles: {  }
   restrict_password_management: true
   restrict_email_management: true

@@ -25,6 +25,7 @@ elements: |-
     '#type': textfield
     '#title': Email
     '#required': true
+    '#default_value': '[current-user:mail]'
   department:
     '#type': select
     '#title': Department/Institute/Center/Program
@@ -465,7 +466,7 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: '[webform_submission:values:submission_title:raw]'
+      subject: 'Your Honors Thesis submission to DigiNole has been received'
       body: 'Your submission &quot;[webform_submission:values:submission_title]&quot; has been received.'
       excluded_elements: {  }
       ignore_access: false
@@ -505,8 +506,88 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: _default
-      body: _default
+      subject: 'A new Honors Thesis has been submitted to DigiNole and is awaiting review'
+      body: "Submitted on [webform_submission:created]<br />\r\n<br />\r\nSubmitted by: [webform_submission:user]<br />\r\n<br />\r\nView submission <a href=\"[webform_submission:token-view-url]\">here</a>."
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: fsu_strata
+      parameters: {  }
+      debug: false
+  honors_thesis_submitter_ingested:
+    id: email
+    handler_id: honors_thesis_submitter_ingested
+    label: 'Honors Thesis Submitter Ingested'
+    notes: 'Ingestion email sent to submitter.'
+    status: true
+    conditions:
+      enabled:
+        ':input[name="submission_status"]':
+          value: ingested
+    weight: 2
+    settings:
+      states:
+        - updated
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Your Honors Thesis submission to DigiNole is online'
+      body: "Your submission &quot;[webform_submission:values:submission_title]&quot; is now accessible in DigiNole.<br />\r\n<br />\r\nIt is available at&nbsp;[webform_submission:values:diginole_purl]."
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  honors_thesis_submitter_approval:
+    id: email
+    handler_id: honors_thesis_submitter_approval
+    label: 'Honors Thesis Submitter Approval'
+    notes: 'Notification email sent to submitter when their submission has been approved'
+    status: true
+    conditions:
+      enabled:
+        ':input[name="submission_status"]':
+          value: approved
+    weight: 2
+    settings:
+      states:
+        - updated
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Your DigiNole Submission "[webform_submission:values:submission_title]" has been approved'
+      body: 'Your submission to DigiNole, &quot;[webform_submission:values:submission_title]&quot; has been approved. You will receive another email in the next 1-2 weeks with a link to access it.'
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
