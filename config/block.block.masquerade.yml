@@ -1,0 +1,28 @@
+uuid: 945e27f7-6956-4c4a-adea-dd00dfd7784e
+langcode: en
+status: true
+dependencies:
+  module:
+    - masquerade
+    - user
+  theme:
+    - fsu_strata
+id: masquerade
+theme: fsu_strata
+region: fullcontent
+weight: 0
+provider: null
+plugin: masquerade
+settings:
+  id: masquerade
+  label: Masquerade
+  label_display: visible
+  provider: masquerade
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
