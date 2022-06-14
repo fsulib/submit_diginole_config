@@ -229,5 +229,23 @@ access:
       - administrator
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  honors_thesis_confirmation_override:
+    id: settings
+    handler_id: honors_thesis_confirmation_override
+    label: 'Honors Thesis Confirmation Override'
+    notes: 'Override confirmation URL if selected form is Honors Theses'
+    status: true
+    conditions:
+      enabled:
+        ':input[name="submission_type"]':
+          value: honors_thesis
+    weight: 0
+    settings:
+      debug: ''
+      preview_title: ''
+      preview_message: ''
+      confirmation_url: /honors-thesis-submission-form
+      confirmation_title: ''
+      confirmation_message: ''
 variants: {  }

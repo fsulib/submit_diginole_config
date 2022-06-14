@@ -23,16 +23,19 @@ elements: |-
     '#type': textfield
     '#title': 'First Name'
     '#required': true
+    '#default_value': '[current-user:field_first_name]'
     '#admin_notes': 'Present in all variants.'
   last_name:
     '#type': textfield
     '#title': 'Last Name'
     '#required': true
+    '#default_value': '[current-user:field_last_name]'
     '#admin_notes': 'Present in all variants.'
   email:
     '#type': textfield
     '#title': Email
     '#required': true
+    '#default_value': '[current-user:mail]'
     '#admin_notes': 'Present in all variants.'
   department:
     '#type': select
@@ -429,9 +432,6 @@ elements: |-
       - research_repository_reviewer
     '#access_view_users':
       - '1'
-  captcha:
-    '#type': captcha
-    '#captcha_type': recaptcha/reCAPTCHA
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
@@ -581,7 +581,6 @@ settings:
 access:
   create:
     roles:
-      - anonymous
       - authenticated
     users: {  }
     permissions: {  }
@@ -671,7 +670,7 @@ handlers:
       sender_mail: ''
       sender_name: ''
       subject: 'Your Research Repository Submission to DigiNole has been received'
-      body: 'Your submission &quot;[webform_submission:values:submission_title]&quot; has been received.'
+      body: "Thank you for submitting &quot;[webform_submission:values:submission_title]&quot; to DigiNole.<br />\r\n<br />\r\nIf you have received this email in error or you have any questions about your submission, please notify lib-support@fsu.edu."
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
@@ -711,7 +710,7 @@ handlers:
       sender_mail: ''
       sender_name: ''
       subject: 'A new Research Repository submission has been submitted to DigiNole and is awaiting review'
-      body: "Submitted on [webform_submission:created]<br />\r\n<br />\r\nSubmitted by: [webform_submission:user]<br />\r\n<br />\r\nView submission <a href=\"[webform_submission:token-view-url]\">here</a>."
+      body: "Submitted on [webform_submission:created]<br />\r\n<br />\r\nSubmitted by: [webform_submission:user]<br />\r\n<br />\r\nPlease review this <a href=\"[webform_submission:token-view-url]\">submission</a> for accuracy and approval.<br />\r\n<br />\r\nIf you have received this email in error, please notify lib-support@fsu.edu."
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
@@ -751,7 +750,7 @@ handlers:
       sender_mail: ''
       sender_name: ''
       subject: 'Your DigiNole Submission "[webform_submission:values:submission_title]" has been approved'
-      body: 'Your submission to DigiNole, &quot;[webform_submission:values:submission_title]&quot; has been approved. You will receive another email in the next 1-2 weeks with a link to access it.'
+      body: 'Your submission to DigiNole, &quot;[webform_submission:values:submission_title]&quot; has been approved. You will receive another email with a link to access it.'
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
@@ -791,7 +790,7 @@ handlers:
       sender_mail: ''
       sender_name: ''
       subject: 'Your Research Repository submission to DigiNole is online'
-      body: "Your submission &quot;[webform_submission:values:submission_title]&quot; is now accessible in DigiNole.<br />\r\n<br />\r\nIt is available at&nbsp;[webform_submission:values:diginole_purl]."
+      body: "Congratulations! Your submission to DigiNole, &quot;[webform_submission:values:submission_title]&quot;, is now available.<br />\r\n<br />\r\nYou can find it at the following link: [webform_submission:values:diginole_purl]<br />\r\n<br />\r\nIf you need to make updates to the record in question or you have received this email in error, please notify lib-support@fsu.edu."
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true

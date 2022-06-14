@@ -4,7 +4,7 @@ login_link_enabled: true
 login_link_label: 'FSU CAS Login'
 login_success_message: 'You have successfully logged in'
 server:
-  version: '2.0'
+  version: '3.0'
   protocol: https
   hostname: cas.fsu.edu
   port: 443
@@ -18,11 +18,11 @@ gateway:
     negate: false
     pages: ''
 forced_login:
-  enabled: false
+  enabled: true
   paths:
     id: request_path
     negate: false
-    pages: ''
+    pages: "/honors-thesis-submission-form\r\n/research-repository-submission-form"
 user_accounts:
   prevent_normal_login: true
   auto_register: true
@@ -52,5 +52,5 @@ proxy:
   can_be_proxied: false
   proxy_chains: ''
 advanced:
-  debug_log: false
+  debug_log: true
   connection_timeout: 10
