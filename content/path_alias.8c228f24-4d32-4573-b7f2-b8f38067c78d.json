@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "8c228f24-4d32-4573-b7f2-b8f38067c78d"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/fc502a8b-3206-49ad-b12a-3c043e30bff6"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/policies"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}
