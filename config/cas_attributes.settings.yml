@@ -5,8 +5,8 @@ field:
   sync_frequency: 2
   overwrite: true
   mappings:
-    field_first_name: '[cas:attribute:fsuedufirstname]'
-    field_last_name: '[cas:attribute:fsuedulastname]'
+    field_first_name: '[cas:attribute:firstname]'
+    field_last_name: '[cas:attribute:fsuedupreferredlastname]'
 role:
   sync_frequency: 0
   deny_login_no_match: false

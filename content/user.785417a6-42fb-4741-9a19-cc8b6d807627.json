@@ -48,7 +48,7 @@
     ],
     "changed": [
         {
-            "value": "2022-05-26T14:17:43+00:00",
+            "value": "2022-06-01T19:18:00+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -57,21 +57,6 @@
             "target_id": "administrator",
             "target_type": "user_role",
             "target_uuid": "3716f7d6-ad17-4784-a0e9-6a2d801b203e"
-        },
-        {
-            "target_id": "research_repository_reviewer",
-            "target_type": "user_role",
-            "target_uuid": "f6548250-c5c0-43b9-809c-5cf497d33c78"
-        },
-        {
-            "target_id": "honors_thesis_reviewer",
-            "target_type": "user_role",
-            "target_uuid": "6387f7ac-4d9f-4688-9f9a-bd5c972cbc7d"
-        },
-        {
-            "target_id": "university_records_reviewer",
-            "target_type": "user_role",
-            "target_uuid": "cd5b3602-e844-41ba-bfc1-4a978f11c201"
         }
     ],
     "default_langcode": [
@@ -81,12 +66,12 @@
     ],
     "field_first_name": [
         {
-            "value": "dave"
+            "value": "David"
         }
     ],
     "field_last_name": [
         {
-            "value": "rodriguez"
+            "value": "Rodriguez"
         }
     ]
 }
