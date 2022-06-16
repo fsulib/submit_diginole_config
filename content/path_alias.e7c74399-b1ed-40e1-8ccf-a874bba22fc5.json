@@ -1,7 +1,7 @@
 {
     "uuid": [
         {
-            "value": "b9800763-ca98-4a27-be94-943477be9cd0"
+            "value": "e7c74399-b1ed-40e1-8ccf-a874bba22fc5"
         }
     ],
     "langcode": [
@@ -11,12 +11,12 @@
     ],
     "path": [
         {
-            "value": "\/node\/fc502a8b-3206-49ad-b12a-3c043e30bff6"
+            "value": "\/node\/d112f245-161a-4162-801d-d725db2acc99"
         }
     ],
     "alias": [
         {
-            "value": "\/policies"
+            "value": "\/help"
         }
     ],
     "status": [

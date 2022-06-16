@@ -1,7 +1,7 @@
 {
     "uuid": [
         {
-            "value": "45ec0fbf-166d-475c-a20f-f86e04a2a538"
+            "value": "5a36afa5-af17-4786-8b11-366ceacbebaf"
         }
     ],
     "langcode": [
@@ -11,12 +11,12 @@
     ],
     "path": [
         {
-            "value": "\/node\/d112f245-161a-4162-801d-d725db2acc99"
+            "value": "\/node\/0c452fa6-a1ea-4442-a644-7244ebd23019"
         }
     ],
     "alias": [
         {
-            "value": "\/help"
+            "value": "\/faqs"
         }
     ],
     "status": [

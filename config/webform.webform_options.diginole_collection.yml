@@ -6,4 +6,11 @@ id: diginole_collection
 label: 'DigiNole Collection'
 category: 'DigiNole Submission'
 likert: false
-options: ''
+options: |-
+  'fsu:college_of_social_work': 'College of Social Work'
+  "fsu:National_High_Magnetic_Field_Laboratory\t": 'National High Magnetic Field Laboratory'
+  "fsu:institute_of_molecular_biophysics\t": 'Institute of Molecular Biophysics'
+  "fsu:usedit\t": USEDiT
+  "fsu:ant4930\t": 'Video Ethnography'
+  'fsu:anthropology_faculty_scholarship': 'Faculty Scholarship'
+  'fsu:askew_school_of_public_administration_and_policy': 'Askew School of Public Administration and Policy'

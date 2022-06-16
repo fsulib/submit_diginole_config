@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - user.role.administrator
+    - user.role.university_records_reviewer
     - webform.webform.university_records_submission
   module:
     - user
@@ -1177,9 +1179,11 @@ display:
           hide_alter_empty: true
           destination: true
       access:
-        type: perm
+        type: role
         options:
-          perm: 'administer webform submission'
+          role:
+            administrator: administrator
+            university_records_reviewer: university_records_reviewer
       filters:
         in_draft:
           id: in_draft
@@ -1429,7 +1433,7 @@ display:
         - url
         - url.query_args
         - user
-        - user.permissions
+        - user.roles
       tags: {  }
   embed_default:
     id: embed_default
@@ -2423,9 +2427,11 @@ display:
             completed: '0'
             remote_addr: '0'
       access:
-        type: perm
+        type: role
         options:
-          perm: 'edit any webform submission'
+          role:
+            administrator: administrator
+            university_records_reviewer: university_records_reviewer
       filters:
         webform_id:
           id: webform_id
@@ -2633,7 +2639,7 @@ display:
         - url
         - url.query_args
         - user
-        - user.permissions
+        - user.roles
       tags: {  }
   embed_review:
     id: embed_review
@@ -3162,9 +3168,11 @@ display:
           output_url_as_text: false
           absolute: false
       access:
-        type: perm
+        type: role
         options:
-          perm: 'view any webform submission'
+          role:
+            administrator: administrator
+            university_records_reviewer: university_records_reviewer
       filters:
         in_draft:
           id: in_draft
@@ -3414,5 +3422,5 @@ display:
         - url
         - url.query_args
         - user
-        - user.permissions
+        - user.roles
       tags: {  }

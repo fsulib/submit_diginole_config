@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - user.role.administrator
+    - user.role.honors_thesis_reviewer
     - webform.webform.honors_thesis_submission
   module:
     - user
@@ -1177,9 +1179,11 @@ display:
           hide_alter_empty: true
           destination: true
       access:
-        type: perm
+        type: role
         options:
-          perm: 'administer webform submission'
+          role:
+            administrator: administrator
+            honors_thesis_reviewer: honors_thesis_reviewer
       filters:
         in_draft:
           id: in_draft
@@ -1429,7 +1433,7 @@ display:
         - url
         - url.query_args
         - user
-        - user.permissions
+        - user.roles
       tags: {  }
   embed_default:
     id: embed_default
@@ -2317,9 +2321,11 @@ display:
             completed: '0'
             remote_addr: '0'
       access:
-        type: perm
+        type: role
         options:
-          perm: 'edit any webform submission'
+          role:
+            administrator: administrator
+            honors_thesis_reviewer: honors_thesis_reviewer
       filters:
         webform_submission_value:
           id: webform_submission_value
@@ -2567,7 +2573,7 @@ display:
         - url
         - url.query_args
         - user
-        - user.permissions
+        - user.roles
       tags: {  }
   embed_review:
     id: embed_review
@@ -3096,9 +3102,11 @@ display:
           output_url_as_text: false
           absolute: false
       access:
-        type: perm
+        type: role
         options:
-          perm: 'view any webform submission'
+          role:
+            administrator: administrator
+            honors_thesis_reviewer: honors_thesis_reviewer
       filters:
         in_draft:
           id: in_draft
@@ -3348,5 +3356,5 @@ display:
         - url
         - url.query_args
         - user
-        - user.permissions
+        - user.roles
       tags: {  }
