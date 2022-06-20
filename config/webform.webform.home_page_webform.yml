@@ -9,7 +9,7 @@ uid: 1
 template: false
 archive: false
 id: home_page_webform
-title: 'Home Page Webform'
+title: 'Home Page'
 description: 'Webform that lives on the homepage'
 category: ''
 elements: |-
@@ -29,7 +29,6 @@ elements: |-
     '#title': 'Submission Type'
     '#options': webform_selector
     '#empty_option': 'Select the appropriate submission type'
-    '#select2': true
     '#required': true
   actions:
     '#type': webform_actions

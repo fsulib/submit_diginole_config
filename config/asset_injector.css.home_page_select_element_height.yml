@@ -1,0 +1,24 @@
+uuid: 6c3ab978-5910-403c-a066-a6c094faaae3
+langcode: en
+status: true
+dependencies:
+  module:
+    - webform
+id: home_page_select_element_height
+label: 'Home page select element height adjustment'
+code: |-
+  #edit-submission-type {
+    height: 40px;
+  }
+media: all
+preprocess: true
+conditions:
+  webform:
+    id: webform
+    negate: false
+    context_mapping:
+      webform: '@webform.webform_route_context:webform'
+    webforms:
+      home_page_webform: home_page_webform
+contexts: {  }
+conditions_require_all: true
