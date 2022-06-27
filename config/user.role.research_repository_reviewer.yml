@@ -1,9 +1,12 @@
 uuid: f6548250-c5c0-43b9-809c-5cf497d33c78
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - system
 id: research_repository_reviewer
 label: 'Research Repository Reviewer'
 weight: 3
 is_admin: null
-permissions: {  }
+permissions:
+  - 'view the administration theme'

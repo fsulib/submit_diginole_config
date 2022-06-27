@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "0754824e-fd10-4a12-a079-9ee6fcce4f9f"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "dd60c32b-46de-4e9e-a31b-333e03a0c032"
+        }
+    ],
+    "filename": [
+        {
+            "value": "upload_university_records.gif"
+        }
+    ],
+    "uri": [
+        {
+            "value": "private:\/\/webform\/university_records_submission\/_sid_\/upload_university_records.gif"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/gif"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 7935
+        }
+    ],
+    "status": [
+        {
+            "value": false
+        }
+    ],
+    "created": [
+        {
+            "value": "2022-06-27T15:11:17+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2022-06-27T15:11:17+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

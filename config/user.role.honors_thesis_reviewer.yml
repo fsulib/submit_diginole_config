@@ -1,9 +1,12 @@
 uuid: 6387f7ac-4d9f-4688-9f9a-bd5c972cbc7d
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - system
 id: honors_thesis_reviewer
 label: 'Honors Thesis Reviewer'
 weight: 4
 is_admin: null
-permissions: {  }
+permissions:
+  - 'view the administration theme'
