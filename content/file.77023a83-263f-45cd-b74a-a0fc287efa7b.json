@@ -1,7 +1,7 @@
 {
     "uuid": [
         {
-            "value": "0754824e-fd10-4a12-a079-9ee6fcce4f9f"
+            "value": "77023a83-263f-45cd-b74a-a0fc287efa7b"
         }
     ],
     "langcode": [
@@ -17,22 +17,22 @@
     ],
     "filename": [
         {
-            "value": "upload_university_records.gif"
+            "value": "upload_university_records.jar"
         }
     ],
     "uri": [
         {
-            "value": "private:\/\/webform\/university_records_submission\/_sid_\/upload_university_records.gif"
+            "value": "private:\/\/webform\/university_records_submission\/_sid_\/upload_university_records.jar"
         }
     ],
     "filemime": [
         {
-            "value": "image\/gif"
+            "value": "application\/java-archive"
         }
     ],
     "filesize": [
         {
-            "value": 7935
+            "value": 7
         }
     ],
     "status": [
@@ -42,13 +42,13 @@
     ],
     "created": [
         {
-            "value": "2022-06-27T15:11:17+00:00",
+            "value": "2022-06-30T09:20:04+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": "2022-06-27T15:11:17+00:00",
+            "value": "2022-06-30T09:20:04+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ]

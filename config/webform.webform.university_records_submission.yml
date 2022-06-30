@@ -104,6 +104,7 @@ elements: |-
   upload_university_records:
     '#type': managed_file
     '#title': 'Upload University Records'
+    '#description': '<em>If the file you are intending to upload is larger than 100MB, please submit this form without an attached file and send a follow-up email to lib-specialcollections@fsu.edu. A member of the DigiNole support team will coordinate with you on receiving your submission via another service (e.g. Dropbox, Google Drive, etc).</em>'
     '#states':
       visible:
         ':input[name="have_you_contacted_the_university_archivist"]':
