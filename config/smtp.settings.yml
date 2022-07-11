@@ -3,14 +3,14 @@ _core:
 smtp_on: true
 smtp_host: email-smtp.us-east-1.amazonaws.com
 smtp_hostbackup: ''
-smtp_port: '25'
+smtp_port: '587'
 smtp_protocol: tls
 smtp_autotls: true
 smtp_timeout: 30
 smtp_username: '0'
 smtp_password: '0'
-smtp_from: lib-support@fsu.edu
-smtp_fromname: submit.diginole
+smtp_from: Lib-WebDev@fsu.edu
+smtp_fromname: 'Florida State University Libraries'
 smtp_client_hostname: ''
 smtp_client_helo: ''
 smtp_allowhtml: '1'
