@@ -1,12 +1,12 @@
 {
     "uid": [
         {
-            "value": 12
+            "value": 17
         }
     ],
     "uuid": [
         {
-            "value": "6bf4775e-e528-49ef-877c-8401df89bae6"
+            "value": "1b096ed4-4acd-47e5-8b5c-a025cfc8571b"
         }
     ],
     "langcode": [
@@ -22,12 +22,12 @@
     "preferred_admin_langcode": [],
     "name": [
         {
-            "value": "svarry"
+            "value": "barsenault"
         }
     ],
     "mail": [
         {
-            "value": "svarry@fsu.edu"
+            "value": "barsenault@fsu.edu"
         }
     ],
     "timezone": [
@@ -42,36 +42,26 @@
     ],
     "created": [
         {
-            "value": "2022-05-31T13:59:35+00:00",
+            "value": "2022-07-12T13:37:37+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": "2022-07-12T00:15:48+00:00",
+            "value": "2022-07-12T13:37:37+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
-    "roles": [
-        {
-            "target_id": "university_records_reviewer",
-            "target_type": "user_role",
-            "target_uuid": "cd5b3602-e844-41ba-bfc1-4a978f11c201"
-        }
-    ],
+    "roles": [],
     "default_langcode": [
         {
             "value": true
         }
     ],
-    "field_first_name": [
-        {
-            "value": "Sandra"
-        }
-    ],
+    "field_first_name": [],
     "field_last_name": [
         {
-            "value": "Varry"
+            "value": "Arsenault"
         }
     ]
 }

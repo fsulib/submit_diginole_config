@@ -48,7 +48,7 @@
     ],
     "changed": [
         {
-            "value": "2022-06-16T14:21:34+00:00",
+            "value": "2022-07-12T00:16:00+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -64,6 +64,14 @@
             "value": true
         }
     ],
-    "field_first_name": [],
-    "field_last_name": []
+    "field_first_name": [
+        {
+            "value": "Favenzio"
+        }
+    ],
+    "field_last_name": [
+        {
+            "value": "Calvo"
+        }
+    ]
 }
