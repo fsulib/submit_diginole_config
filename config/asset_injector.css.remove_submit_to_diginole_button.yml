@@ -1,0 +1,15 @@
+uuid: 96f213b6-a38b-4105-be45-69b670cadf25
+langcode: en
+status: true
+dependencies: {  }
+id: remove_submit_to_diginole_button
+label: 'remove Submit to DigiNole button'
+code: |-
+  .navbar-brand {
+    visibility: hidden;
+  }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: false
