@@ -16,7 +16,7 @@ elements: |-
   processed_text_02:
     '#type': processed_text
     '#text': |
-      <p><strong>As of July 18, 2022 there will be a pause on uploads to the repository for the next 30 days. All submissions are saved in a queue for the time being. Users will receive a link to their submission once it is posted online. If you have questions, please contact lib-support@fsu.edu. Thank you for supporting DigiNole as we continue to refresh the site!</strong></p>
+      <p><strong>As of July 22, 2022 there will be a pause on uploads to the repository for the next 30 days. All submissions are saved in a queue for the time being. Users will receive a link to their submission once it is posted online. If you have questions, please contact lib-support@fsu.edu. Thank you for supporting DigiNole as we continue to refresh the site!</strong></p>
     '#format': full_html
   processed_text:
     '#type': processed_text

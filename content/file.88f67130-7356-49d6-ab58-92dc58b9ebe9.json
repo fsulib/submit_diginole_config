@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "88f67130-7356-49d6-ab58-92dc58b9ebe9"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "36f6798b-7a90-4c76-b244-687d976dc989"
+        }
+    ],
+    "filename": [
+        {
+            "value": "coverpage.pdf"
+        }
+    ],
+    "uri": [
+        {
+            "value": "private:\/\/webform\/honors_thesis_submission\/2\/coverpage.pdf"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "application\/pdf"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 189929
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2022-07-20T19:49:43+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2022-07-20T20:07:33+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

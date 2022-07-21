@@ -8,6 +8,14 @@ code: |-
   .navbar-brand {
     visibility: hidden;
   }
+
+  #fsu-nav-utility .navbar-right {
+    display: none;
+  }
+
+  #fsu-masthead #fsu-title {
+    padding-top: 15px;
+  }
 media: all
 preprocess: true
 conditions: {  }

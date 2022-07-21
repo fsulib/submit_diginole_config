@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "37b00ec8-d657-4b30-8a7e-e4fc7a9c4ee2"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "36f6798b-7a90-4c76-b244-687d976dc989"
+        }
+    ],
+    "filename": [
+        {
+            "value": "DigiNole Metadata Guidelines.pdf"
+        }
+    ],
+    "uri": [
+        {
+            "value": "private:\/\/webform\/research_repository_submission\/1\/DigiNole Metadata Guidelines.pdf"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "application\/pdf"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 503057
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2022-07-20T19:17:05+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2022-07-20T19:17:24+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}
